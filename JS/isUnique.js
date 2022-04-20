@@ -1,5 +1,29 @@
-function isUnique(string) {
-  return new Set(string).size === string.length
+function isUnique(str) {
+
+  /** 1 **/
+  // for (let i = 0; i < str.length; i++) {
+  //   if (str.lastIndexOf(str[i]) !== i) {
+  //     return false
+  //   }
+  // }
+  // return true
+
+  /** 2 **/
+  // const chars = new Set()
+  //
+  // for (let i = 0; i < str.length; i++) {
+  //   const current = str[i]
+  //
+  //   if (chars.has(current)) {
+  //     return false
+  //   }
+  //
+  //   chars.add(current)
+  // }
+  // return true
+
+  /** 3 **/
+  return new Set(str).size === str.length
 }
 
 console.log(isUnique('123')) // -> true
