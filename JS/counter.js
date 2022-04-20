@@ -5,11 +5,11 @@ function makeCounter() {
   };
 }
 
-const counter = makeCounter();
+const counter1 = makeCounter();
 const counter2 = makeCounter();
 
-counter(); // 1
-console.log(counter()); // 2
+counter1(); // 1
+console.log(counter1()); // 2
 
 counter2(); // 1
 counter2(); // 2
