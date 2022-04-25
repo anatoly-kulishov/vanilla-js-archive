@@ -1,6 +1,7 @@
 function makeCounter() {
   let count = 0;
-  return function () {
+
+  return () => {
     return ++count;
   };
 }
