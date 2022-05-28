@@ -18,7 +18,7 @@ const coinChange = function (coins, amount) {
   return (dp[amount] !== amount + 1) ? dp[amount] : -1;
 };
 
-// console.log('Result:', coinChange([1, 2, 5], 11)); // 3
+console.log('Result:', coinChange([1, 2, 5], 11)); // 3
 console.log('Result:', coinChange([1, 3, 4, 5], 7)); // 2
-// console.log('Result:', coinChange([2], 3)); // -1
-// console.log('Result:', coinChange([1], 0)); // 0
+console.log('Result:', coinChange([2], 3)); // -1
+console.log('Result:', coinChange([1], 0)); // 0
