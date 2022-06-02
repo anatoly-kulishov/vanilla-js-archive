@@ -27,7 +27,7 @@ const myObject = {
   name: "Foo Bar"
 };
 
-const getNameFunc = myObject.getName;
+const getNameFunc = myObject.getName; // .bind(myObject)
 
 // Q: What would be the output and why?
 // Q: What is "strict mode" and how does it affect the result?
@@ -107,9 +107,7 @@ function rle(str) {
     }
   }
 
-  console.log(dictionary);
-
   return result;
 }
 
-console.log('[RLE]', rle('AABBBCCXYZ')); // Should return A2B3C2XYZ
+// console.log('[RLE]', rle('AABBBCCXYZ')); // Should return A2B3C2XYZ
