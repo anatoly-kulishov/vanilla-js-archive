@@ -110,4 +110,4 @@ function rle(str) {
   return result;
 }
 
-// console.log('[RLE]', rle('AABBBCCXYZ')); // Should return A2B3C2XYZ
+console.log('[RLE]', rle('AABBBCCXYZ')); // Should return A2B3C2XYZ
