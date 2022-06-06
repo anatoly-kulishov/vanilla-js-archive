@@ -1,0 +1,13 @@
+const testCase = require("../../Helper/testCase");
+
+const fizzBuzz = (n) => {
+  if (n % 3 === 0 && n % 5 === 0) return "FizzBuzz";
+  else if (n % 3 === 0 && n % 5 !== 0) return "Fizz";
+  else if (n % 5 === 0 && n % 3 !== 0) return "Buzz";
+  else return n;
+}
+
+testCase(fizzBuzz(15), 'FizzBuzz', true);
+testCase(fizzBuzz(9), 'Fizz');
+testCase(fizzBuzz(10), 'Buzz');
+testCase(fizzBuzz(7), 7);
