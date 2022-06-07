@@ -1,7 +1,7 @@
 const testCase = (arg1, arg2, isStart = false) => {
   let flag = arg1 === arg2;
 
-  if (isStart) console.log("Test Cases:");
+  if (isStart) console.log("\nTest Cases:");
 
   if (typeof arg1 === 'object' && typeof arg2 === 'object') {
     flag = JSON.stringify(arg1) === JSON.stringify(arg2);
