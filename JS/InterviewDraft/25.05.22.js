@@ -1,3 +1,5 @@
+'use strict';
+
 /**
  * Closure
  */
@@ -29,16 +31,20 @@ const myObject = {
 
 const getNameFunc = myObject.getName; // .bind(myObject)
 
-// Q: What would be the output and why?
 // Q: What is "strict mode" and how does it affect the result?
-// console.log('[Context]', myObject.getName());
-// console.log('[Context]', getNameFunc());
+// A: Strict mode makes it easier to write "secure" JS, also changes previously accepted "bad syntax" into real errors.
+
+// Q: What would be the output and why?
+// console.log('[Context]', myObject.getName()); // "Foo Bar"
+// console.log('[Context]', getNameFunc()); // Error if we use "use strict" otherwise will be just undefined
 
 /**
  * Bind
  */
 
 // Q: What is "bind"? How does it work?
+// A: Bind - it's just a method which returns a new function that is called as a method on the object,
+// setting its execution context (this) to the specified value.
 
 function plus(x, y) {
   return x + y;
@@ -93,13 +99,14 @@ function rle(str) {
   for (let i = 0; i < str.length; i++) {
     const char = str[i];
     if (dictionary[char] !== undefined) {
-      dictionary[char] = dictionary[char] + 1;
+      dictionary[char] += 1;
     } else {
       dictionary[char] = 1;
     }
   }
 
-  for (const [key, value] of Object.entries(dictionary)) {
+  for (const key in dictionary) {
+    const value = dictionary[key];
     if (value <= 1) {
       result += key;
     } else {

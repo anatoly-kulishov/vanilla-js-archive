@@ -1,13 +1,18 @@
 const testCase = require("../../Helper/testCase");
 
 const fizzBuzz = (n) => {
-  if (n % 3 === 0 && n % 5 === 0) return "FizzBuzz";
-  else if (n % 3 === 0 && n % 5 !== 0) return "Fizz";
-  else if (n % 5 === 0 && n % 3 !== 0) return "Buzz";
-  else return n;
+  const result = [];
+
+  for (let i = 1; i < n + 1; i++) {
+    if (i % 3 === 0 && i % 5 === 0) result.push("FizzBuzz");
+    else if (i % 3 === 0 && i % 5 !== 0) result.push("Fizz");
+    else if (i % 5 === 0 && i % 3 !== 0) result.push("Buzz");
+    else result.push(String(i));
+  }
+
+  return result;
 }
 
-testCase(fizzBuzz(15), 'FizzBuzz', true);
-testCase(fizzBuzz(9), 'Fizz');
-testCase(fizzBuzz(10), 'Buzz');
-testCase(fizzBuzz(7), 7);
+testCase(fizzBuzz(3), ["1", "2", "Fizz"], true);
+testCase(fizzBuzz(5), ["1", "2", "Fizz", "4", "Buzz"]);
+testCase(fizzBuzz(15), ["1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz", "11", "Fizz", "13", "14", "FizzBuzz"]);
