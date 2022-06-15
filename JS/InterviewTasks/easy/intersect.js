@@ -8,7 +8,6 @@ const intersect = (nums1, nums2) => {
     return acc;
   }, {});
 
-
   for (let i = 0; i < nums2.length; i++) {
     const current = nums2[i];
     let count = map[current];

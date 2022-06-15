@@ -1,6 +1,5 @@
 const testCase = require("../../Helper/testCase");
 
-// O(n)
 function isBalanced2(string) {
   const stack = [];
   const brackets = {
