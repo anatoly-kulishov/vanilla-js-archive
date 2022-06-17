@@ -1,24 +1,19 @@
 const testCase = require("../../Helper/testCase");
 
-const sum = (a) => {
-  return (b) => {
-    return a + b;
+function sum(a) {
+  let currentSum = a;
+
+  function f(b) {
+    currentSum += b;
+    return f;
   }
+
+  f.valueOf = function () {
+    return currentSum;
+  };
+
+  return f;
 }
 
-const mul = (a) => {
-  return (b) => {
-    return a * b;
-  }
-}
-
-const calculate = (cb) => {
-    return (a) => {
-      return (b) => {
-        return cb(a, b)
-      }
-    }
-}
-
-testCase(calculate((sum) (3)(2)), 5, true);
-testCase(calculate((mul) (3)(2)), 6);
+testCase(+sum(3)(2), 5, true); // We can use +
+testCase(sum(1)(5)(10).valueOf(), 16); // Or can use special method .valueOf() for example.
