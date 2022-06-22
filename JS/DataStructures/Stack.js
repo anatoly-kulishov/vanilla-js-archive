@@ -1,3 +1,13 @@
+/**
+ * O(1)
+ * Push
+ * Pop
+ *
+ * O(n)
+ * Search
+ * Access
+ */
+
 module.exports = class Stack {
   constructor() {
     this.count = 0;
