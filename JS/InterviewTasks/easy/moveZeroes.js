@@ -13,9 +13,7 @@ const testCase = require("../../Helper/testCase");
 let moveZeroes = (nums) => {
   const n = nums.length;
 
-  if (n === 0 || n === 1) {
-    return nums;
-  }
+  if (n === 0 || n === 1) return nums;
 
   let left = 0;
   let right = 0;
@@ -31,7 +29,6 @@ let moveZeroes = (nums) => {
       nums[right] = temp;
       left++;
       right++;
-      console.log(left, right);
     }
   }
 

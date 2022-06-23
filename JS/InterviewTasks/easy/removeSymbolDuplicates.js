@@ -1,6 +1,6 @@
 const testCase = require("../../Helper/testCase");
 
-function removeDupes(str) {
+function removeSymbolDuplicates(str) {
   /** 1 **/
   // const res = [];
   // const map = {};
@@ -17,7 +17,7 @@ function removeDupes(str) {
   return Array.from(new Set(str)).join('');
 }
 
-testCase(removeDupes('abcd'), 'abcd', true);
-testCase(removeDupes('aabbccdd'), 'abcd');
-testCase(removeDupes('abcddbca'), 'abcd');
-testCase(removeDupes('abababcdcdcd'), 'abcd');
+testCase(removeSymbolDuplicates('abcd'), 'abcd', true);
+testCase(removeSymbolDuplicates('aabbccdd'), 'abcd');
+testCase(removeSymbolDuplicates('abcddbca'), 'abcd');
+testCase(removeSymbolDuplicates('abababcdcdcd'), 'abcd');
