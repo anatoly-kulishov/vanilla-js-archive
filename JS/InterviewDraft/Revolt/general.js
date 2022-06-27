@@ -98,6 +98,7 @@ function rle(str) {
 
   for (let i = 0; i < str.length; i++) {
     const char = str[i];
+
     if (dictionary[char] !== undefined) {
       dictionary[char] += 1;
     } else {
@@ -107,6 +108,7 @@ function rle(str) {
 
   for (const key in dictionary) {
     const value = dictionary[key];
+
     if (value <= 1) {
       result += key;
     } else {

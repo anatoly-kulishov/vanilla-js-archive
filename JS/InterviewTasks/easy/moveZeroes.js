@@ -7,8 +7,6 @@ const testCase = require("../../Helper/testCase");
  * Constraints:
  * 1 <= nums.length <= 104
  * -231 <= nums[i] <= 231 - 1
- *
- * @param nums
  */
 let moveZeroes = (nums) => {
   const n = nums.length;
