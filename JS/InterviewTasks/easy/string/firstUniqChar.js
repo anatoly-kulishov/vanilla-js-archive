@@ -1,5 +1,16 @@
-const testCase = require("../../Helper/testCase");
+/**
+ * Given a string s, find the first non-repeating character in it and return its index. If it does not exist, return -1.
+ *
+ * 1 <= s.length <= 105
+ * s consists of only lowercase English letters.
+ */
 
+const testCase = require("../../../Helper/testCase");
+
+/**
+ * @param {string} s
+ * @return {number}
+ */
 let firstUniqChar = (s) => {
   let map = new Map();
 
@@ -7,7 +18,7 @@ let firstUniqChar = (s) => {
     let current = s[i];
 
     if (map.has(current)) {
-      map.set(current, map.get(current) + 1)
+      map.set(current, map.get(current) + 1);
     } else {
       map.set(current, 1);
     }
