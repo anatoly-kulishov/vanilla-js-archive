@@ -1,10 +1,12 @@
-const testCase = require("../../Helper/testCase");
+const testCase = require("../../../Helper/testCase");
 
 function removeSymbolDuplicates(str) {
   /** 1 **/
   // const res = [];
   // const map = {};
-  // for (let i = 0; i < str.length; i++) {
+  // const n = str.length;
+  //
+  // for (let i = 0; i < n; i++) {
   //   const char = str[i];
   //   if (!map[char]) {
   //     map[char] = true;

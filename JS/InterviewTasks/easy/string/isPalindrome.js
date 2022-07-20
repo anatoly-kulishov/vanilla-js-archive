@@ -17,16 +17,16 @@ const testCase = require("../../../Helper/testCase");
  * @return {boolean}
  */
 const isPalindrome = (s) => {
-  let str = s.toLowerCase().replace(/[^a-z0-9]/gi, '');
-  let reversedStr = '';
-  const n = str.length - 1;
+    let str = s.toLowerCase().replace(/[^a-z0-9]/gi, '');
+    let reversedStr = '';
+    const n = str.length - 1;
 
-  for (let i = n; i >= 0; i--) {
-    const current = str[i];
-    reversedStr += current;
-  }
+    for (let i = n; i >= 0; i--) {
+        const current = str[i];
+        reversedStr += current;
+    }
 
-  return reversedStr === str;
+    return reversedStr === str;
 }
 
 testCase(isPalindrome("A man, a plan, a canal: Panama"), true, true);

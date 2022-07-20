@@ -16,30 +16,30 @@ const testCase = require("../../../Helper/testCase");
  * @return {boolean}
  */
 function isBalanced(string) {
-  const n = string.length;
-  const queue = [];
-  const start = '{[(';
-  const end = '}])';
-  const map = {
-    '}': '{',
-    ']': '[',
-    ')': '('
-  }
-
-  for (let i = 0; i < n; i++) {
-    const char = string[i];
-    if (start.includes(char)) {
-      queue.push(char);
+    const n = string.length;
+    const queue = [];
+    const start = '{[(';
+    const end = '}])';
+    const map = {
+        '}': '{',
+        ']': '[',
+        ')': '('
     }
-    if (end.includes(char)) {
-      const last = queue.pop();
-      if (map[char] !== last) {
-        return false;
-      }
-    }
-  }
 
-  return !queue.length;
+    for (let i = 0; i < n; i++) {
+        const char = string[i];
+        if (start.includes(char)) {
+            queue.push(char);
+        }
+        if (end.includes(char)) {
+            const last = queue.pop();
+            if (map[char] !== last) {
+                return false;
+            }
+        }
+    }
+
+    return !queue.length;
 }
 
 testCase(isBalanced('()'), true, true);

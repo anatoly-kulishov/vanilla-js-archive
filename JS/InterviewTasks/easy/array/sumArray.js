@@ -1,5 +1,9 @@
-const testCase = require("../../Helper/testCase");
+const testCase = require("../../../Helper/testCase");
 
+/**
+ * @param arr
+ * @returns {number}
+ */
 const sumArray = (arr) => {
   const n = arr.length;
   let result = 0;

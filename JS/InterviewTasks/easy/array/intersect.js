@@ -14,24 +14,24 @@ const testCase = require("../../../Helper/testCase");
  * @return {number[]}
  */
 const intersect = (nums1, nums2) => {
-  const result = [];
+    const result = [];
 
-  const map = nums1.reduce((acc, i) => {
-    acc[i] = acc[i] ? acc[i] + 1 : 1;
-    return acc;
-  }, {});
+    const map = nums1.reduce((acc, i) => {
+        acc[i] = acc[i] ? acc[i] + 1 : 1;
+        return acc;
+    }, {});
 
-  for (let i = 0; i < nums2.length; i++) {
-    const current = nums2[i];
-    let count = map[current];
+    for (let i = 0; i < nums2.length; i++) {
+        const current = nums2[i];
+        let count = map[current];
 
-    if(count && count > 0) {
-      result.push(current)
-      map[current] -= 1;
+        if (count && count > 0) {
+            result.push(current)
+            map[current] -= 1;
+        }
     }
-  }
 
-  return result;
+    return result;
 };
 
 testCase(intersect([1, 2, 2, 1], [2, 2]), [2, 2], true);

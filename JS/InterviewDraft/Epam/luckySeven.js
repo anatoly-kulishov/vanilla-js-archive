@@ -8,13 +8,13 @@ const luckySeven = (arr) => {
     return false;
   }
 
-  for(let i = 0; i < n - 3; i++) {
+  for(let i = 0; i < n - 2; i++) {
     const first = arr[i];
     const second = arr[i + 1];
     const third = arr[i + 2];
 
     if((first + second + third) === luckyNumber) {
-      return true
+      return true;
     }
   }
 
@@ -22,6 +22,7 @@ const luckySeven = (arr) => {
 }
 
 testCase(luckySeven([1, 2, 3, 22, 2, 3, 2, 69, 5]), true);
+testCase(luckySeven([1, 10, 17, 3, 3, 1]), true);
 testCase(luckySeven([1, 2, 3]), false);
 testCase(luckySeven([7]), false);
 testCase(luckySeven([]), false);

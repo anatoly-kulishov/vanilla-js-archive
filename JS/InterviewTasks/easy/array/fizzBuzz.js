@@ -16,16 +16,16 @@ const testCase = require("../../../Helper/testCase");
  * @return {string[]}
  */
 const fizzBuzz = (n) => {
-  const result = [];
+    const result = [];
 
-  for (let i = 1; i < n + 1; i++) {
-    if (i % 3 === 0 && i % 5 === 0) result.push("FizzBuzz");
-    else if (i % 3 === 0 && i % 5 !== 0) result.push("Fizz");
-    else if (i % 5 === 0 && i % 3 !== 0) result.push("Buzz");
-    else result.push(String(i));
-  }
+    for (let i = 1; i <= n; i++) {
+        if (i % 3 === 0 && i % 5 === 0) result.push("FizzBuzz");
+        else if (i % 3 === 0 && i % 5 !== 0) result.push("Fizz");
+        else if (i % 5 === 0 && i % 3 !== 0) result.push("Buzz");
+        else result.push(String(i));
+    }
 
-  return result;
+    return result;
 }
 
 testCase(fizzBuzz(3), ["1", "2", "Fizz"], true);

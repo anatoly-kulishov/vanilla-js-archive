@@ -1,5 +1,9 @@
-const testCase = require("../../Helper/testCase");
+const testCase = require("../../../Helper/testCase");
 
+/**
+ * @param str
+ * @returns {string}
+ */
 function rle(str) {
   const dictionary = {};
   let result = '';
@@ -24,11 +28,15 @@ function rle(str) {
   return result;
 }
 
+/**
+ * @param str
+ * @returns {string}
+ */
 function rle2(str) {
   const dictionary = {};
   let result = '';
 
-  for (let char of str) {
+  for (const char of str) {
     if(dictionary[char] !== undefined) {
       dictionary[char] = dictionary[char] + 1
     } else {

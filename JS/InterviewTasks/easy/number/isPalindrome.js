@@ -13,7 +13,7 @@ const testCase = require("../../../Helper/testCase");
  * @return {boolean}
  */
 const isPalindrome = (x) => {
-  return x.toString() === x.toString().split('').reverse().join('');
+    return x.toString() === x.toString().split('').reverse().join('');
 };
 
 testCase(isPalindrome(121), true, true);
