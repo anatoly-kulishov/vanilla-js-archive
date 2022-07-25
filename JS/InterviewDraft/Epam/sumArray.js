@@ -5,9 +5,9 @@ const sumArray = (arr) => {
   let result = 0;
 
   for (let i = 0; i < n; i++) {
-    const current = arr[i];
+    const currentArr = arr[i];
 
-    const sum = current.reduce((acc, curr) => {
+    const sum = currentArr.reduce((acc, curr) => {
       return acc + curr;
     }, 0);
 

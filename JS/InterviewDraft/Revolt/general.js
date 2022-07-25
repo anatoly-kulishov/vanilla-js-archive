@@ -96,17 +96,15 @@ function rle(str) {
   const dictionary = {};
   let result = '';
 
-  for (let i = 0; i < str.length; i++) {
-    const char = str[i];
-
-    if (dictionary[char] !== undefined) {
-      dictionary[char] += 1;
-    } else {
+  for (let char of str) {
+    if (dictionary[char] === undefined) {
       dictionary[char] = 1;
+    } else {
+      dictionary[char] += 1;
     }
   }
 
-  for (const key in dictionary) {
+  for (let key in dictionary) {
     const value = dictionary[key];
 
     if (value <= 1) {

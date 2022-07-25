@@ -1,5 +1,10 @@
 const testCase = require("../../Helper/testCase");
 
+/**
+ * @param a
+ * @param b
+ * @returns {any}
+ */
 function add(a, b) {
   if (!a) {
     return add
