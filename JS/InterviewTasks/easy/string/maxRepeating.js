@@ -1,5 +1,9 @@
-const testCase = require("../../Helper/testCase");
+const testCase = require("../../../Helper/testCase");
 
+/**
+ * @param str
+ * @returns {*}
+ */
 let maxRepeating = (str) => {
   const n = str.length;
   let count = 0;

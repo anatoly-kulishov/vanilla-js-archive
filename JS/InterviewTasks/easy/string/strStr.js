@@ -1,5 +1,10 @@
-const testCase = require("../../Helper/testCase");
+const testCase = require("../../../Helper/testCase");
 
+/**
+ * @param haystack
+ * @param needle
+ * @returns {number}
+ */
 const strStr = (haystack, needle) => {
   if (needle.length === 0) return 0;
   if (needle === haystack) return 0;

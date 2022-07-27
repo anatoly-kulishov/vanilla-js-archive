@@ -1,5 +1,10 @@
-const testCase = require("../../Helper/testCase");
+const testCase = require("../../../Helper/testCase");
 
+/**
+ * @param {number[]} source
+ * @param {number[]} subset
+ * @returns {boolean}
+ */
 function arraySubset(source, subset) {
   if (source.length < subset.length) {
     return false;

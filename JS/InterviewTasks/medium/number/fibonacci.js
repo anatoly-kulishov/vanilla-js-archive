@@ -25,25 +25,9 @@ function fibonacci(n) {
 	return sequence;
 }
 
-testCase(fibonacci(8), [1, 1, 2, 3, 5, 8, 13, 21], true, 'fibonacci', timePerformanceResult(time));
+testCase(fibonacci(20), [1,1,2,3,5,8,13,21,34,55,89,144,233,377,610,987,1597,2584,4181,6765], true, 'fibonacci', timePerformanceResult(time));
 testCase(fibonacci(10), [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]);
 testCase(fibonacci(6), [1, 1, 2, 3, 5, 8]);
 testCase(fibonacci(4), [1, 1, 2, 3]);
 testCase(fibonacci(2), [1, 1]);
 testCase(fibonacci(1), [1]);
-
-/**
- * @param n
- * @returns {*}
- */
-function fibonacci2(n) {
-	if (n < 2) {
-		return n;
-	}
-
-	return fibonacci2(n - 1) + fibonacci2(n - 2);
-}
-
-testCase(fibonacci2(10), 55, true, 'fibonacci2', timePerformanceResult(time));
-testCase(fibonacci2(5), 5);
-testCase(fibonacci2(1), 1);

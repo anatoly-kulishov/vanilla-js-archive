@@ -1,5 +1,5 @@
 const testCase = (arg1, arg2, isStart = false, title = '', time) => {
-	let flag = arg1 === arg2;
+	let isAnObject = false;
 
 	if (isStart && title === '') {
 		console.log(`\nTest Cases: (${time}ms)`);
@@ -10,10 +10,20 @@ const testCase = (arg1, arg2, isStart = false, title = '', time) => {
 	}
 
 	if (typeof arg1 === 'object' && typeof arg2 === 'object') {
-		flag = JSON.stringify(arg1) === JSON.stringify(arg2);
+		isAnObject = true;
 	}
 
-	console.log(`[ ${flag ? '✔' : `✘`} ]`, `(${arg1})`, '~', `(${arg2})`)
+	logStatus(arg1, arg2, isAnObject)
+}
+
+const logStatus = (arg1, arg2, isAnObject) => {
+	let flag = arg1 === arg2;
+	if(isAnObject) {
+		flag = JSON.stringify(arg1) === JSON.stringify(arg2);
+		console.log(`[ ${flag ? '✔' : `✘`} ]`, `(${JSON.stringify(arg1)})`, '~', `(${JSON.stringify(arg2)})`)
+	} else {
+		console.log(`[ ${flag ? '✔' : `✘`} ]`, `(${JSON.stringify(arg1)})`, '~', `(${JSON.stringify(arg2)})`)
+	}
 }
 
 module.exports = testCase;
