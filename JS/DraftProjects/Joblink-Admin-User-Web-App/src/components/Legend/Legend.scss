@@ -1,0 +1,44 @@
+.legend {
+    max-width: 100%;
+}
+
+.caption-list {
+    margin: 20px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.caption-item {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0;
+    padding: 12px 8px 12px 36px;
+
+    color: #3F3F46;
+
+    border: 1px solid #F4F4F5;
+    box-sizing: border-box;
+    border-radius: 4px 4px 0 0;
+}
+
+.caption-item:hover {
+    opacity: 0.8;
+}
+
+.caption-item .icon {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: 12px;
+
+    transform: translate(0, -50%);
+
+    width: 14px;
+    height: 14px;
+
+    border-radius: 50%
+}

@@ -1,0 +1,17 @@
+.link-count {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .count {
+        padding: 3.5px 4px;
+        font-size: 14px;
+        line-height: 1;
+        letter-spacing: -0.6px;
+        color: #ffffff;
+        border: 1.5px solid #22C55E;
+        border-radius: 50%;
+        background: #22C55E;
+        user-select: none;
+    }
+}

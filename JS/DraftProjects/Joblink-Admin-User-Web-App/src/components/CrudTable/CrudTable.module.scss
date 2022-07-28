@@ -1,0 +1,43 @@
+.crudTableTitle {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.18px;
+    color: #3F3F46;
+}
+
+.crudTableList {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    & > li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.crudTableBox {
+    position: relative;
+    padding: 8px 8px 8px 16px;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: -0.22px;
+    color: #52525B;
+    background: #FAFAFA;
+    border: 1px solid #E4E4E7;
+}
+
+.add {
+    font-weight: 500;
+    font-size: 17px;
+    color: #16A34A;
+    cursor: pointer;
+}
+
+.noResult {
+    padding: 14px;
+    font-size: 14px;
+}

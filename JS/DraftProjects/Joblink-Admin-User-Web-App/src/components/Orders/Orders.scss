@@ -1,0 +1,83 @@
+.orders-list {
+    max-height: 520px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow-y: auto;
+}
+
+.orders-list li {
+    padding: 12px;
+    margin-bottom: 8px;
+    background-color: #fafafa;
+    border: 1px solid #F4F4F5;
+    box-sizing: border-box;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.orders-list li:last-child {
+    margin-bottom: 0;
+}
+
+.card .job-title {
+    max-width: 175px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+
+    font-weight: 500;
+    font-size: 17px;
+    letter-spacing: -0.22px;
+    color: #52525B;
+}
+
+.card .job-date,
+.card .job-desc {
+    font-size: 13px;
+    letter-spacing: -0.04px;
+    color: #71717A;
+}
+
+.card .job-date {
+    text-align: right;
+}
+
+@media (min-width: 1200px) and (max-width: 1280px) {
+    .card .job-date,
+    .card .job-desc {
+        font-size: 12px;
+    }
+}
+
+.card .job-desc {
+    line-height: 1.7;
+}
+
+.card .job-role {
+    font-weight: 500;
+    letter-spacing: -0.13px;
+    color: #52525B;
+}
+
+.card .job-row {
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+@media (max-width: 1400px) {
+    .card .job-title {
+        font-size: 16px;
+        max-width: 130px;
+    }
+
+    .card .job-role {
+        font-size: 14px;
+    }
+}
+
+.job-icon-status {
+    width: 12px;
+    height: 12px;
+}

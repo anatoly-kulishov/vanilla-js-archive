@@ -1,0 +1,33 @@
+.app-header {
+    padding: 28px 18px;
+
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.app-header .account {
+    display: flex;
+    align-items: center;
+}
+
+.app-header .account__name {
+    margin-right: 12px;
+    font-weight: 600;
+    font-size: 17px;
+    color: #52525B;
+}
+
+.app-header .account__button {
+    display: flex;
+    cursor: pointer;
+}
+
+@media (max-width: 767px) {
+    .app-header {
+        padding: 25px 10px;
+    }
+
+    .app-header .account__name {
+        font-size: 13px;
+    }
+}

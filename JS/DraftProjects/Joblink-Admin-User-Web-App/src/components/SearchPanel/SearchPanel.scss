@@ -1,0 +1,46 @@
+.search-panel {
+    position: relative;
+
+    &__button {
+        position: absolute;
+        top: 50%;
+        left: 16px;
+        transform: translate(0, -50%);
+
+        width: 24px;
+        height: 24px;
+        padding: 0;
+
+        outline: none;
+        border: none;
+        background-color: transparent;
+    }
+
+    &__input {
+        width: auto;
+        min-width: 360px;
+        flex-grow: 1;
+        margin-right: 3px;
+        background-color: #fff !important;
+        padding: 12px 16px 12px 54px !important;
+
+        .css-yk16xz-control {
+            border-color: red !important;
+        }
+
+    }
+}
+
+@media(max-width: 1400px) {
+    .search-panel__input {
+        min-width: 100%;
+    }
+}
+
+@media(max-width: 767px) {
+    .search,
+    .search-panel__input {
+        width: 100%;
+        min-width: auto;
+    }
+}
