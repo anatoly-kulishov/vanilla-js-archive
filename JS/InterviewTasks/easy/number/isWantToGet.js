@@ -7,7 +7,7 @@
  *  5. Available notes 100, 50, 20 10
  */
 
-const testCase = require("../Helper/testCase");
+const testCase = require("../../../Helpers/testCase");
 
 /**
  * @param {number} amountRequired

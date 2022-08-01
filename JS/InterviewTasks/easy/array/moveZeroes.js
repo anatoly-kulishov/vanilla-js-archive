@@ -7,7 +7,7 @@
  * -231 <= nums[i] <= 231 - 1
  */
 
-const testCase = require("../../../Helper/testCase");
+const testCase = require("../../../Helpers/testCase");
 
 /**
  * @param nums

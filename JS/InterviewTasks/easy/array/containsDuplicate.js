@@ -5,7 +5,7 @@
  * -109 <= nums[i] <= 109
  */
 
-const testCase = require("../../../Helper/testCase");
+const testCase = require("../../../Helpers/testCase");
 
 /**
  * @param {number[]} nums

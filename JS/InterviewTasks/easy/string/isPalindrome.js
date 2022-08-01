@@ -6,7 +6,7 @@
  * s consists only of printable ASCII characters.
  */
 
-const testCase = require("../../../Helper/testCase");
+const testCase = require("../../../Helpers/testCase");
 
 // const isPalindrome = (x) => {
 //   return x.toString() === x.toString().split('').reverse().join('');

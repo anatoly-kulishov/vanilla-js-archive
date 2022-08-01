@@ -7,7 +7,7 @@
  * 0 <= prices[i] <= 104
  */
 
-const testCase = require("../../../Helper/testCase");
+const testCase = require("../../../Helpers/testCase");
 
 /**
  * @param prices

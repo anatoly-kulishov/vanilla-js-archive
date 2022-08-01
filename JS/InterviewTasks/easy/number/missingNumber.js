@@ -7,7 +7,7 @@
  * All the numbers of nums are unique.
  */
 
-const testCase = require("../../../Helper/testCase");
+const testCase = require("../../../Helpers/testCase");
 
 /**
  * @param nums

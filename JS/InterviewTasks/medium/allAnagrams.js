@@ -1,4 +1,4 @@
-const testCase = require("../../Helper/testCase");
+const testCase = require("../../Helpers/testCase");
 
 function allAnagrams(array) {
   const sorted = array.map(str => str.split('').sort().join(''));

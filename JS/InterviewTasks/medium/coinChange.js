@@ -1,4 +1,4 @@
-const testCase = require("../../Helper/testCase");
+const testCase = require("../../Helpers/testCase");
 
 const coinChange = function (coins, amount) {
   let dp = Array.from({length: amount + 1}, () => amount + 1);

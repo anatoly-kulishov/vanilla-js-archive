@@ -1,4 +1,4 @@
-const testCase = require("../../Helper/testCase");
+const testCase = require("../../Helpers/testCase");
 
 const reverseString = (s) => {
   let a_pointer = 0;

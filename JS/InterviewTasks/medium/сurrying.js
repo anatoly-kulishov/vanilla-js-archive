@@ -1,4 +1,4 @@
-const testCase = require("../../Helper/testCase");
+const testCase = require("../../Helpers/testCase");
 
 function sum(a) {
   let currentSum = a;

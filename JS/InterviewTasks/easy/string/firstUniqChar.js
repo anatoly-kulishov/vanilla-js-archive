@@ -5,7 +5,7 @@
  * s consists of only lowercase English letters.
  */
 
-const testCase = require("../../../Helper/testCase");
+const testCase = require("../../../Helpers/testCase");
 
 /**
  * @param {string} s

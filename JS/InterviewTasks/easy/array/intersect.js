@@ -6,7 +6,7 @@
  * 0 <= nums1[i], nums2[i] <= 1000
  */
 
-const testCase = require("../../../Helper/testCase");
+const testCase = require("../../../Helpers/testCase");
 
 /**
  * @param {number[]} nums1

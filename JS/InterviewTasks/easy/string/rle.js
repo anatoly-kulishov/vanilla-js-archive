@@ -1,4 +1,4 @@
-const testCase = require("../../../Helper/testCase");
+const testCase = require("../../../Helpers/testCase");
 
 /**
  * @param str
@@ -59,3 +59,4 @@ function rle2(str) {
 testCase(rle('AABBBCCXYZ'), 'A2B3C2XYZ', true);
 testCase(rle('AAAABBBCCXYZDDDDEEEFFFAAAAAABBBBBBBBBBBBBBBBBBBBBBBBBBBBbbb'), 'A10B31C2XYZD4E3F3b3');
 testCase(rle('AABcDDDeFgggg'), 'A2BcD3eFg4');
+testCase(rle2('AABcDDDeFgggg'), 'A2BcD3eFg4');

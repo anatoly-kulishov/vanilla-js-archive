@@ -1,6 +1,7 @@
-const testCase = require("../../../Helper/testCase");
-const timePerformanceStart = require("../../../Helper/timePerfomanceStart");
-const timePerformanceResult = require("../../../Helper/timePerfomanceResult");
+const testCase = require("../../../Helpers/testCase");
+const timePerformanceStart = require("../../../Helpers/timePerfomanceStart");
+const timePerformanceResult = require("../../../Helpers/timePerfomanceResult");
+
 
 const time = timePerformanceStart();
 

@@ -4,7 +4,7 @@
  * You can return the answer in any order.
  */
 
-const testCase = require("../../../Helper/testCase");
+const testCase = require("../../../Helpers/testCase");
 
 /**
  * @param nums

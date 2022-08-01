@@ -9,11 +9,11 @@
  * s consists of parentheses only '()[]{}'.
  */
 
-const testCase = require("../../../Helper/testCase");
+const testCase = require("../../../Helpers/testCase");
 
 /**
- * @param {string} s
- * @return {boolean}
+ * @param string
+ * @returns {boolean}
  */
 function isBalanced(string) {
     const n = string.length;

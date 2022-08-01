@@ -1,4 +1,4 @@
-const testCase = require("../../Helper/testCase");
+const testCase = require("../../Helpers/testCase");
 
 function groupBy(array, fn) {
   return array.reduce((res, current) => {

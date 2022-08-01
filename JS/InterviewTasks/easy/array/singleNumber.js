@@ -7,7 +7,7 @@
  * Each element in the array appears twice except for one element which appears only once.
  */
 
-const testCase = require("../../../Helper/testCase");
+const testCase = require("../../../Helpers/testCase");
 
 /**
  * @param nums
