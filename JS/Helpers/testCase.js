@@ -2,7 +2,7 @@ const testCase = (arg1, arg2, isStart = false, title = '', time) => {
 	let isAnObject = false;
 
 	if (isStart && title === '') {
-		console.log(`\nTest Cases: (${time}ms)`);
+		console.log(`\nTest Cases: ${time && time + 'ms'}`);
 	}
 
 	if (isStart && title) {
