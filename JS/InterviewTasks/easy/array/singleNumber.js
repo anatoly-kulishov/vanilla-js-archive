@@ -14,32 +14,26 @@ const testCase = require("../../../Helpers/testCase");
  * @returns {number|*}
  */
 const singleNumber = (nums) => {
-  const map = {};
-  const n = nums.length;
+	if (nums.length === 1) return nums[0];
 
-  if (n === 1) {
-    return nums[0];
-  }
+	let uniq = new Set();
+	let uniqSum = 0;
+	let numSum = 0;
 
-  for (let i = 0; i < n; i++) {
-    const current = nums[i];
-    if (map[current] !== undefined) {
-      map[current] += 1;
-    } else {
-      map[current] = 1;
-    }
-  }
+	for (let i = 0; i < nums.length; i++) {
+		const current = nums[i];
 
-  for (let key in map) {
-    const value = map[key];
-    if(value === 1) {
-      return Number(key)
-    }
-  }
+		if (!uniq.has(current)) {
+			uniq.add(current);
+			uniqSum += current;
+		}
+
+		numSum += current;
+	}
+
+	return uniqSum * 2 - numSum;
 };
 
-
-testCase(singleNumber([2, 2, 1]), 1, true);
-testCase(singleNumber([4, 1, 2, 1, 2]), 4);
-testCase(singleNumber([1, 0, 1]), 0);
+testCase(singleNumber([4, 1, 2, 1, 2]), 4, true, 'singleNumber');
+testCase(singleNumber([2, 2, 1]), 1);
 testCase(singleNumber([1]), 1);
