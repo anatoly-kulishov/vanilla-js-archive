@@ -6,19 +6,22 @@ const testCase = require("../../../Helpers/testCase");
  * @returns {boolean}
  */
 function arraySubset(source, subset) {
-  if (source.length < subset.length) {
-    return false;
-  }
 
-  for (let i = 0; i < subset.length; i++) {
-    const index = source.indexOf(subset[i]);
-    if (index === -1) {
-      return false;
-    }
-    delete source[index];
-  }
+	if (source.length < subset.length) {
+		return false;
+	}
 
-  return true;
+	for (let i = 0; i < subset.length; i++) {
+		const index = source.indexOf(subset[i]);
+
+		if (index === -1) {
+			return false;
+		}
+
+		delete source[index];
+	}
+
+	return true;
 }
 
 testCase(arraySubset([2, 1, 3], [1, 2, 3]), true, true);

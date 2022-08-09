@@ -2,7 +2,7 @@ const testCase = (arg1, arg2, isStart = false, title = '', time) => {
 	let isAnObject = false;
 
 	if (isStart && title === '') {
-		console.log(`\nTest Cases: ${time && time + 'ms'}`);
+		console.log(`\nTest Cases: ${time ? time + 'ms' : ''}`);
 	}
 
 	if (isStart && title) {
@@ -18,7 +18,7 @@ const testCase = (arg1, arg2, isStart = false, title = '', time) => {
 
 const logStatus = (arg1, arg2, isAnObject) => {
 	let flag = arg1 === arg2;
-	if(isAnObject) {
+	if (isAnObject) {
 		flag = JSON.stringify(arg1) === JSON.stringify(arg2);
 		console.log(`[ ${flag ? '✔' : `✘`} ]`, `(${JSON.stringify(arg1)})`, '~', `(${JSON.stringify(arg2)})`)
 	} else {
