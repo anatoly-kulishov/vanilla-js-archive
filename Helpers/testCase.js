@@ -20,9 +20,9 @@ const logStatus = (arg1, arg2, isAnObject) => {
 	let flag = arg1 === arg2;
 	if (isAnObject) {
 		flag = JSON.stringify(arg1) === JSON.stringify(arg2);
-		console.log(`[ ${flag ? '✔' : `✘`} ]`, `(${JSON.stringify(arg1)})`, '~', `(${JSON.stringify(arg2)})`)
+		console.log(`[ ${flag ? '✔ ' : `✘`} ]`, `(${JSON.stringify(arg1)})`, '~', `(${JSON.stringify(arg2)})`)
 	} else {
-		console.log(`[ ${flag ? '✔' : `✘`} ]`, `(${JSON.stringify(arg1)})`, '~', `(${JSON.stringify(arg2)})`)
+		console.log(`[ ${flag ? '✔ ' : `✘`} ]`, `(${JSON.stringify(arg1)})`, '~', `(${JSON.stringify(arg2)})`)
 	}
 }
 

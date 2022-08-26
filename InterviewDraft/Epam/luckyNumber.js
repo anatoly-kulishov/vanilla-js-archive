@@ -1,7 +1,6 @@
 const testCase = require("../../Helpers/testCase");
 
-const luckySeven = (arr) => {
-  const luckyNumber = 7;
+const luckyNumber = (arr, luckyNumber) => {
   const n = arr.length;
 
   if(n <= 1) {
@@ -21,8 +20,9 @@ const luckySeven = (arr) => {
   return false;
 }
 
-testCase(luckySeven([1, 2, 3, 22, 2, 3, 2, 69, 5]), true);
-testCase(luckySeven([1, 10, 17, 3, 3, 1]), true);
-testCase(luckySeven([1, 2, 3]), false);
-testCase(luckySeven([7]), false);
-testCase(luckySeven([]), false);
+testCase(luckyNumber([1, 2, 3, 22, 2, 3, 2, 69, 5], 7), true);
+testCase(luckyNumber([1, 10, 17, 3, 3, 1], 7), true);
+testCase(luckyNumber([1, 2, 3], 6), true);
+testCase(luckyNumber([1, 2, 3], 7), false);
+testCase(luckyNumber([7], 7), false);
+testCase(luckyNumber([]), false);

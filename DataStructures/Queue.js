@@ -1,5 +1,5 @@
 /**
- * O(1)
+ * O(1) [Constant]
  * Enqueue
  * Dequeue
  */

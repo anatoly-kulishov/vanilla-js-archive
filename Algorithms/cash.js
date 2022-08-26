@@ -20,7 +20,7 @@ function cashFunction(fn) {
 
 function factorial(n) {
   let result = 1;
-  while (n != 1) {
+  while (n !== 1) {
     result *= n;
     n -= 1;
   }

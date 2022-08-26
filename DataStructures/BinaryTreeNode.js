@@ -26,7 +26,7 @@
  * Define a remove() method, that uses the preOrderTraversal() method and Array.prototype.filter() to remove a BinaryTreeNode from the binary tree.
  * Define a find() method, that uses the preOrderTraversal() method to retrieve the given node in the binary tree.
  *
- * O(log(n)) - At the best case || O(n) - At the worst case
+ * O(log(n)) [Logarithmic] - At the best case || O(n) [Linear] - At the worst case
  * Inserting
  * Removing
  * Finding

@@ -1,6 +1,7 @@
 import {
     HIDE_ALERT,
-    HIDE_LOADER, INITIALIZED_SUCCESS,
+    HIDE_LOADER,
+    INITIALIZED_SUCCESS,
     SHOW_ALERT,
     SHOW_LOADER,
 } from "../types";

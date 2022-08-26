@@ -1,9 +1,9 @@
 /**
- * O(1)
+ * O(1) [Constant]
  * Push
  * Pop
  *
- * O(n)
+ * O(n) [Linear]
  * Search
  * Access
  */

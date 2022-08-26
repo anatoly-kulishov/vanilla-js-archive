@@ -14,29 +14,29 @@ const testCase = require("../../../Helpers/testCase");
  * @returns {*}
  */
 const moveZeroes = (nums) => {
-  const n = nums.length;
+	const n = nums.length;
 
-  if (n <= 1) return nums;
+	if (n <= 1) return nums;
 
-  let left = 0;
-  let right = 0;
-  let temp = null;
+	let left = 0;
+	let right = 0;
+	let temp = null;
 
-  while (right < n) {
-    if (nums[right] === 0) {
-      right++;
-    } else {
-      // [nums[left], nums[right]] = [nums[right], nums[left]]
-      temp = nums[left];
-      nums[left] = nums[right];
-      nums[right] = temp;
+	while (right < n) {
+		if (nums[right] === 0) {
+			right++;
+		} else {
+			// [nums[left], nums[right]] = [nums[right], nums[left]]
+			temp = nums[left];
+			nums[left] = nums[right];
+			nums[right] = temp;
 
-      left++;
-      right++;
-    }
-  }
+			left++;
+			right++;
+		}
+	}
 
-  return nums;
+	return nums;
 };
 
 testCase(moveZeroes([0, 1, 0, 3, 12]), [1, 3, 12, 0, 0], true);

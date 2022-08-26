@@ -61,6 +61,7 @@ Function.prototype.fbind = function (context, ...args) {
 
 /**
  * Palindrome
+ * O(log n) [Logarithmic]
  */
 
 const isPalindrome = (x) => {

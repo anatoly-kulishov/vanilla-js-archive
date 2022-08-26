@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * O(1)
+ * O(1) [Constant]
  * Search, insert, delete
  */
 

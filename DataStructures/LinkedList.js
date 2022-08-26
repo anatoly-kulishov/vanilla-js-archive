@@ -1,10 +1,10 @@
 /**
- * O(n)
+ * O(n) [Linear]
  * Insertion and removal from a closed location
  * Finding an element
  * Element Access
  *
- * O(1)
+ * O(1) [Constant]
  * Accessing the first element
  */
 

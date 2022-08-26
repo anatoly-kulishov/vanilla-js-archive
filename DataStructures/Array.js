@@ -1,10 +1,10 @@
 /**
- * O(1)
+ * O(1) [Constant]
  * Accessing and changing the value of the (n) element
  * Adding an element to the end of an array
  * Removing an element from the end of an array
  *
- * O(n)
+ * O(n) [Linear]
  * Finding an element
  * Adding not to the end of the array
  * Removing not from the end of the array
