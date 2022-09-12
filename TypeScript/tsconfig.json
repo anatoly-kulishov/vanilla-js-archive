@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": false
+  },
+  "files": [
+    "classes.ts",
+    "generics.ts",
+    "helpers.ts",
+    "type-guards.ts",
+    "utility-types",
+  ]
+}
+
