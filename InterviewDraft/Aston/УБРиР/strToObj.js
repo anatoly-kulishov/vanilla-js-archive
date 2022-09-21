@@ -20,10 +20,10 @@ const strToObj = (str) => {
 	return str
 		.split('.')
 		.reverse()
-		.reduce((acc, a) => {
+		.reduce((previousValue, currentValue) => {
 			let n = {};
 
-			return n[a] = acc, n
+			return n[currentValue] = previousValue, n
 		}, {})
 }
 
