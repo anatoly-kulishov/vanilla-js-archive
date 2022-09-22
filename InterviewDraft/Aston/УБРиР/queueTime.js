@@ -14,6 +14,14 @@
 const testCase = require("../../../Helpers/testCase");
 
 function queueTime(customers, tillCount) {
+	if (!Array.isArray(customers)) {
+		throw new Error(`InvalidArgumentException: Parameter 1 must be an array, received: ${typeof customers}`);
+	} else if (!customers.every(time => Number.isInteger(time))) {
+		throw new Error(`InvalidArgumentException: Parameter 1 must be an array of integers. At least one element in the array does not conform to this, received: ${customers}`);
+	} else if (!Number.isInteger(tillCount)) {
+		throw new Error(`InvalidArgumentException: Parameter 2 must be an integer, received: ${typeof tillCount}`);
+	}
+
 	let tills = Array(tillCount <= 0 ? 1 : tillCount).fill(0);
 
 	customers.forEach(customer => {
@@ -25,13 +33,7 @@ function queueTime(customers, tillCount) {
 	return Math.max(...tills);
 }
 
-// if (!Array.isArray(customers)) {
-// 	throw new Error(`InvalidArgumentException: Parameter 1 must be an array, received: ${typeof customers}`);
-// } else if (!customers.every(time => Number.isInteger(time))) {
-// 	throw new Error(`InvalidArgumentException: Parameter 1 must be an array of integers. At least one element in the array does not conform to this, received: ${customers}`);
-// } else if (!Number.isInteger(tillCount)) {
-// 	throw new Error(`InvalidArgumentException: Parameter 2 must be an integer, received: ${typeof tillCount}`);
-// }
+
 
 testCase(queueTime([5, 3, 4], 1), 12, true);
 testCase(queueTime([10, 2, 3, 3], 2), 10);

@@ -1,8 +1,27 @@
-function decrement(a) {
-	function f() {
-		return a - 1;
+function decrementCount(a) {
+	return function () {
+		return function () {
+			if(a <= 0) return 0;
+			return a--
+		}
 	}
-	return f;
 }
 
-console.log( decrement(3)());
+const a = decrementCount(5)()
+
+console.log(a()) // 5
+console.log(a()) // 4
+console.log(a()) // 3
+console.log(a()) // 2
+console.log(a()) // 1
+console.log(a()) // 0
+console.log(a()) // 0
+
+console.log('-------------------');
+
+const b = decrementCount(3)()
+
+console.log(b()) // 3
+console.log(b()) // 2
+console.log(b()) // 1
+console.log(b()) // 0

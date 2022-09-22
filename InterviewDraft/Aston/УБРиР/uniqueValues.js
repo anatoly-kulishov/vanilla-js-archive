@@ -1,3 +1,5 @@
+const testCase = require("../../../Helpers/testCase");
+
 /**
  * Есть строка “a b a b c c e d d d d”
  * Нужно вывести массив уникальных значений, который отсортирован по частоте включения в строке
@@ -8,9 +10,9 @@ function uniqueValues(str) {
 	const res = []
 	const map = {}
 
-	for(let i = 0; i < formattedStr.length; i++) {
+	for (let i = 0; i < formattedStr.length; i++) {
 		const current = formattedStr[i]
-		if(map[current] === undefined) {
+		if (map[current] === undefined) {
 			map[current] = 1
 			res.push(current)
 		} else {
@@ -21,4 +23,4 @@ function uniqueValues(str) {
 	return res.sort((a, b) => map[b] - map[a])
 }
 
-console.log(uniqueValues("a b a b c c e d d d d")) // [ 'd', 'a', 'b', 'c', 'e' ]
+testCase(uniqueValues("a b a b c c e d d d d"), ['d', 'a', 'b', 'c', 'e'], true)
