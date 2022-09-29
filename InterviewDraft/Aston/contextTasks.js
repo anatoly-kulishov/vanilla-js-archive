@@ -1,4 +1,4 @@
-var a = 500;
+let a = 404;
 
 const obj = {
 	a: 10,

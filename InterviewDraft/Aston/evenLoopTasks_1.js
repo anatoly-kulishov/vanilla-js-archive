@@ -22,10 +22,10 @@
 
 /*******************************************************/
 
-// let promise = new Promise((resolve, reject) => {
-// 	resolve("a");
+// let promise = new Promise((resolve) => {
+// 	setTimeout(() => resolve("a"), 0)
 // });
-//
+
 // promise
 // 	.then((res) => {
 //     const value = res + "b";

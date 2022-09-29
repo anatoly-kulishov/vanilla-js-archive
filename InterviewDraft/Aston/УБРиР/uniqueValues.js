@@ -6,9 +6,9 @@ const testCase = require("../../../Helpers/testCase");
  */
 
 function uniqueValues(str) {
-	const formattedStr = str.split(" ")
-	const res = []
-	const map = {}
+	const formattedStr = str.split(" ");
+	const res = [];
+	const map = {};
 
 	for (let i = 0; i < formattedStr.length; i++) {
 		const current = formattedStr[i]

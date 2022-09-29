@@ -2,7 +2,7 @@ function decrementCount(a) {
 	return function () {
 		return function () {
 			if(a <= 0) return 0;
-			return a--
+			return a--;
 		}
 	}
 }
