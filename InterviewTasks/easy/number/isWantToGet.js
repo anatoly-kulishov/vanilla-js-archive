@@ -30,5 +30,5 @@ function isWantToGet(amountRequired) {
 }
 
 testCase(isWantToGet(365), [100, 100, 100, 50, 10], true);
-// testCase(isWantToGet(160), [100, 50, 10]);
-// testCase(isWantToGet(0), []);
+testCase(isWantToGet(160), [100, 50, 10]);
+testCase(isWantToGet(0), []);
