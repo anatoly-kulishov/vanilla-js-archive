@@ -23,32 +23,32 @@
 /*******************************************************/
 
 // let promise = new Promise((resolve) => {
-// 	setTimeout(() => resolve("a"), 0)
+//     setTimeout(() => resolve("a"), 0)
 // });
-
+//
 // promise
-// 	.then((res) => {
-//     const value = res + "b";
-//     console.log("1 = " + value); // ab
-//     return value;
-// 	})
-// 	.then((res) => {
-//     const value = res + "c";
-//     console.log("2 = " + value); // abc
-// 		return value;
-// 	})
-// 	.finally((res) => { 	// .finally isn't having props
-//     const value = res + "!!!!!!!";
-//     console.log("3 = " + value); // undefined!!!!!!!
-// 		return value;
-// 	})
-// 	.catch((res) => {
-//     console.log(res); // Will not be executed
-//     return res + "d";
-// 	})
-// 	.then((res) => {
-//     console.log("5 = " + res); // abc
-// 	});
+//     .then((res) => {
+//         const value = res + "b";
+//         console.log("1 = " + value); // ab
+//         return value;
+//     })
+//     .then((res) => {
+//         const value = res + "c";
+//         console.log("2 = " + value); // abc
+//         return value;
+//     })
+//     .finally((res) => { 	// .finally isn't having props
+//         const value = res + "!!!!!!!";
+//         console.log("3 = " + value); // undefined!!!!!!!
+//         return value;
+//     })
+//     .catch((res) => {
+//         console.log(res); // Will not be executed
+//         return res + "d";
+//     })
+//     .then((res) => {
+//         console.log("5 = " + res); // abc
+//     });
 
 /*******************************************************/
 

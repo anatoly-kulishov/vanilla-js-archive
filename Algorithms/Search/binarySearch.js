@@ -10,25 +10,28 @@ const simpleArray = [1, 4, 5, 8, 5, 1, 2, 7, 5, 2, 11];
 let n1 = 0;
 let n2 = 0;
 
-const binarySearch = (arr, item) => {
+const binarySearch = (arr, target) => {
     let start = 0;
     let end = arr.length;
-    let middle;
-    let found = false;
+
     let position = -1;
+    let found = false;
+
     while (found === false && start <= end) {
         n1 += 1;
-        middle = Math.floor((start + end) / 2);
-        if (arr[middle] === item) {
+        const middle = Math.floor((start + end) / 2);
+
+        if (arr[middle] === target) {
             found = true;
             position = middle;
         }
-        if (item < arr[middle]) {
+        if (target < arr[middle]) {
             end = middle - 1;
         } else {
             start = middle + 1;
         }
     }
+
     return position;
 };
 

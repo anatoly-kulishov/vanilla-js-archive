@@ -1,13 +1,11 @@
 function decrementCount(a) {
-	return function () {
-		return function () {
-			if(a <= 0) return 0;
-			return a--;
-		}
-	}
+    return () => {
+        if (a <= 0) return 0;
+        return a--;
+    }
 }
 
-const a = decrementCount(5)()
+const a = decrementCount(5);
 
 console.log(a()) // 5
 console.log(a()) // 4
@@ -19,7 +17,7 @@ console.log(a()) // 0
 
 console.log('-------------------');
 
-const b = decrementCount(3)()
+const b = decrementCount(3);
 
 console.log(b()) // 3
 console.log(b()) // 2

@@ -11,7 +11,8 @@ function uniqueValues(str) {
 	const map = {};
 
 	for (let i = 0; i < formattedStr.length; i++) {
-		const current = formattedStr[i]
+		const current = formattedStr[i];
+
 		if (map[current] === undefined) {
 			map[current] = 1
 			res.push(current)

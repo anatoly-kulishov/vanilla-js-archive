@@ -29,3 +29,4 @@ const obj = {
 obj.getF();
 obj.getF4();
 obj.getF5();
+
