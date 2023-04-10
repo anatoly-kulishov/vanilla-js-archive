@@ -3,14 +3,14 @@ interface User {
 }
 
 interface Human extends User {
-	speak(): void
+	speak: () => void
 }
 
 interface Animal extends User {
 	color: string
 }
 
-const serverInfo: Human = {
+const serverInfo: Human = <Human>{
 	name: 'Anatoly',
 	speak: () => {
 		console.log('Hello!')

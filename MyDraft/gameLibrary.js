@@ -1,35 +1,41 @@
 class GameLibrary {
-  constructor() {
-    this.collection = [];
-  }
+    constructor() {
+        this.collection = [];
+    }
 
-  addGameInCollection() {}
-  removeGameFromCollection() {}
-  getAllCollection() {}
+    addGameInCollection() {
+    }
+
+    removeGameFromCollection() {
+    }
+
+    getAllCollection() {
+    }
 }
 
 class Steam extends GameLibrary {
-  constructor() {
-    super();
-  }
-
-  addGameInCollection(game) {
-    super.addGameInCollection();
-    this.collection.push(game)
-  }
-
-  removeGameFromCollection(game) {
-    super.removeGameFromCollection();
-    const index = this.collection.indexOf(this.collection.find(el => el === game));
-    if(index > -1) {
-      this.collection.splice(index, 1);
+    constructor() {
+        super();
     }
-  }
 
-  getAllCollection() {
-    super.getAllCollection();
-    return this.collection;
-  }
+    addGameInCollection(game) {
+        super.addGameInCollection();
+        this.collection.push(game)
+    }
+
+    removeGameFromCollection(game) {
+        super.removeGameFromCollection();
+        const index = this.collection.indexOf(this.collection.find(el => el === game));
+
+        if (index > -1) {
+            this.collection.splice(index, 1);
+        }
+    }
+
+    getAllCollection() {
+        super.getAllCollection();
+        return this.collection;
+    }
 }
 
 const steam = new Steam();
