@@ -11,13 +11,18 @@ const classNames = [
 
 const correctAnswer = ['link', 'menu-item', 'menu', 'header', 'footer'];
 
+/**
+ * O(n)
+ * @param classNames
+ * @returns {*[]}
+ */
 const filterClassNames = (classNames) => {
 	const classNamesCount = {};
 	const arrayUniq = [];
 
 	for (let i = 0; i < classNames.length; i++) {
 		const current = classNames[i];
-		if (classNamesCount[current]) {
+		if (classNamesCount[current] !== undefined) {
 			classNamesCount[current] += 1;
 		} else {
 			classNamesCount[current] = 1;

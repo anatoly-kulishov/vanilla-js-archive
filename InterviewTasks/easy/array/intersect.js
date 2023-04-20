@@ -1,14 +1,7 @@
-/**
- * Given two integer arrays nums1 and nums2, return an array of their intersection.
- * Each element in the result must be unique and you may return the result in any order.
- *
- * 1 <= nums1.length, nums2.length <= 1000
- * 0 <= nums1[i], nums2[i] <= 1000
- */
-
 const testCase = require("../../../Helpers/testCase");
 
 /**
+ * O(n)
  * @param {number[]} nums1
  * @param {number[]} nums2
  * @return {number[]}

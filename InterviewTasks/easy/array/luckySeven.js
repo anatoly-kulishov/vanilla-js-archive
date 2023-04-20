@@ -1,6 +1,7 @@
 const testCase = require("../../../Helpers/testCase");
 
 /**
+ * O(n)
  * @param arr
  * @returns {boolean}
  */
