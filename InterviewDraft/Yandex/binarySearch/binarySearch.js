@@ -1,12 +1,12 @@
 /**
  * Binary search
- * O(log n)
+ * O(n log n)
  * @param arr
  * @param item
  * @returns {*}
  */
 
-const simpleArray = [1, 4, 5, 8, 5, 1, 2, 7, 5, 2, 11];
+const simpleArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 let n1 = 0;
 let n2 = 0;
 
@@ -48,11 +48,11 @@ const recursiveBinarySearch = (arr, item, start, end) => {
     }
 };
 
-console.log("binarySearch =", binarySearch(simpleArray, 11));
+console.log("binarySearch =", binarySearch(simpleArray, 10));
 console.log(`binarySearch (n) = ${n1}`);
 console.log("-----------------------------");
 console.log(
     "recursiveBinarySearch =",
-    recursiveBinarySearch(simpleArray, 11, 0, simpleArray.length)
+    recursiveBinarySearch(simpleArray, 10, 0, simpleArray.length)
 );
 console.log(`recursiveBinarySearch (n) = ${n2}`);

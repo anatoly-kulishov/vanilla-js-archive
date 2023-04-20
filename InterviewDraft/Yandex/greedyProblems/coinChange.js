@@ -1,5 +1,11 @@
 const testCase = require("../../../Helpers/testCase");
 
+/**
+ *  Dynamic Programming
+ * @param coins
+ * @param amount
+ * @returns change
+ */
 const coinChange = function (coins, amount) {
   let dp = Array.from({length: amount + 1}, () => amount + 1);
   dp[0] = 0;

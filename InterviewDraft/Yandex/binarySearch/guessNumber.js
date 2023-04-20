@@ -2,9 +2,9 @@ const testCase = require("../../../Helpers/testCase");
 
 /**
  * Forward declaration of guess API.
- * @return         -1 if num is higher than the picked number
- *                  1 if num is lower than the picked number
- *               otherwise return 0
+ * @return  -1 if num is higher than the picked number
+ *           1 if num is lower than the picked number
+ *           otherwise return 0
  * @param n
  * @param pn
  */
@@ -24,14 +24,6 @@ const guessNumber = (n, pn) => {
     return -1;
 };
 
-
-/**
- var guess = function(num) {}
- * @return {number}
- *
- * @param num
- * @param pn
- */
 function guess(num, pn) {
     if (num === pn) {
         return 0;
