@@ -1,8 +1,6 @@
 const testCase = require("../../../Helpers/testCase");
 
 /**
- * flatten.
- *
  * Дан массив, в котором могут храниться любые типы данных.
  * Нужно реализовать функцию, которая разворачивает вложенные массивы в исходный массив.
  * Данные остальных типов должны остаться без изменений.
@@ -25,8 +23,7 @@ function flatten(list) {
     return res;
 }
 
-function flattenLoop(list)
-{
+function flattenLoop(list) {
     const stack = [...list];
     const res = [];
 
@@ -43,14 +40,10 @@ function flattenLoop(list)
     return res.reverse();
 }
 
-testCase(flatten([1, 'any [complex] string', null, function () {
-}, [1, 2, [3, '4'], 0], [], {a: 1}]), [1, 'any [complex] string', null, function () {
-}, 1, 2, 3, '4', 0, {a: 1}], true, 'flatten');
+testCase(flatten([1, 'any [complex] string', null, function () {}, [1, 2, [3, '4'], 0], [], {a: 1}]), [1, 'any [complex] string', null, function () {}, 1, 2, 3, '4', 0, {a: 1}], true, 'flatten');
 testCase(flatten([0, [1, [2, 3]], 4]), [0, 1, 2, 3, 4]);
 testCase(flatten([[1, 5]]), [1, 5]);
 
-testCase(flattenLoop([1, 'any [complex] string', null, function () {
-}, [1, 2, [3, '4'], 0], [], {a: 1}]), [1, 'any [complex] string', null, function () {
-}, 1, 2, 3, '4', 0, {a: 1}], true, 'flattenLoop');
+testCase(flattenLoop([1, 'any [complex] string', null, function () {}, [1, 2, [3, '4'], 0], [], {a: 1}]), [1, 'any [complex] string', null, function () {}, 1, 2, 3, '4', 0, {a: 1}], true, 'flattenLoop');
 testCase(flattenLoop([0, [1, [2, 3]], 4]), [0, 1, 2, 3, 4]);
 testCase(flattenLoop([[1, 5]]), [1, 5]);

@@ -25,4 +25,4 @@ let obj2 = {
     }
 };
 
-obj1.doSomething(); // Result: ? ?
+obj1.doSomething(); // Result: ???
