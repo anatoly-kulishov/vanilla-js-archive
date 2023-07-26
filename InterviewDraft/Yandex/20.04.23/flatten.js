@@ -9,17 +9,22 @@ const testCase = require("../../../Helpers/testCase");
  */
 function flatten(list) {
     const res = [];
+
     for (let i = 0; i < list.length; i++) {
         const curr = list[i];
+
         if (Array.isArray(curr)) {
             const flat = flatten(curr);
+
             for (let j = 0; j < flat.length; j++) {
                 res.push(flat[j]);
             }
         } else {
             res.push(curr);
         }
+
     }
+
     return res;
 }
 

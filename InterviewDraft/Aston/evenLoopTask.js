@@ -1,3 +1,10 @@
+// Promise.resolve()
+//   .then(()=>console.log(1))
+//   .then(()=>console.log(1))
+// Promise.resolve()
+//   .then(()=>console.log(2))
+//   .then(()=>console.log(2))
+/** **************************************************** */
 // function doSmth() {
 // 	return Promise.resolve("123");
 // }
@@ -19,9 +26,7 @@
 // 		console.log("4", c); // 321
 // 		return c;
 // 	});
-
-/*******************************************************/
-
+/** **************************************************** */
 // let promise = new Promise((resolve) => {
 //     setTimeout(() => resolve("a"), 0)
 // });
@@ -49,9 +54,7 @@
 //     .then((res) => {
 //         console.log("5 = " + res); // abc
 //     });
-
-/*******************************************************/
-
+/** **************************************************** */
 // console.log(1);
 //
 // setTimeout(function () {
