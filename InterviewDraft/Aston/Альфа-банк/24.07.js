@@ -272,7 +272,7 @@
 // foo();
 // console.log('end')
 //
-// // start 1 end 2 3
+// // start 1 2 end 3
 /** ************************************************************************ */
 // let a = 10;
 // setTimeout(function timeout() {
