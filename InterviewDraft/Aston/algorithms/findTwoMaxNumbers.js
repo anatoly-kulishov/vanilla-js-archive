@@ -5,7 +5,6 @@
  *
  * Таким образом, после прохода по массиву, в max1 и max2 будут храниться два максимальных элемента в правильном порядке.
  */
-
 function findTwoMaxNumbers(arr) {
   let max1 = -Infinity;
   let max2 = -Infinity;

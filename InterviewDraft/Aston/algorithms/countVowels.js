@@ -14,7 +14,6 @@ const vowelCount = countVowels(text);
 console.log(vowelCount); // Output: 2
 
 /** ************************************************************************ */
-
 function countVowels2(str) {
   const vowels = "aeiouаеёиоуыюя"; // Гласные буквы
   let count = 0;

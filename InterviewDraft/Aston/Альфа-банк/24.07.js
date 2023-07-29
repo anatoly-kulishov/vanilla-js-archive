@@ -17,7 +17,10 @@
 //
 //   return (
 //     <form onClick={onClickForm}>
-//       <input value={controlledInputValue} onChange={setControlledInputValue} placeholder="controlled" />
+//       <input
+//         value={controlledInputValue}
+//         onChange={(e) => setControlledInputValue(e.target.value)}
+//         placeholder="controlled" />
 //       <input placeholder="uncontrolled" ref={uncontrolledInputElement} />
 //
 //       <button>Отправить заявку на кредит</button>
@@ -30,23 +33,22 @@
 // const PleaseReviewMe = () => {
 //   const [count, setCount] = React.useState(1);
 //   const [items, setItems] = React.useState([{ id: 1 }]);
-//
-//   let myInterval;
+//   const myIntervalRef = useRef();
 //
 //   const setIntervalCount = () => {
-//     myInterval = setInterval(() => console.log(count), 1000);
+//     myIntervalRef.current = setInterval(() => console.log(count), 1000);
 //   }
 //
 //   React.useEffect(() => {
 //     document.addEventListener("click", setIntervalCount);
 //
 //     return () => {
-//       clearInterval(myInterval);
+//       clearInterval(myIntervalRef.current);
 //       document.removeEventListener("click", setIntervalCount);
-//     }
-//   }, []);
+//     };
+//   }, []); // Пустой массив зависимостей, чтобы создать/очистить интервал только один раз.
 //
-//  Hint: useCallback здесь не нужен, тк мы передаем его в кнопку а не мемоизированный компонент!
+//   // Hint: useCallback здесь не нужен, тк мы передаем его в кнопку, а не мемоизированный компонент!
 //   const click = React.useCallback(() => {
 //     // батчинг #1
 //     // setCount(count + 1); // 0
@@ -77,12 +79,14 @@
 //
 // const [data, setData] = useState(heavyComputations(props.basedOn)) // heavy computation
 
-// useMemo 2 загрузку и последующие
+// useMemo для 2-й загрузки и последующих
+// Асинхронные вычисления с помощью useEffect
+// web-worker
 // lazy Suspense
 // React.memo
 // virtualization(IntersectionObserver), pagination
-// web-workers
-// деление на чанки метода (Promise,setTimeout) основной способ
+// деление на чанки метода (Promise, setTimeout) основной способ
+// Предварительная обработка данных на сервере
 /** ************************************************************************ */
 // function currying(fn, ...args) {
 //   return (...nextArgs) => {
@@ -172,95 +176,6 @@
 //
 // a.emit("event1"); // Output: 1
 /** ************************************************************************ */
-/** (Array.prototype.map) */
-// Array.prototype.myMap = function(callback, thisArg) {
-//   if (this == null) throw new TypeError("this is null or not defined");
-//   if (typeof callback !== "function") throw new TypeError(callback + " is not a function");
-//
-//   const array = Object(this);
-//   const length = array.length >>> 0;
-//   const result = new Array(length);
-//   const context = thisArg || this;
-//
-//   for (let i = 0; i < length; i++) {
-//     if (i in array) {
-//       result[i] = callback.call(context, array[i], i, array);
-//     }
-//   }
-//
-//   return result;
-// };
-//
-// console.log([1, 2, 3].map((el) => el + 1)); // [ 2, 3, 4 ]
-/** (Array.prototype.some) */
-// Array.prototype.some = function(callback, thisArg) {
-//   if (this == null) throw new TypeError("this is null or not defined");
-//   if (typeof callback !== "function") throw new TypeError(callback + " is not a function");
-//
-//   const array = Object(this);
-//   const length = array.length >>> 0;
-//   const context = thisArg || this;
-//
-//   for (let i = 0; i < length; i++) {
-//     if (i in array && callback.call(context, array[i], i, array)) {
-//       return true;
-//     }
-//   }
-//
-//   return false;
-// }
-//
-// console.log([1, 2, 3].some((num) => num > 2)); // true
-// console.log([1, 2, 3].some((num) => num > 3)); // false
-/** (Array.prototype.filter) */
-// Array.prototype.filter = function(callback, thisArg) {
-//   if (this == null) throw new TypeError("this is null or not defined");
-//   if (typeof callback !== "function") throw new TypeError(callback + " is not a function");
-//
-//   const array = Object(this);
-//   const length = array.length >>> 0;
-//   const result = [];
-//   const context = thisArg || this;
-//
-//   for (let i = 0; i < length; i++) {
-//     if (i in array) {
-//       const element = array[i];
-//       if (callback.call(context, element, i, array)) {
-//         result.push(element);
-//       }
-//     }
-//   }
-//
-//   return result;
-// };
-/** (Promise.all) */
-// Promise.all = function(iterable) {
-//   return new Promise(function(resolve, reject) {
-//     if (!Array.isArray(iterable)) {
-//       return reject(new TypeError("Promise.all accepts an array"));
-//     }
-//
-//     let resolvedCount = 0;
-//     const promisesLength = iterable.length;
-//     const results = new Array(promisesLength);
-//
-//     function resolvePromise(index, value) {
-//       resolvedCount++;
-//       results[index] = value;
-//
-//       if (resolvedCount === promisesLength) {
-//         resolve(results);
-//       }
-//     }
-//
-//     for (let i = 0; i < promisesLength; i++) {
-//       Promise.resolve(iterable[i]).then(function(value) {
-//         resolvePromise(i, value);
-//       }, reject);
-//     }
-//   });
-// };
-/** ************************************************************************ */
 // console.log('start')
 //
 // async function foo() {
@@ -271,8 +186,8 @@
 //
 // foo();
 // console.log('end')
-//
-// // start 1 2 end 3
+
+// start 1 2 end 3
 /** ************************************************************************ */
 // let a = 10;
 // setTimeout(function timeout() {
@@ -292,8 +207,8 @@
 // });
 //
 // console.log(a); // 35
-//
-// // 10, 35, 35, 40
+
+// 10, 35, 35, 40
 /** ************************************************************************ */
 // console.log(1);
 //
@@ -313,8 +228,8 @@
 // });
 //
 // console.log(5);
-//
-// // 1 6 5 2 name 4 3
+
+// 1 6 5 2 name 4 3
 /** ************************************************************************ */
 // function a() {
 //   console.log("1");
@@ -328,8 +243,8 @@
 //
 // a();
 // b();
-//
-// // 1 2 1 1 1 1 ...
+
+// 1 2 1 1 1 1∞...
 /** ************************************************************************ */
 // Promise.resolve()
 //   .then(()=>console.log(1))
