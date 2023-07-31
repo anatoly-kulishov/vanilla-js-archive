@@ -32,6 +32,46 @@ Array.prototype.myFilter = function(callback) {
 
   return filteredArray;
 };
+/** (Array.prototype.reduce) */
+// Определяем метод reduce на прототипе Array
+Array.prototype.myReduce = function(callback, initialValue) {
+  // Проверяем, является ли переданный колбэк действительно функцией
+  if (typeof callback !== "function") {
+    throw new TypeError("Колбэк должен быть функцией");
+  }
+
+  // Проверяем, является ли массив пустым, и нет ли начального значения
+  if (this.length === 0 && initialValue === undefined) {
+    throw new TypeError("Пустой массив без начального значения для reduce");
+  }
+
+  // Инициализируем аккумулятор и начальный индекс для итерации
+  let accumulator;
+  let startIndex;
+
+  // Если предоставлено начальное значение, используем его как аккумулятор и начинаем итерацию с начала массива
+  if (initialValue !== undefined) {
+    accumulator = initialValue;
+    startIndex = 0;
+  } else {
+    // Если начальное значение не предоставлено, используем первый элемент массива как аккумулятор и начинаем итерацию со второго элемента
+    accumulator = this[0];
+    startIndex = 1;
+  }
+
+  // Проходим по массиву, начиная с соответствующего индекса в зависимости от наличия начального значения
+  for (let i = startIndex; i < this.length; i++) {
+    // Проверяем, существует ли текущий индекс в массиве (для обработки разреженных массивов)
+    if (i in this) {
+      // Вызываем переданный колбэк с аккумулятором, текущим элементом, текущим индексом и исходным массивом
+      // Результат колбэка становится новым значением аккумулятора
+      accumulator = callback.call(undefined, accumulator, this[i], i, this);
+    }
+  }
+
+  // Возвращаем окончательное значение аккумулятора после процесса сокращения
+  return accumulator;
+};
 
 /** ************************** Promise ************************** */
 /** (Promise.all) */
@@ -70,6 +110,7 @@ function myPromiseAll(promises) {
     }
   });
 }
+
 /** (Promise.race) */
 function myPromiseRace(promises) {
   // Возвращаем новый промис
