@@ -1,9 +1,7 @@
-// Решение алгоритмов через Set, Map
-// ts: infer, is
-
-// (PureComponent vs React.memo, способы оптимизации тяжелого метода и пр.)
-// (обязательно глянуть аргументы, сравнения различные по типу PureComponent vs React.memo)
-
+/** (PureComponent vs React.memo, способы оптимизации тяжелого метода и пр.) */
+// Разница между Component и PureComponent заключается в методе updating lifecycle: shouldComponentUpdate.
+// PureComponent изначально определяет функцию, которая ответствена за принятие решения — нужно ли продолжать updating lifecycle или нет.
+/** ************************************************************************ */
 // XmlHttpRequest
 // идемпотентные методы запросов
 // безопасные не безопасные, сложные простые
@@ -12,31 +10,35 @@
 // websocket, short polling, long polling, SSE(server sent events)
 // long polling, кешируемость запросов, метро запрос до и после не
 // abortController
+/** ************************************************************************ */
 // SOP(same origin policy) -> CORS, preflight, сложные простые
 
+// К распространенным методам HTTP относятся GET, POST, PUT и DELETE.
+
+// При обычном обмене ресурсами между источниками (CORS) браузер отправляет запрос вместе с заголовками управления доступом.
+// Обычно это запросы данных GET, которые считаются низкорисковыми.
+
+// Однако некоторые HTTP-запросы считаются сложными и требуют подтверждения со стороны сервера перед отправкой фактического запроса.
+// Процесс предварительного утверждения называется предварительным запросом.
+/** ************************************************************************ */
 // div addEvent   <- currentTarget
 //   span
 //   span    <- target
 
 // target vs currentTarget
-
-// body > div > 'text'
-/*
-flex
-grid
-position
-margin
-padding
-display inline-block text align center
-transform translateX(50%)
-*/
-
-//оптимизация загрузки js async vs defer
-//css, критический css
-
-// https://habr.com/ru/post/320430/
-// worker
 /** ************************************************************************ */
+// body > div > 'text'
+// grid
+// position
+// margin
+// padding
+// display inline-block text align center
+// transform translateX(50%)
+/** ************************************************************************ */
+// оптимизация загрузки js async vs defer
+// css, критический css
+/** ************************************************************************ */
+// worker
 // sync // while (true)
 // event {
 //   micro all // promise return promise callback then catch finally, queueMicrotask, observers(MutationObserver)
@@ -55,6 +57,8 @@ transform translateX(50%)
 // foo();
 //
 // console.log("end");
+
+// Output: start, 1, 2, end, 3
 /** ************************************************************************ */
 // function a() {
 //   console.log("1");
@@ -87,7 +91,7 @@ transform translateX(50%)
 // });
 //
 // console.log(5);
-// 1 6 5 2 name 4 3
+// Output: 1 6 5 2 name 4 3
 /** ************************************************************************ */
 // Promise.reject("a") // a
 //   .then(p => p + "1", p => p + "2") // a2
@@ -129,7 +133,7 @@ transform translateX(50%)
 //     console.log("Hello");
 //   }
 // }
-
+//
 // class Cat extends Animal {
 //   constructor(name, age) {
 //     super(name);
@@ -146,7 +150,7 @@ transform translateX(50%)
 // Animal.Hello(); // Hello
 //
 // let cat = new Cat("Vasya", 28);
-// cat.getName();// Vasya
+// cat.getName();// Vasya 28
 /** ************************************************************************ */
 // let a = {
 //   foo: function() {
@@ -184,22 +188,22 @@ transform translateX(50%)
 // car();
 // console.log(x); // 1
 /** ************************************************************************ */
-// let x = 2
+// let x = 2;
 //
 // const foo = () => {
-//     console.log(x) // error ~ 2
-// }
+//   console.log(x); // error ~ 2
+// };
 //
 // const bar = () => {
-//     console.log(x) // error
-//     let x = 1
-//     foo()
-// }
+//   console.log(x); // error
+//   let x = 1;
+//   foo();
+// };
 //
 // bar();
 /** ************************************************************************ */
 // lex. env: {
-//   env record: {inner variable, this},
+//   env record: {inner variable, this}
 //   outer: link on outer lex. env
 // }
 /** ************************************************************************ */
