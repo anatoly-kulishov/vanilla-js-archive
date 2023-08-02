@@ -10,8 +10,6 @@
 //
 // https://docs.google.com/spreadsheets/d/1lcOJxNjRaT7L1EHnjC0jNtnQRO_ecjOR4svRKWMExvI/edit#gid=746419281
 //
-//
-//
 //   Разное полезное. Если что-то знаешь - игнорируй.
 //
 // React (базовый)

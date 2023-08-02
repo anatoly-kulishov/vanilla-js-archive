@@ -26,4 +26,4 @@ class Bar extends Foo {
   }
 }
 
-new Bar(); // Output: ???
+new Bar(); // ???

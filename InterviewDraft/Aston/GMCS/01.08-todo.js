@@ -22,12 +22,11 @@
 //  Поместить вызов JS-файла и встроенный JS-код в конец страницы до /body.
 //  Отложить загрузку CSS для элемента autocomplete.
 
-
-function F() {
-  if(new.target == undefined) {
-
-  }
-}
-const a = new F();
+// function F() {
+//   if(new.target == undefined) {
+//
+//   }
+// }
+// const a = new F();
 
 //F();
