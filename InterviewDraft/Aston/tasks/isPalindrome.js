@@ -1,7 +1,6 @@
 function isPalindrome(str) {
   let reversedStr = "";
 
-  // Исправленное условие цикла
   for (let i = str.length - 1; i >= 0; i--) {
     const current = str[i];
     reversedStr += current;

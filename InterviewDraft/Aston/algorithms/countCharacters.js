@@ -21,6 +21,7 @@ function countCharacters(str) {
 
 // Пример использования функции
 const text = "ppoal";
-const result = countCharacters(text);
-console.log(result);
 
+const result = countCharacters(text);
+
+console.log(result);
