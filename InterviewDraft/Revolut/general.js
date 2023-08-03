@@ -3,7 +3,6 @@
 /**
  * Closure
  */
-
 // Q: What is "closure"?
 // A: It's the ability to simply jump to the context above and take on a variable, for example.
 

@@ -1,3 +1,5 @@
+/** Output: [-2, -2] */
+
 var i = 10;
 var result = [];
 

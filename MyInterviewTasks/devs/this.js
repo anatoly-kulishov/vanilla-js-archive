@@ -2,7 +2,7 @@
  * #1 (context)
  * Hint:
  * let that = this // 1 - option
- * this as second params in filter
+ * this as second params in filter // 2 - option
  */
 const userService = {
   currentFilter: "active",
@@ -14,7 +14,7 @@ const userService = {
     return this.users.filter(function(user) {
       console.log(this.currentFilter);
       return user.status === this.currentFilter;
-    }); // 2 - option
+    });
   }
 };
 
