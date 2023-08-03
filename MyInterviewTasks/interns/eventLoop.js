@@ -2,11 +2,18 @@
  * #1 (async/await)
  * Hint: [start, 1, 2, end, 3]
  */
+// const timeout = ms => new Promise(resolve => {
+//   setTimeout(() => {
+//     console.log('2')
+//     resolve()
+//   }, ms)
+// });
+//
 // console.log('start')
 //
 // async function foo() {
 //   console.log('1')
-//   await console.log('2')
+//   await timeout(0);
 //   console.log('3')
 // }
 //
@@ -78,7 +85,7 @@
 //
 // a();
 // b();
-
+//
 // Output: ???
 /**
  * #5 (no name)

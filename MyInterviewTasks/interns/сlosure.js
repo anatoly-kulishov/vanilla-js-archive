@@ -3,7 +3,7 @@
 var i = 10;
 var result = [];
 
-while (i--) {
+while (--i) {
     result.push(() => {
         return i + i
     })
