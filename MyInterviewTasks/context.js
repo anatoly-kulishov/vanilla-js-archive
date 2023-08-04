@@ -1,18 +1,3 @@
-/** Output: c = 1 */
-// var c = 1;
-//
-// function a(func) {
-//   var c = 2;
-//
-//   func();
-// }
-//
-// function b() {
-//   console.log(c); //
-// }
-//
-// a(b);
-/** ************************************************************************ */
 /** Output: F = 10, F2 = undefined, F3 = 10, F4 = undefined, F5 = 10 */
 // var a = 404;
 //
@@ -41,7 +26,7 @@
 //     console.log("F5", this.a); //
 //   }
 // };
-
+//
 // obj.getF();
 // obj.getF4();
 // obj.getF5();
@@ -56,12 +41,12 @@
 //   }
 // }
 //
-// a.foo(); // a
-// a.bar(); // window
+// a.foo(); //
+// a.bar(); //
 //
 // let c = a.foo;
 //
-// c(); // window
+// c(); //
 //
 // const fn = (cb) => cb()
-// fn(a.foo); // window
+// fn(a.foo); //
