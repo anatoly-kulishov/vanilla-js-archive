@@ -2,11 +2,18 @@
  * #1 (async/await)
  * Hint: [start, 1, 2, end, 3]
  */
+// const timeout = ms => new Promise(resolve => {
+//   setTimeout(() => {
+//     console.log('2')
+//     resolve()
+//   }, ms)
+// });
+//
 // console.log('start')
 //
 // async function foo() {
 //   console.log('1')
-//   await console.log('2')
+//   await timeout(0);
 //   console.log('3')
 // }
 //
@@ -20,22 +27,22 @@
  */
 // let a = 10;
 // setTimeout(function timeout() {
-//   console.log(a); // 40
+//   console.log(a); //
 //   a = 30;
 // }, 0);
 //
 // let p = new Promise(function(resolve, reject) {
-//   console.log(a); // 10
+//   console.log(a); //
 //   a = 35;
 //   resolve();
 // });
 //
 // p.then(function(){
-//   console.log(a); // 35
+//   console.log(a); //
 //   a = 40
 // });
 //
-// console.log(a); // 35
+// console.log(a); //
 
 // Output: ???
 /**
@@ -78,7 +85,7 @@
 //
 // a();
 // b();
-
+//
 // Output: ???
 /**
  * #5 (no name)

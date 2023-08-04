@@ -6,19 +6,19 @@
 //
 // doSmth()
 // 	.then(function (a) {
-// 		console.log("1", a); // 123
+// 		console.log("1", a); //
 // 		return a;
 // 	})
 // 	.then(function (b) {
-// 		console.log("2", b); // 123
+// 		console.log("2", b); //
 // 		return Promise.reject("321");
 // 	})
 // 	.catch(function (err) {
-// 		console.log("3", err); // 321
+// 		console.log("3", err); //
 // 		return '321'
 // 	})
 // 	.then(function (c) {
-// 		console.log("4", c); // 321
+// 		console.log("4", c); //
 // 		return c;
 // 	});
 /** **************************************************** */
@@ -30,17 +30,17 @@
 // promise
 //     .then((res) => {
 //         const value = res + "b";
-//         console.log("1 = " + value); // ab
+//         console.log("1 = " + value); //
 //         return value;
 //     })
 //     .then((res) => {
 //         const value = res + "c";
-//         console.log("2 = " + value); // abc
+//         console.log("2 = " + value); //
 //         return value;
 //     })
 //     .finally((res) => { 	// .finally isn't having props
 //         const value = res + "!!!!!!!";
-//         console.log("3 = " + value); // undefined!!!!!!!
+//         console.log("3 = " + value); //
 //         return value;
 //     })
 //     .catch((res) => {
@@ -48,7 +48,7 @@
 //         return res + "d";
 //     })
 //     .then((res) => {
-//         console.log("5 = " + res); // abc
+//         console.log("5 = " + res); //
 //     });
 /** **************************************************** */
 /** Output: [1 4 6 3 2 7 5] */
@@ -69,4 +69,4 @@
 //
 // console.log(6);
 
-// Result: ???
+// Result:

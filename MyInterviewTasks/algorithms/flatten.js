@@ -1,4 +1,4 @@
-const testCase = require("../../../Helpers/testCase");
+const testCase = require("../../Helpers/testCase");
 
 /**
  * Дан массив, в котором могут храниться любые типы данных.

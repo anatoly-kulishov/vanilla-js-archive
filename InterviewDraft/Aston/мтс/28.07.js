@@ -69,9 +69,6 @@
 //
 // console.log (baz.bar); // 2
 /** ************************************************************************ */
-// console.log(String('sdfg').__proto__) // String prototype
-// console.log([].__proto__.__proto__.__proto__) // null
-/** ************************************************************************ */
 // class Animal {
 //   constructor(name) {
 //     this.name = name;

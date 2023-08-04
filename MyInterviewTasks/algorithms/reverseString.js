@@ -1,4 +1,4 @@
-const testCase = require("../../../Helpers/testCase");
+const testCase = require("../../Helpers/testCase");
 
 // [test].split('').reverse().join('') // tset
 // [...arg].reverse().join('')

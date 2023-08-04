@@ -9,7 +9,7 @@
  * s consists of parentheses only '()[]{}'.
  */
 
-const testCase = require("../../../Helpers/testCase");
+const testCase = require("../../Helpers/testCase");
 
 /**
  * @param s
