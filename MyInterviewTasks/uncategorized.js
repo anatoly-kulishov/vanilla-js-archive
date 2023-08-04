@@ -44,10 +44,10 @@
 //   a.b = 2;
 //   a = null;
 //
-//   console.log(a); // null
+//   console.log(a); //
 // }
 //
 // clear(a);
 //
-// console.log(a); // { b: 2 }
-// console.log(a.b); // 2
+// console.log(a); //
+// console.log(a.b); //

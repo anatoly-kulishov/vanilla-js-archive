@@ -1,7 +1,7 @@
 const testCase = require("../../Helpers/testCase");
 
-// [test].split('').reverse().join('') // tset
-// [...arg].reverse().join('')
+// [test].split('').reverse() // tset
+// [...arg].reverse()
 
 const reverseString = (s) => {
 	let a_pointer = 0;
@@ -20,5 +20,7 @@ const reverseString = (s) => {
 	return s;
 };
 
-testCase(reverseString(['h', 'e', 'l', 'l', 'o']), ['o', 'l', 'l', 'e', 'h'], true);
-testCase(reverseString(['H', 'a', 'n', 'n', 'a', 'h']), ['h', 'a', 'n', 'n', 'a', 'H']);
+// const reverseString = (s) => {};
+
+console.log(reverseString(['h', 'e', 'l', 'l', 'o'])) // ['o', 'l', 'l', 'e', 'h']
+console.log(reverseString(['H', 'a', 'n', 'n', 'a', 'h'])) // ['h', 'a', 'n', 'n', 'a', 'H']
