@@ -1,9 +1,11 @@
-function decrementCount(a) {
-    return () => {
-        if (a <= 0) return 0;
-        return a--;
-    }
-}
+// function decrementCount(a) {
+//     return () => {
+//         if (a <= 0) return 0;
+//         return a--;
+//     }
+// }
+
+function decrementCount(a) {}
 
 const a = decrementCount(5);
 
