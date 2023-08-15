@@ -16,6 +16,7 @@ const linearSearch = (arr, item) => {
       return i;
     }
   }
+
   return null;
 };
 

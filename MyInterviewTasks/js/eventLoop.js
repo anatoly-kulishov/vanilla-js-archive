@@ -1,6 +1,6 @@
 /**
  * #1 (async/await)
- * Hint: [start, 1, 2, end, 3]
+ * Hint: [start, 1, end, 2, 3]
  */
 // const timeout = ms => new Promise(resolve => {
 //   setTimeout(() => {

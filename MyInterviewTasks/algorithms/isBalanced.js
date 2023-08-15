@@ -5,16 +5,9 @@
  * Open brackets must be closed by the same type of brackets.
  * Open brackets must be closed in the correct order.
  *
- * 1 <= s.length <= 104
  * s consists of parentheses only '()[]{}'.
  */
 
-const testCase = require("../../Helpers/testCase");
-
-/**
- * @param s
- * @returns {boolean}
- */
 function isBalanced(s) {
     const queue = [];
     const start = '{[(';
@@ -40,8 +33,8 @@ function isBalanced(s) {
     return !queue.length;
 }
 
-testCase(isBalanced('()'), true, true);
-testCase(isBalanced('()[]{}'), true);
-testCase(isBalanced('(]'), false);
-testCase(isBalanced('([)]'), false);
-testCase(isBalanced('{[]}'), true);
+console.log(isBalanced('()')); // true
+console.log(isBalanced('()[]{}')); // true
+console.log(isBalanced('(]')); // false
+console.log(isBalanced('([)]')); // false
+console.log(isBalanced('{[]}')); // true

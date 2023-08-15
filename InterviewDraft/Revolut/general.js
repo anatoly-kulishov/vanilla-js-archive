@@ -10,7 +10,7 @@ for (var i = 0; i < 5; i++) {
     setTimeout(() => {
         // Q: What would be the output and why?
         // A: Operator "var" have only functions scope
-        console.log('[Closure]', i + i + '' + i) // 5 + 5 + '' + 5 = 10 + '' + 5 = 105
+        console.log('[Closure]', i + i + '' + i)
     }, i * 10);
 }
 
@@ -27,7 +27,7 @@ const myObject = {
     name: "Foo Bar"
 };
 
-const getNameFunc = myObject.getName; // .bind(myObject)
+const getNameFunc = myObject.getName;
 
 // Q: What is "strict mode" and how does it affect the result?
 // A: Strict mode makes it easier to write "secure" JS, also changes previously accepted "bad syntax" into real errors.

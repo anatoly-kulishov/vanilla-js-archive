@@ -27,7 +27,7 @@ const SearchPanel = props => {
             </button>
             <input type="text"
                    className={`form-control search-panel__input ${className}`}
-                   placeholder={placeholder ? placeholder : 'Search by name...'}
+                   placeholder={placeholder ? placeholder : 'search by name...'}
                    value={term}
                    onChange={onSearchChange}
             />

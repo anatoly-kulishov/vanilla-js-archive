@@ -1,4 +1,5 @@
 // 1) return Array.from(new Set(str.replace(/ /g,'')));
+
 // 2) function uniqueValues(str) {
 //   const formattedStr = str.split(" ");
 //   const res = [];
@@ -22,6 +23,6 @@
  * Есть строка “a b a b c c e d d d d”
  * Нужно вывести массив уникальных значений, который отсортирован по частоте включения в строке
  */
-function uniqueValues(str) {}
+// function uniqueValues(str) {}
 
 console.log("a b a b c c e d d d d"); // ['d', 'a', 'b', 'c', 'e']

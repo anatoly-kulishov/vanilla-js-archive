@@ -2,7 +2,7 @@
 
 /**
  * O(1) [Constant]
- * Search, insert, delete
+ * search, insert, delete
  */
 
 function HashTable(size = 13) {

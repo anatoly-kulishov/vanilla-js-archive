@@ -99,7 +99,7 @@
 // Animal.Hello(); // Hello
 //
 // let cat = new Cat("Vasya", 28);
-// cat.getName();// Vasya 28
+// cat.getName(); // Vasya 28
 /** ************************************************************************ */
 // let a = {
 //   foo: function() {

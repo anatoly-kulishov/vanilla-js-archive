@@ -10,6 +10,7 @@ let n = 0;
 
 const insertionSort = (arr) => {
   const newArr = arr;
+
   for (let i = 1; i < newArr.length; i++) {
     let j = i - 1;
     const temp = arr[i];
@@ -21,6 +22,7 @@ const insertionSort = (arr) => {
     }
     arr[j + 1] = temp;
   }
+
   return newArr;
 };
 

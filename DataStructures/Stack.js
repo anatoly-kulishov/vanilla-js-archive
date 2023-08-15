@@ -4,7 +4,7 @@
  * Pop
  *
  * O(n) [Linear]
- * Search
+ * search
  * Access
  */
 

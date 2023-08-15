@@ -1,7 +1,5 @@
-const testCase = require("../../Helpers/testCase");
-
-// [test].split('').reverse() // tset
-// [...arg].reverse()
+// 1: [test].split('').reverse() // tset
+// 2: [...arg].reverse()
 
 const reverseString = (s) => {
 	let a_pointer = 0;

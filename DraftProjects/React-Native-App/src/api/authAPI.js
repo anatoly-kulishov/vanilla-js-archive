@@ -7,7 +7,6 @@ const authAPI = {
     // getMyProfile: () => {
     //     return baseInstance.post("profile", profile).then(res => res.data)
     // }
-
 }
 
 export default authAPI;

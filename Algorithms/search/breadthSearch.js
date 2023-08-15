@@ -18,7 +18,9 @@ graph.f = ["g"];
 
 function breadthSearch(graph, start, end) {
   let queue = [];
+
   queue.push(start);
+
   while (queue.length > 0) {
     const current = queue.shift();
     if (!graph[current]) {
@@ -30,6 +32,7 @@ function breadthSearch(graph, start, end) {
       queue = [...queue, ...graph[current]];
     }
   }
+
   return false;
 }
 

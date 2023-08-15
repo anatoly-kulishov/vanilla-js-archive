@@ -1,4 +1,5 @@
 // 1) return str === str.split('').reverse().join(''); // O(3*n) = O(n)
+
 // 2) function isPalindrome(str) {
 //   let reversedStr = "";
 //
