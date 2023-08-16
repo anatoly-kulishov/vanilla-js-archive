@@ -114,7 +114,7 @@
 // const asyncFilter = async (arr, predicate) => {
 //   const result = await Promise.all(arr.map((item) => predicate(item)));
 //
-//   return arr.filter((item, index) => result[index]);
+//   return arr.filter((_, index) => result[index]);
 // };
 //
 // const NUMBERS = [1, 2, 3, 4, 5];
