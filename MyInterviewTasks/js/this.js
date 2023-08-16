@@ -1,6 +1,6 @@
 /**
  * #1 (context)
- * Hint:
+ * Output:
  * let that = this // 1 - option
  * this as second params in filter // 2 - option
  */

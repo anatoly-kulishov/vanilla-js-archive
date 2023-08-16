@@ -70,3 +70,25 @@
 // console.log(6);
 
 // Result:
+/** **************************************************** */
+/** Output: [1, 5, 3, 4, 2] */
+// setTimeout(() => console.log(2), 0);
+//
+// console.log(1);
+//
+// new Promise(res => {
+//   console.log(5);
+//   res();
+// }).then(() => console.log(4));
+//
+// console.log(3);
+/** **************************************************** */
+/** Output: [2, 1] */
+// Promise.resolve(1)
+//   .then(x => x + 1)
+//   .then(x => {throw x;})
+//   .then(x => console.log(x))
+//   .catch(err => console.log(err))
+//   .then(() => Promise.resolve(1))
+//   .catch(err => console.log(err))
+//   .then(x => console.log(x));

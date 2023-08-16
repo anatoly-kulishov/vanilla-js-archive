@@ -12,7 +12,7 @@
 //     result[0](), // ???
 //     result[1]() // ???
 // );
-
+/** **************************************************** */
 /** Output: c = 1 */
 // var c = 1;
 //
@@ -27,3 +27,48 @@
 // }
 //
 // a(b);
+/** **************************************************** */
+/** wrapper: 3,  showValue: 2 */
+// let value = 2;
+//
+// function showValue() {
+//   console.log(`showValue ${value}`); //
+// }
+//
+// function wrapper() {
+//   let value = 3;
+//   console.log(`wrapper ${value}`); //
+//   showValue();
+// }
+//
+// wrapper();
+/** ************************************************************************ */
+/** Output: clear.a = null, a = { b:2 }, a.b = 2 */
+// var a = {};
+//
+// function clear(a) {
+//   a.b = 2;
+//   a = null;
+//
+//   console.log(a); //
+// }
+//
+// clear(a);
+//
+// console.log(a); //
+// console.log(a.b); //
+/** ************************************************************************ */
+/** Output: baz.bar = 2 */
+// let foo = {
+//   bar: 1,
+// }
+//
+// const baz = foo;
+//
+// foo.bar = 2
+//
+// foo = {
+//   bar: 3
+// }
+//
+// console.log (baz.bar); //

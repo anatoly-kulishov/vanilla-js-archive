@@ -50,3 +50,44 @@
 //
 // const fn = (cb) => cb()
 // fn(a.foo); //
+/** **************************************************** */
+/** Output: [this: {}, foo.this: global, foo2.this: undefined] */
+// console.log(this); //
+//
+// function foo() {
+//   console.log(this); //
+// }
+//
+// function foo2() {
+//   "use strict";
+//   console.log(this); //
+// }
+//
+// foo();
+//
+// foo2();
+/** **************************************************** */
+/** Output: [square.area: 25, square.perimeter: NaN] */
+// const square = {
+//   side: 5,
+//   area() {
+//     return this.side * this.side;
+//   },
+//   perimeter: () => 4 * this.side
+// };
+//
+// console.log(square.area()); //
+// console.log(square.perimeter()); //
+/** **************************************************** */
+/** Output: [foo.this: global] */
+// function foo() {
+//   console.log(this);
+// }
+//
+// function doFo(fn) {
+//   fn();
+// }
+//
+// var a = { foo: foo };
+//
+// doFo(a.foo);

@@ -13,7 +13,7 @@
 // console.log("foo" + +"bar"); //
 // console.log(!!"false" == !!"true"); //
 // console.log(null == ""); //
-
+/** **************************************************** */
 /**
  * function
  * true

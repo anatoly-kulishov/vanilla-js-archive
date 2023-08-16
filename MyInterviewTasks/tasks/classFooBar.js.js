@@ -1,6 +1,6 @@
 /**
  * #1 (Inheritance)
- * Hint: [barfoo barbar foobar]
+ * Output: [barfoo barbar foobar]
  */
 class Foo {
   constructor() {
@@ -26,4 +26,4 @@ class Bar extends Foo {
   }
 }
 
-new Bar(); // Output: ???
+new Bar(); // Output:

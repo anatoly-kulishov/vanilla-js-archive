@@ -1,4 +1,4 @@
-/** Hint: [wrapper: 3, showValue: 2] */
+/** Output: [wrapper: 3, showValue: 2] */
 // let value = 2;
 //
 // function showValue() {
@@ -13,7 +13,7 @@
 //
 // wrapper();
 /** **************************************************** */
-/** Hint: [undefined] */
+/** Output: [undefined] */
 // let foo = 1;
 //
 // (function f() {
@@ -25,7 +25,7 @@
 //   console.log(foo);
 // })();
 /** **************************************************** */
-/** Hint: [this: {}, foo.this: global, foo2.this: undefined] */
+/** Output: [this: {}, foo.this: global, foo2.this: undefined] */
 // console.log(this); //
 //
 // function foo() {
@@ -41,7 +41,7 @@
 //
 // foo2();
 /** **************************************************** */
-/** Hint: [square.area: 25, square.perimeter: NaN] */
+/** Output: [square.area: 25, square.perimeter: NaN] */
 // const square = {
 //   side: 5,
 //   area() {
@@ -53,7 +53,7 @@
 // console.log(square.area()); //
 // console.log(square.perimeter()); //
 /** **************************************************** */
-/** Hint: [foo.this: global] */
+/** Output: [foo.this: global] */
 // function foo() {
 //   console.log(this);
 // }
@@ -66,7 +66,7 @@
 //
 // doFo(a.foo);
 /** **************************************************** */
-/** Hint: [1: "Чек от месье Ivan", 2: Error (is non a function)] */
+/** Output: [1: "Чек от месье Ivan", 2: Error (is non a function)] */
 // class Customer {
 //   constructor(name) {
 //     this.name = name;
@@ -85,7 +85,7 @@
 //
 // Ivan.pay();
 /** **************************************************** */
-/** Hint: [1, 5, 3, 4, 2] */
+/** Output: [1, 5, 3, 4, 2] */
 // setTimeout(() => console.log(2), 0);
 //
 // console.log(1);
@@ -97,7 +97,7 @@
 //
 // console.log(3);
 /** **************************************************** */
-/** Hint: [2, 1] */
+/** Output: [2, 1] */
 // Promise.resolve(1)
 //   .then(x => x + 1)
 //   .then(x => {throw x;})
