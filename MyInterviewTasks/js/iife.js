@@ -21,6 +21,7 @@
 // let foo = 1;
 //
 // (function f() {
+//   console.log(foo);
 //
 //   if (foo) {
 //     var foo = 2;

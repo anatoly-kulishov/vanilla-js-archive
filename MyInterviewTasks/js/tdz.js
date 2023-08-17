@@ -28,12 +28,12 @@
 // console.log(foo(15));
 /** **************************************************** */
 /** Output: [x is not defined] */
-function giveMeX(showX) {
-  if (showX) {
-    let x = 5;
-  }
-  return x;
-}
-
-console.log(giveMeX(false));
-console.log(giveMeX(true));
+// function giveMeX(showX) {
+//   if (showX) {
+//     let x = 5;
+//   }
+//   return x;
+// }
+//
+// console.log(giveMeX(false));
+// console.log(giveMeX(true));

@@ -12,7 +12,7 @@
 // console.log([] + null + 1); //
 // console.log("foo" + +"bar"); //
 // console.log(!!"false" == !!"true"); //
-// console.log(null == ""); //
+// console.log(null); //
 /** **************************************************** */
 /**
  * function

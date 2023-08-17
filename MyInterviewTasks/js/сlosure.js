@@ -79,13 +79,13 @@
  *    return count += 1;
  *  }
  */
-function x() {
-  // применив замыкание решить задачу
-}
-
-const func = x();
-
-console.log(func()); // 1
-console.log(func()); // 2
-console.log(func()); // 3
-console.log(func()); // 4
+// function x() {
+//   // применив замыкание решить задачу
+// }
+//
+// const func = x();
+//
+// console.log(func()); // 1
+// console.log(func()); // 2
+// console.log(func()); // 3
+// console.log(func()); // 4

@@ -38,13 +38,13 @@
 //         console.log("2 = " + value); //
 //         return value;
 //     })
-//     .finally((res) => { 	// .finally isn't having props
+//     .finally((res) => { 	//
 //         const value = res + "!!!!!!!";
 //         console.log("3 = " + value); //
 //         return value;
 //     })
 //     .catch((res) => {
-//         console.log(res); // Will not be executed
+//         console.log(res); //
 //         return res + "d";
 //     })
 //     .then((res) => {
