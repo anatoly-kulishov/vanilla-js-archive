@@ -1,26 +1,26 @@
 /** **************************************************** */
 /** Output: 1 = 123, 2 = 123, 3 = 321, 4 = 321 */
-// function doSmth() {
-// 	return Promise.resolve("123");
-// }
-//
-// doSmth()
-// 	.then(function (a) {
-// 		console.log("1", a); //
-// 		return a;
-// 	})
-// 	.then(function (b) {
-// 		console.log("2", b); //
-// 		return Promise.reject("321");
-// 	})
-// 	.catch(function (err) {
-// 		console.log("3", err); //
-// 		return '321'
-// 	})
-// 	.then(function (c) {
-// 		console.log("4", c); //
-// 		return c;
-// 	});
+  // function doSmth() {
+  // 	return Promise.resolve("123");
+  // }
+  //
+  // doSmth()
+  // 	.then(function (a) {
+  // 		console.log("1", a); //
+  // 		return a;
+  // 	})
+  // 	.then(function (b) {
+  // 		console.log("2", b); //
+  // 		return Promise.reject("321");
+  // 	})
+  // 	.catch(function (err) {
+  // 		console.log("3", err); //
+  // 		return '321'
+  // 	})
+  // 	.then(function (c) {
+  // 		console.log("4", c); //
+  // 		return c;
+  // 	});
 /** **************************************************** */
 /** Output: 1 = ab, 2 = abc, 3 = undefined!!!!!!!, 4 = abc */
 // let promise = new Promise((resolve) => {

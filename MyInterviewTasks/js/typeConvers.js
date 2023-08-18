@@ -39,10 +39,10 @@
 // console.log(typeof x); //
 // console.log(x instanceof Object); //
 //
-// var str1 = String(123);
-// var str2 = new String(123);
-//
-// console.log(typeof str1 === typeof str2); //
+var str1 = String(123);
+var str2 = new String(123);
+
+console.log(typeof str1, typeof str2); //
 // console.log(str1 === str2); //
 //
 // console.log(str1 === String(123)); //
