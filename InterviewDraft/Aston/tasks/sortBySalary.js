@@ -1,7 +1,7 @@
 const employees = [
-  { title: "Max", salary: 2800 },
   { title: "Alex", salary: 2100 },
-  { title: "Marin", salary: 2300 }
+  { title: "Max", salary: 2800 },
+  { title: "Marin", salary: 2300 },
 ];
 
 /** #1 */

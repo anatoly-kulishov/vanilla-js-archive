@@ -9,28 +9,7 @@
  */
 
 function isBalanced(s) {
-    const queue = [];
-    const start = '{[(';
-    const end = '}])';
-    const map = {
-        '}': '{',
-        ']': '[',
-        ')': '('
-    }
 
-    for (let char of s) {
-        if (start.includes(char)) {
-            queue.push(char);
-        }
-        if (end.includes(char)) {
-            const last = queue.pop();
-            if (map[char] !== last) {
-                return false;
-            }
-        }
-    }
-
-    return !queue.length;
 }
 
 console.log(isBalanced('()')); // true
