@@ -1,6 +1,6 @@
 // const sumDigits = (digits) => {
 //   return String(digits).split("").reduce((acc, curr) => {
-//     if(isNaN(Number(curr))) {
+  //     if(isNaN(Number(curr))) {
 //       return acc;
 //     }
 //

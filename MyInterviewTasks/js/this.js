@@ -1,5 +1,4 @@
 /**
- * #1 (context)
  * Output:
  * let that = this // 1 - option
  * this as second params in filter // 2 - option

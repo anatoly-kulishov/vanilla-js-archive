@@ -8,9 +8,7 @@
  * s consists of parentheses only '()[]{}'.
  */
 
-function isBalanced(s) {
-
-}
+function isBalanced(s) {}
 
 console.log(isBalanced('()')); // true
 console.log(isBalanced('()[]{}')); // true

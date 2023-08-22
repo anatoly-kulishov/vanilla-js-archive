@@ -1,5 +1,4 @@
 /**
- * #1 (Inheritance)
  * Output: [barfoo barbar foobar]
  */
 class Foo {
