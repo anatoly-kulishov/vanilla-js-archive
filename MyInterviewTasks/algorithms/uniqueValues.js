@@ -25,4 +25,4 @@
  */
 function uniqueValues(str) {}
 
-console.log("a b a b c c e d d d d"); // ['d', 'a', 'b', 'c', 'e']
+console.log(uniqueValues("a b a b c c e d d d d")); // ['d', 'a', 'b', 'c', 'e']
