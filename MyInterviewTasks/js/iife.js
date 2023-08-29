@@ -1,4 +1,4 @@
-/** Output: 1(i,b) = 2 {j: 1}, 2(i,b) = 2 {j: 1, k: 1}, i = 3 */
+/** Output: [1(i,b) = 2 {j: 1}, 2(i,b) = 2 {j: 1, k: 1}, i = 3] */
 // var i = 1;
 // var b = {};
 //
@@ -17,7 +17,7 @@
 //
 // console.log(i, b); //
 /** ************************************************************************ */
-/** Output: foo: undefined */
+/** Output: [foo: undefined] */
 // let foo = 1;
 //
 // (function f() {

@@ -1,8 +1,4 @@
-/** **************************************************** */
-/**
- * Output: [ReferenceError: Cannot access 'a' before initialization]
- * А если var? --> NaN
- */
+/** Output: [ReferenceError: Cannot access 'a' before initialization] */
 // let a = a + 1;
 // console.log(a);
 /** **************************************************** */

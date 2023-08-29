@@ -1,4 +1,4 @@
-/** Output: F = 10, F2 = undefined, F3 = 10, F4 = undefined, F5 = 10 */
+/** Output: [F = 10, F2 = undefined, F3 = 10, F4 = undefined, F5 = 10] */
 // var a = 404;
 //
 // const obj = {
@@ -31,7 +31,7 @@
 // obj.getF4();
 // obj.getF5();
 /** ************************************************************************ */
-/** Output: foo = a, F2 = bar = window, c = window, a.foo = window */
+/** Output: [foo = a, F2 = bar = window, c = window, a.foo = window] */
 // let a = {
 //   foo: function() {
 //     console.log(this) //

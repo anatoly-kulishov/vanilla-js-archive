@@ -13,7 +13,7 @@
 //     result[1]() // ???
 // );
 /** **************************************************** */
-/** Output: c = 1 */
+/** Output: [c = 1] */
 // var c = 1;
 //
 // function a(func) {
@@ -28,7 +28,7 @@
 //
 // a(b);
 /** **************************************************** */
-/** wrapper: 3,  showValue: 2 */
+/** Output: [wrapper: 3,  showValue: 2] */
 // let value = 2;
 //
 // function showValue() {
@@ -43,7 +43,7 @@
 //
 // wrapper();
 /** ************************************************************************ */
-/** Output: clear.a = null, a = { b:2 }, a.b = 2 */
+/** Output: [clear.a = null, a = { b:2 }, a.b = 2] */
 // var a = {};
 //
 // function clear(a) {
@@ -58,7 +58,7 @@
 // console.log(a); //
 // console.log(a.b); //
 /** ************************************************************************ */
-/** Output: baz.bar = 2 */
+/** Output: [baz.bar = 2] */
 // let foo = {
 //   bar: 1,
 // }
@@ -72,20 +72,3 @@
 // }
 //
 // console.log (baz.bar); //
-/** ************************************************************************ */
-/**
- *  let count = 0;
- *  return () => {
- *    return count += 1;
- *  }
- */
-// function x() {
-//   // применив замыкание решить задачу
-// }
-//
-// const func = x();
-//
-// console.log(func()); // 1
-// console.log(func()); // 2
-// console.log(func()); // 3
-// console.log(func()); // 4

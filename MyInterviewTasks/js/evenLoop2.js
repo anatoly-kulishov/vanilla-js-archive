@@ -1,5 +1,4 @@
-/** **************************************************** */
-/** Output: 1 = 123, 2 = 123, 3 = 321, 4 = 321 */
+/** Output: [1 = 123, 2 = 123, 3 = 321, 4 = 321] */
   // function doSmth() {
   // 	return Promise.resolve("123");
   // }
@@ -22,7 +21,7 @@
   // 		return c;
   // 	});
 /** **************************************************** */
-/** Output: 1 = ab, 2 = abc, 3 = undefined!!!!!!!, 4 = abc */
+/** Output: [1 = ab, 2 = abc, 3 = undefined!!!!!!!, 4 = abc] */
 // let promise = new Promise((resolve) => {
 //     setTimeout(() => resolve("a"), 0)
 // });

@@ -1,7 +1,4 @@
-/**
- * #1 (async/await)
- * Output: [start, 1, end, 2, 3]
- */
+/** Output: [start, 1, end, 2, 3] */
 // const timeout = ms => new Promise(resolve => {
 //   setTimeout(() => {
 //     console.log('2')
@@ -22,10 +19,7 @@
 
 // Output:
 /** **************************************************** */
-/**
- * #2 (no name)
- * Output: [10, 35, 35, 40]
- */
+/** Output: [10, 35, 35, 40] */
 // let a = 10;
 // setTimeout(function timeout() {
 //   console.log(a); //
@@ -47,10 +41,7 @@
 
 // Output:
 /** **************************************************** */
-/**
- * #3 (no name)
- * Output: [1, 6, 5, 2, name, 4, 3]
- */
+/** Output: [1, 6, 5, 2, name, 4, 3] */
 // console.log(1);
 //
 // const p = Promise.resolve(() => {
@@ -72,10 +63,7 @@
 
 // Output:
 /** **************************************************** */
-/**
- * #4 (no name)
- * Output: [1, 2, 1, 1, 1∞...]
- */
+/** Output: [1, 2, 1, 1, 1∞...] */
 // function a() {
 //   console.log("1");
 //   Promise.resolve().then(a);
@@ -91,10 +79,7 @@
 
 // Output:
 /** **************************************************** */
-/**
- * #5 (no name)
- * Output: [1, 2, 1, 2]
- */
+/** Output: [1, 2, 1, 2] */
 // Promise.resolve()
 //   .then(() => console.log(1))
 //   .then(() => console.log(1));
