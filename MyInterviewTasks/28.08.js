@@ -177,15 +177,15 @@
 /** Output: [1, f1, 2, a1, f2, a2, f3]
  * console.log('1');
  * (function() {
- *           console.log('f1');
- *           a('a1').then((res) => {
- *              console.log(res);
- *              console.log('f2');
- *              a('a2').then((res) => {
- *                 console.log.log(res);
- *                 console.log('f3');
- *              })
- *           })
+ *    console.log('f1');
+ *    a('a1').then((res) => {
+ *       console.log(res);
+ *       console.log('f2');
+ *       a('a2').then((res) => {
+ *          console.log(res);
+ *          console.log('f3');
+ *       })
+ *    })
  * })();
  * console.log('2');
  * */
@@ -213,7 +213,7 @@
 /** Output: [(await sum)] */
 // const numbers = [4, 8, 15];
 //
-// const result = numbers.reduce( (sum, number) => {
+// const result = numbers.reduce(async (sum, number) => {
 //   return sum + number;
 // }, 0);
 //
