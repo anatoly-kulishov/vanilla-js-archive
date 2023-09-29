@@ -1,3 +1,21 @@
+interface IName {
+	name: string;
+}
+
+function isName(obj: unknown): obj is IName {
+	return obj !== null && typeof obj === 'object' && 'name' in obj;
+}
+
+const getName = (obj: unknown): string | null  => {
+	if(isName(obj)) {
+		return obj.name;
+	}
+
+	return null;
+}
+
+const userName = getName({name: 'abc'})?.slice(1)
+/** **************************************************************************** **/
 interface User {
 	name: string
 }
@@ -24,3 +42,5 @@ function isHuman(serverInfo: User): serverInfo is Human {
 if (isHuman(serverInfo)) {
 	serverInfo.speak();
 }
+
+
