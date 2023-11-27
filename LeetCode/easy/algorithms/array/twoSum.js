@@ -1,10 +1,5 @@
 const testCase = require("../../../../Helpers/testCase");
 
-/**
- * @param nums
- * @param target
- * @returns {[*,number]}
- */
 const twoSum = (nums, target) => {
   const hashtable = {};
 
