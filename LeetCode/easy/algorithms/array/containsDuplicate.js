@@ -1,10 +1,5 @@
 const testCase = require("../../../../Helpers/testCase");
 
-/**
- * O(n)
- * @param {number[]} nums
- * @return {boolean}
- */
 const containsDuplicate = (nums) => {
     const n = nums.length;
     const map = {};
@@ -14,7 +9,6 @@ const containsDuplicate = (nums) => {
         if (map[current] === undefined) {
             map[current] = 1;
         } else {
-            map[current] += 1;
             return true;
         }
     }
