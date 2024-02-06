@@ -36,15 +36,16 @@ const singleNumber2 = (nums) => {
 
 	for(let num of nums) {
 		if(map[num] !== undefined) {
-			delete map[num];
+			map[num] += 1
 		} else {
 			map[num] = 1;
 		}
 	}
 
-	return Object.keys(map)[0];
+
+	return +Object.entries(map).filter(el => el[1] === 1)[0][0]
 };
 
-testCase(singleNumber([4, 1, 2, 1, 2]), 4, true, 'singleNumber');
+testCase(singleNumber2([4, 1, 1, 2, 1, 2]), 4, true, 'singleNumber');
 testCase(singleNumber([2, 2, 1]), 1);
 testCase(singleNumber([1]), 1);

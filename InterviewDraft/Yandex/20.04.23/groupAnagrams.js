@@ -10,7 +10,7 @@ function groupAnagrams(strs) {
     const map = {};
 
     for (let i = 0; i < strs.length; i++) {
-        const curr = strs[i].split('').sort().reverse().join('');
+        const curr = strs[i].split('').sort().reverse().join('').toLowerCase();
 
         if (map[curr]) {
             map[curr].push(strs[i]);
