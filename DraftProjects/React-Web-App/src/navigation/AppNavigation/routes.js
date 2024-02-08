@@ -29,7 +29,7 @@ const JoblinkApiScreen = lazy(() => import("../../screens/JoblinkApiScreen"));
 export const AccountsSubMenu = [
     {
         id: 1,
-        to: '/accounts-companies',
+        to: '/accounts-Companies',
         label: '- Companies'
     },
     {
@@ -136,22 +136,22 @@ const routes = [
         component: <ReportingCostCenterScreen title="Cost center"/>
     },
     {
-        path: "/accounts-companies",
+        path: "/accounts-Companies",
         exact: true,
         component: withSuspense(CompaniesScreen)
     },
     {
-        path: "/accounts-companies/:companyId",
+        path: "/accounts-Companies/:companyId",
         exact: true,
         component: <CompanyDetailsScreen/>
     },
     {
-        path: "/accounts-companies/:companyId/edit-company-info",
+        path: "/accounts-Companies/:companyId/edit-company-info",
         exact: true,
         component: <EditCompanyInfoScreen/>
     },
     {
-        path: "/accounts-companies/:companyId/edit-company-locations",
+        path: "/accounts-Companies/:companyId/edit-company-locations",
         exact: true,
         component: <EditCompanyLocationsScreen/>
     },
