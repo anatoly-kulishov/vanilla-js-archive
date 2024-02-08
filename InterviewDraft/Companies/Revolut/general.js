@@ -82,7 +82,7 @@ console.log("[Palindrome]", isPalindrome("level")); // Should return true
  * "AABBBCCXYZ"
  * You need to write the RLE function, which will output a string like:
  * "A2B3C2XYZ"
- * (please see "InterviewDraft.spec.js" for more examples)
+ * (please see "InterviewDraft.spec.JS" for more examples)
  *
  * Explanation:
  * 1. if the symbol occurs 1 time, it remains unchanged

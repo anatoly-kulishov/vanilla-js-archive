@@ -1,9 +1,5 @@
 const testCase = require("../../../../Helpers/testCase");
 
-/**
- * @param nums
- * @returns {number|*}
- */
 const singleNumber = (nums) => {
 	if (nums.length === 1) return nums[0];
 
@@ -25,10 +21,6 @@ const singleNumber = (nums) => {
 	return uniqSum * 2 - numSum;
 };
 
-/**
- * @param nums
- * @returns {*|string}
- */
 const singleNumber2 = (nums) => {
 	const map = {};
 

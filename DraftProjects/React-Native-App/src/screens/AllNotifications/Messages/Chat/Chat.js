@@ -15,7 +15,7 @@ const Chat = () => {
     const submitBtnStyles = Platform.OS === 'ios' ? submitBtnStylesIOS : submitBtnStylesAndroid;
 
     const submitHandler = () => {
-        console.log("Chat.js => submitHandler()")
+        console.log("Chat.JS => submitHandler()")
     }
 
     useEffect(() => {
