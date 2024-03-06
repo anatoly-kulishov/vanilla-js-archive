@@ -16,7 +16,6 @@ function fn4() {
     x = 5;
 }
 
-
 fn1(x);
 console.log(x); // ?
 
