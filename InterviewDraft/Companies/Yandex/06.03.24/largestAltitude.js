@@ -12,5 +12,5 @@ let largestAltitude = function(gain) {
 };
 
 
-testCase(largestAltitude([-5,1,5,0,-7]), 1, true)
-testCase(largestAltitude([-4,-3,-2,-1,4,3,2]), 0)
+testCase(largestAltitude([-5, 1, 5, 0, -7]), 1, true)
+testCase(largestAltitude([-4, -3, -2, -1, 4, 3, 2]), 0)
