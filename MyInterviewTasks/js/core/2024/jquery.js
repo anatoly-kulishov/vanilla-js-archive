@@ -24,7 +24,7 @@ class Query {
         return this
     }
     html(innerHtml) {
-        this.nodes.forEach(node => node.innerHtml = innerHtml)
+        this.nodes.forEach(node => node.innerHTML = innerHtml)
         return this
     }
 }
@@ -35,10 +35,11 @@ const $node = $('.JS-node');
 
 $node
     .addClass('node')
+    .addClass('test')
     .toggleClass('item')
-    .removeClass('node')
+    .removeClass('test')
     .css({
         color: 'red',
         paddingTop: '10px'
     })
-    .html('<li>hello</li>');
+    .html('<mark>innerHTML</mark>');
