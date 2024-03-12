@@ -14,8 +14,6 @@
 // function a(obj: Animal, keyof Animal) {}
 // a({name: 'alex', age: 2}, 'name')
 /** Big(O) */
-// 1 logn nlogn n n^2 n^3... n! 2^n
-
 // for {} // n
 // for {} // 2n => n
 // for {} // 3n => n

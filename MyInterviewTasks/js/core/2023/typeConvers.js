@@ -34,30 +34,30 @@
  * object
  * 123
  */
-// function x() {}
-//
-// console.log(typeof x); //
-// console.log(x instanceof Object); //
-//
-// var str1 = String(123);
-// var str2 = new String(123);
+function x() {}
 
-// console.log(typeof str1, typeof str2); //
-// console.log(str1 === str2); //
-//
-// console.log(str1 === String(123)); //
-// console.log(str2 === new String(123)); //
-//
-// console.log(str1 === 123); //
-// console.log(str1 === "123"); //
-//
-// console.log(str1 == str2); //
-// console.log(str1 == 123); //
-// console.log(str1 == "123"); //
-//
-// var y = [];
-// console.log(typeof y); //
-//
-// var str3 = "123";
-// str3[0] = "2";
-// console.log(str3); //
+console.log(typeof x); //
+console.log(x instanceof Object); //
+
+var str1 = String(123);
+var str2 = new String(123);
+
+console.log(typeof str1, typeof str2); //
+console.log(str1 === str2); //
+
+console.log(str1 === String(123)); //
+console.log(str2 === new String(123)); //
+
+console.log(str1 === 123); //
+console.log(str1 === "123"); //
+
+console.log(str1 == str2); //
+console.log(str1 == 123); //
+console.log(str1 == "123"); //
+
+var y = [];
+console.log(typeof y); //
+
+var str3 = "123";
+str3[0] = "2";
+console.log(str3); //

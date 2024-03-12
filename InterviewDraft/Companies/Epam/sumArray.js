@@ -1,10 +1,9 @@
 const testCase = require("../../../Helpers/testCase");
 
 const sumArray = (arr) => {
-  const n = arr.length;
   let result = 0;
 
-  for (let i = 0; i < n; i++) {
+  for (let i = 0; i < arr.length; i++) {
     const currentArr = arr[i];
 
     const sum = currentArr.reduce((acc, curr) => {

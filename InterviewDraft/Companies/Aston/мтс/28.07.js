@@ -24,6 +24,7 @@
 //
 // a();
 // b();
+// Output: 1, 2, 1...
 /** ************************************************************************ */
 // console.log(1);
 //
@@ -43,7 +44,7 @@
 // });
 //
 // console.log(5);
-// Output: 1 6 5 2 name 4 3
+// Output: 1, 6, 5, 2, name, 4, 3
 /** ************************************************************************ */
 // Promise.reject("a") // a
 //   .then(p => p + "1", p => p + "2") // a2
@@ -95,7 +96,7 @@
 // }
 //
 // let animal = new Animal("Petya");
-// animal.getName; // Petya
+// animal.getName(); // Petya
 // Animal.Hello(); // Hello
 //
 // let cat = new Cat("Vasya", 28);

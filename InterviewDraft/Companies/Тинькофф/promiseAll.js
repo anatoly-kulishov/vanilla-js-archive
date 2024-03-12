@@ -27,5 +27,5 @@ const reject = (value, timeout) =>
 promiseAll([resolve(1, 200), resolve(2, 300), resolve(3, 100)])
     .then(console.log)
 
-// promiseAll([reject(1, 200), reject(2, 500), resolve(3, 1000)])
-//     .then(console.error)
+promiseAll([reject(1, 200), reject(2, 500), resolve(3, 1000)])
+    .then(console.error)

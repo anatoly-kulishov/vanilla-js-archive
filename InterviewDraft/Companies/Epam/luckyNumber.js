@@ -1,14 +1,15 @@
 const testCase = require("../../../Helpers/testCase");
+
 const luckyNumber = (arr, luckyNumber) => {
   if(arr.length <= 1) return false;
 
   for(let i = 0; i < arr.length - 2; i++) {
-    const first = arr[i];
-    const second = arr[i + 1];
-    const third = arr[i + 2];
+    let first = arr[i]
+    let second = arr[i + 1]
+    let third = arr[i + 2]
 
     if((first + second + third) === luckyNumber) {
-      return true;
+      return true
     }
   }
 

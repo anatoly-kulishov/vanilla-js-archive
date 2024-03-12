@@ -1,16 +1,16 @@
 function fn() {
     console.log('hello'); //
 
-    setTimeout(function() {
+    setTimeout(function () {
         console.log('setTimeout1'); //
     }, 0);
 
-    new Promise(function(resolve) {
+    new Promise(function (resolve) {
         resolve();
         console.log('resolve') //
-    }).then(function() {
+    }).then(function () {
         console.log('then1'); //
-    }).then(function() {
+    }).then(function () {
         console.log('then2'); //
     });
 

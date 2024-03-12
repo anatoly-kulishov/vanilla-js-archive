@@ -61,19 +61,23 @@ console.log("[Bind]", plus4(4)); // Should return 8
  * O(log n) [Logarithmic]
  */
 const isPalindrome = (x) => {
-    const len = x.length;
-    const mid = Math.floor(len / 2);
+    let start = 0;
+    let end = x.length - 1;
 
-    for (let i = 0; i < mid; i++) {
-        if (x[i] !== x[len - 1 - i]) {
-            return false;
+    while (start < end) {
+        if (x[start].toLowerCase() !== x[end].toLowerCase()) {
+            return false
         }
+
+        start++;
+        end--;
     }
 
     return true;
 }
 
 console.log("[Palindrome]", isPalindrome("level")); // Should return true
+console.log("[Palindrome]", isPalindrome("leveL")); // Should return true
 
 /**
  * Run-length encoding

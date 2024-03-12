@@ -5,7 +5,7 @@ const employees = [
 ];
 
 /** #1 */
-employees.sort((a, b) => b.salary - a.salary);
+employees.sort((a, b) => a.salary - b.salary);
 
 /** #2 */
 employees.sort((a, b) => {
