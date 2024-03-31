@@ -2,10 +2,6 @@
  * Breadth-first search
  * (Поиск в ширину)
  * O(V)
- * @param graph
- * @param start
- * @param end
- * @returns {boolean}
  */
 
 const graph = {};

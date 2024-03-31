@@ -1,11 +1,7 @@
 /**
  * Binary search
  * O(log n)
- * @param arr
- * @param item
- * @returns {*}
  */
-
 const simpleArray = [1, 4, 5, 8, 5, 1, 2, 7, 5, 2, 11];
 let n1 = 0;
 let n2 = 0;
