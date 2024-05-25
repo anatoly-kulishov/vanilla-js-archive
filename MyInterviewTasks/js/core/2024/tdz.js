@@ -1,4 +1,3 @@
-/** Output: [a: Error(a is not defined), b: 4, z: 1, d: {a: 10}, f: 10] */
 let z = 1;
 
 if(true) {

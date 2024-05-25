@@ -7,3 +7,5 @@ if(b.d === z.d) console.log('Bad...') //
 let a = 1
 a.toString()
 if(typeof a == 'number') console.log('Why?') //
+
+// Output: [Bad..., Why?]

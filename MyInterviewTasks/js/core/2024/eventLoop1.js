@@ -23,4 +23,3 @@ const foo1 = () => {
 foo1();
 
 // Output: 1, 4, 6, 3, foo1...
-
