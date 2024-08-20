@@ -32,4 +32,4 @@
 // console.log([...new Set('AAAAbbbbcccee332')].join(''));
 // 'Abce32'
 /** sort by number in the string */
-// console.log(['app4le', 'melon2', 'b5anana'].sort((a,b) => a.match(/\d/) - b.match(/\d/)));
+console.log(['app4le', 'melon2', 'b5anana'].sort((a,b) => a.match(/\d/) - b.match(/\d/)));

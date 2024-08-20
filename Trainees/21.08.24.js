@@ -1,23 +1,157 @@
-// class Query {
-//    // Code here...
-// }
-//
-// const $ = (selector) => new Query(selector)
-//
-// const $node = $('.JS-node');
-//
-// $node
-//     .addClass('node')
-//     .addClass('test')
-//     .toggleClass('item')
-//     .removeClass('test')
-//     .css({
-//         color: 'red',
-//         paddingTop: '10px'
-//     })
-//     .html('<mark>innerHTML</mark>');
+// console.log(5)
+// Promise.resolve(1)
+//     .then(() => console.log(2))
+//     .then(console.log(3))
+//     .then(() => console.log(4))
+// console.log(6)
 
 /** **************************************************************************************************************** **/
+
+// Promise.resolve(1)
+//     .then(() => console.log('1:', 2))
+//     .then(console.log('2:', 3))
+//     .then(() => console.log('3:', 4))
+//
+// Promise.resolve(1)
+//     .then(() => console.log('4:', 2))
+//     .then(console.log)
+//     .then(() => console.log('5:', 4))
+
+/** **************************************************************************************************************** **/
+
+// var f = function () {
+//     this.x = 5;
+//     (function () {
+//         this.x = 3
+//     })();
+//     console.log('1:', this.x)
+// }
+//
+// var obj = {
+//     x: 4,
+//     m: function () {
+//         console.log('2:', this.x)
+//     }
+// }
+//
+// f();
+// new f();
+// obj.m();
+// new obj.m();
+// f.call(f);
+// obj.m.call(f);
+
+/** **************************************************************************************************************** **/
+
+// let value = 100
+//
+// function worker() {
+//     value = 10
+//     return;
+//     function value() {}
+// }
+//
+// worker()
+//
+// console.log(value) //
+
+/** **************************************************************************************************************** **/
+
+// import React from "react";
+//
+// const PleaseReviewMe = () => {
+//   const [count, setCount] = React.useState(1);
+//   const [items, setItems] = React.useState([{ id: 1 }]);
+//   const myIntervalRef = useRef();
+//
+//   const setIntervalCount = () => {
+//     myIntervalRef.current = setInterval(() => console.log(count), 1000);
+//   }
+//
+//   React.useEffect(() => {
+//     document.addEventListener("click", setIntervalCount);
+//   }, [setIntervalCount]);
+//
+//   const click = React.useCallback(() => {
+//     setCount(count + 1);
+//     setCount(count + 1);
+//     setItems([...items, { id: count + 1 }]);
+//   }, [items, count])
+//
+//   return (
+//     <React.Fragment>
+//       <ul>
+//         {items.map((item) => (
+//           <li>{item.id}</li>
+//         ))}
+//       </ul>
+//       <button onClick={click}>add one</button>
+//     </React.Fragment>
+//   );
+// };
+//
+// export default PleaseReviewMe;
+
+/** ************************************************************************ */
+
+// import heavyComputations from './util'
+//
+// const [data, setData] = useState(heavyComputations(props.basedOn)) // heavy computation
+
+// useMemo для 2-й загрузки и последующих
+// Асинхронные вычисления с помощью useEffect
+// web-worker
+// lazy Suspense
+// React.memo
+// virtualization(IntersectionObserver), pagination
+// деление на чанки метода (Promise, setTimeout) основной способ
+// Предварительная обработка данных на сервере
+
+/** **************************************************************************************************************** **/
+
+// чистые функций, хок(фун-и высшего порядка), фу-и первого класса(FE), композиция,
+// каррирование, частичное применение, рекурсия, замыкание
+
+/** **************************************************************************************************************** **/
+
+// infer
+// type guards(typeof, in, instanceOf, is)
+// utility types: Omit, Pick, Record etc.
+// Exclude vs Omit, declare, type vs interface
+
+// type Arr = number | Array<Arr>;
+// let arr: Arr = [1, 2, 4, 5, [1, 2], [4, 5, [3, 2, [5, 6], 4], 6]];
+
+// interface Animal { name: string; age: number; }
+// function a(obj: any, ...) {}
+// a({name: 'alex', age: 2}, 'name', 'age')
+
+/** **************************************************************************************************************** **/
+
+/** Big(O) */
+// for {} // n
+// for {} // 2n => n
+// for {} // 3n => n
+
+// for {
+//   for { //n^2
+//     for { //n^3
+//
+//     }
+//   }
+// }
+
+/** **************************************************************************************************************** **/
+
+/** countVowels */
+// console.log('привет'); // 2
+
+/** unique value */
+// console.log(AAAAbbbbcccee332); // 'Abce32'
+
+/** sort by number in the string */
+// console.log(['app4le', 'melon2', 'b5anana']); // [ 'melon2', 'app4le', 'b5anana' ]
+
 /** **************************************************************************************************************** **/
 
 /** (Array.prototype.filter) */
@@ -41,14 +175,49 @@
 
 /** **************************************************************************************************************** **/
 
-// function Animal(name) {}
-// function Cat(name, color) {}
+// const compare = (obj, first, second) => {
+//     // Code here...
+// };
 //
-// var myCat = new Cat("Барсик", "рыжий");
+// const o = {
+//     f: {
+//         s: "second"
+//     },
+//     t: {
+//         f: {
+//             x: "second"
+//         }
+//     }
+// };
 //
-// // Проверяем методы
-// myCat.sayHello(); // Привет, я Барсик
-// myCat.meow(); // Мяу, рыжий!
+// console.log(compare(o, "f.s", "t.f.x")); // Output: true
+
+
+/** **************************************************************************************************************** **/
+
+
+/**
+ * Есть строка вида a.b.c.d.e
+ * Необходимо написать функцию, которая преобразует строку в объект вида
+ * {
+ *     "a": {
+ *         "b": {
+ *             "c": {
+ *                 "d": {
+ *                     "e": {}
+ *                 }
+ *             }
+ *         }
+ *     }
+ * }
+ */
+
+
+// const strToObj = (str) => {
+//    // Code here...
+// }
+//
+// console.log(strToObj("a.b.c.d.e")); // {...}
 
 /** **************************************************************************************************************** **/
 
@@ -59,3 +228,22 @@
 // console.log(twoSum([2, 7, 11, 15], 9)); // [0, 1]
 // console.log(twoSum([3, 2, 4], 6)); // 1, 2]
 // console.log(twoSum([3, 3], 6)); // [0, 1]
+
+/** **************************************************************************************************************** **/
+
+/**
+ * REQUIREMENTS:
+ *  1. Always deliver the lowest number of possible notes;
+ *  2. It's possible to get the amount requested with available notes;
+ *  3. The client balance is infinite;
+ *  4. Amount of notes is infinite;
+ *  5. Available notes 100, 50, 20 10
+ */
+
+// function isWantToGet(amountRequired) {
+//     // Code here...
+// }
+//
+// console.log(isWantToGet(365)); // [100, 100, 100, 50, 10]
+// console.log(isWantToGet(160)); // [100, 50, 10]
+// console.log(isWantToGet(0)); // []
