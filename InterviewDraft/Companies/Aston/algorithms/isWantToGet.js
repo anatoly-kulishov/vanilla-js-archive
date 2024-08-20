@@ -9,10 +9,6 @@
 
 const testCase = require("../../../../Helpers/testCase");
 
-/**
- * @param {number} amountRequired
- * @returns {*[]}
- */
 function isWantToGet(amountRequired) {
 	const availableNotes = [100, 50, 20, 10];
 	const result = [];

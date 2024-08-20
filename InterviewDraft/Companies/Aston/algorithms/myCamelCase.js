@@ -2,7 +2,6 @@
  * Написать код, чтобы можно было вызвать и отрабатывало:
  * "hello world".camelCase() => HelloWorld
  */
-
 const testCase = require("../../../../Helpers/testCase");
 
 String.prototype.toUpperCaseFirstChar = function () {

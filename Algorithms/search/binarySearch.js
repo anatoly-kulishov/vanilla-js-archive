@@ -6,6 +6,9 @@ const simpleArray = [1, 4, 5, 8, 5, 1, 2, 7, 5, 2, 11];
 let n1 = 0;
 let n2 = 0;
 
+
+// [1, 2, 2, 4, 5, 5, 7, 9, 11]
+
 const binarySearch = (arr, target) => {
   let start = 0;
   let end = arr.length;

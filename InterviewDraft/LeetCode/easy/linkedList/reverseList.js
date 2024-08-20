@@ -1,10 +1,5 @@
 const testCase = require("../../../../Helpers/testCase");
 
-/**
- * O(n)
- * @param head
- * @returns {null}
- */
 const reversLinkedList = (head) => {
     let prev = null, next = null;
 

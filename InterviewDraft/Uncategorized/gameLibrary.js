@@ -3,14 +3,11 @@ class GameLibrary {
         this.collection = [];
     }
 
-    addGameInCollection() {
-    }
+    addGameInCollection() {}
 
-    removeGameFromCollection() {
-    }
+    removeGameFromCollection() {}
 
-    getAllCollection() {
-    }
+    getAllCollection() {}
 }
 
 class Steam extends GameLibrary {
@@ -21,6 +18,7 @@ class Steam extends GameLibrary {
     addGameInCollection(game) {
         super.addGameInCollection();
         this.collection.push(game)
+        return this
     }
 
     removeGameFromCollection(game) {
@@ -30,6 +28,8 @@ class Steam extends GameLibrary {
         if (index > -1) {
             this.collection.splice(index, 1);
         }
+
+        return this
     }
 
     getAllCollection() {
@@ -40,15 +40,17 @@ class Steam extends GameLibrary {
 
 const steam = new Steam();
 
-steam.addGameInCollection('Diablo');
-steam.addGameInCollection('Diablo 2');
-steam.addGameInCollection('Diablo 3');
-steam.addGameInCollection('Diablo 4');
+steam
+    .addGameInCollection('Diablo')
+    .addGameInCollection('Diablo 2')
+    .addGameInCollection('Diablo 3')
+    .addGameInCollection('Diablo 4');
 
 console.log(steam.getAllCollection()); // [ 'Diablo', 'Diablo 2', 'Diablo 3', 'Diablo 4' ]
 
-steam.removeGameFromCollection('Diablo 4');
-steam.removeGameFromCollection('Diablo 3');
+steam
+    .removeGameFromCollection('Diablo 4')
+    .removeGameFromCollection('Diablo 3');
 
 console.log(steam.getAllCollection()); // [ 'Diablo', 'Diablo 2' ]
 

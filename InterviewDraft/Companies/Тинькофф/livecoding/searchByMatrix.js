@@ -6,8 +6,6 @@ const matrix = [
 
 const n = 20;
 
-console.log(search(matrix, n));
-
 const getValueByIndex = (matrix, index) => {
     const w = matrix[0].length
 

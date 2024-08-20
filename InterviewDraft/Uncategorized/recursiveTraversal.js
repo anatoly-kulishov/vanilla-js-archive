@@ -1,13 +1,17 @@
-function recursiveTraversal(obj) {
-    for (let key in obj) {
-        const value = obj[key];
+// function recursiveTraversal(obj) {
+//     for (let key in obj) {
+//         const value = obj[key];
+//
+//         if (typeof value === 'object') {
+//             recursiveTraversal(value); // Рекурсивный вызов для обхода вложенного объекта
+//         } else {
+//             console.log(key + ': ' + value); // Вывод ключа и значения
+//         }
+//     }
+// }
 
-        if (typeof value === 'object') {
-            recursiveTraversal(value); // Рекурсивный вызов для обхода вложенного объекта
-        } else {
-            console.log(key + ': ' + value); // Вывод ключа и значения
-        }
-    }
+function recursiveTraversal(obj) {
+    // Code here...
 }
 
 const myObj = {

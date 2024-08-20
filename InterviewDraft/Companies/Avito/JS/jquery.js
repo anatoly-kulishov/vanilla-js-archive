@@ -1,4 +1,3 @@
-
 class Query {
     constructor(cssSelector) {
         this.nodes = document.querySelectorAll(cssSelector)

@@ -1,7 +1,7 @@
 /** Output: [NaN, "NaN", "NaN1null1"] */
-console.log(NaN + 1 + null + 1); // NaN
-console.log(NaN + 1 + null + 1 + ""); // "NaN"
-console.log("" + NaN + 1 + null + 1 + ""); // "NaN1null1"
+console.log(NaN + 1 + null + 1); //
+console.log(NaN + 1 + null + 1 + ""); //
+console.log("" + NaN + 1 + null + 1 + ""); //
 
 /** Output: ["number153", 1, null1, "fooNaN", true, false, true] */
 console.log("number" + 15 + 3) //

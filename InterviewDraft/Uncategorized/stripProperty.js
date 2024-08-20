@@ -9,10 +9,10 @@ const stripProperty = (obj, prop) => {
 
 const someObj = {
   name: 'Anatoly',
-  age: 22
+  age: 25
 }
 
-console.log('Before', someObj) // Before { name: 'Anatoly', age: 23 }
+console.log('Before', someObj) // Before { name: 'Anatoly', age: 25 }
 
 stripProperty(someObj, 'age');
 

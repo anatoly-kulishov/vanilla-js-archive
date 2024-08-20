@@ -1,4 +1,4 @@
-// function currying(fn, ...args) {
+// function     currying(fn, ...args) {
 //   return (...nextArgs) => {
 //     const allArgs = [...args, ...nextArgs];
 //

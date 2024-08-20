@@ -1,11 +1,5 @@
 const testCase = require("../../../../Helpers/testCase");
 
-/**
- * O(n)
- * @param {number[]} nums1
- * @param {number[]} nums2
- * @return {number[]}
- */
 const intersect = (nums1, nums2) => {
     const result = [];
 
