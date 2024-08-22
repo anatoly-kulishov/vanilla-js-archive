@@ -58,17 +58,16 @@
 // console.log(a); //
 // console.log(a.b); //
 /** ************************************************************************ */
-/** Output: [baz.bar = 2] */
-// let foo = {
-//   bar: 1,
-// }
-//
-// const baz = foo;
-//
-// foo.bar = 2
-//
-// foo = {
-//   bar: 3
-// }
-//
-// console.log (baz.bar); //
+let foo = {
+  bar: 1,
+}
+
+const baz = foo;
+
+foo.bar = 2
+
+foo = {
+  bar: 3
+}
+
+console.log (baz.bar, foo); //

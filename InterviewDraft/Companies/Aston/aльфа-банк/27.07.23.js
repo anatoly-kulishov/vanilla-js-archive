@@ -12,7 +12,7 @@
 
 // interface Animal { name: string; age: number; }
 // function a(obj: Animal, keyof Animal) {}
-// a({name: 'alex', age: 2}, 'name')
+// a({name: 'alex', age: 2}, 'name', 'age')
 /** Big(O) */
 // for {} // n
 // for {} // 2n => n
@@ -32,4 +32,4 @@
 // console.log([...new Set('AAAAbbbbcccee332')].join(''));
 // 'Abce32'
 /** sort by number in the string */
-console.log(['app4le', 'melon2', 'b5anana'].sort((a,b) => a.match(/\d/) - b.match(/\d/)));
+// console.log(['app4le', 'melon2', 'b5anana'].sort((a,b) => a.match(/\d/) - b.match(/\d/)));
