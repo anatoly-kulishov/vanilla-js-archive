@@ -1,29 +1,29 @@
 /** O(n) */
-// const findSum = (arr, num) => {
-//   const map = {};
-//
-//   for (let i = 0; i < arr.length; i++) {
-//     const current = arr[i];
-//
-//     if (map[current] === undefined) {
-//       map[map - current] = current;
-//     } else {
-//       return [current, map[current]];
-//     }
-//   }
-//
-//   for (let i = 0; i < arr.length; i++) {
-//     if (arr.includes(num - arr[i])) {
-//       return [arr[i], num - arr[i]];
-//     }
-//   }
-//
-//   return []
-// };
-//
-// console.log(findSum([1, 2, 3], 4)); // [1, 3]
-// console.log(findSum([3], 6)); // []
-// console.log(findSum([], 6)); // []
+const findSum = (arr, num) => {
+  const map = {};
+
+  for (let i = 0; i < arr.length; i++) {
+    const current = arr[i];
+
+    if (map[current] === undefined) {
+      map[map - current] = current;
+    } else {
+      return [current, map[current]];
+    }
+  }
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr.includes(num - arr[i])) {
+      return [arr[i], num - arr[i]];
+    }
+  }
+
+  return []
+};
+
+console.log(findSum([1, 2, 3], 4)); // [1, 3]
+console.log(findSum([3], 6)); // []
+console.log(findSum([], 6)); // []
 /** ************************************************************************ */
 /** O(n^2) */
 // const findSum2 = (arr, num) => {
