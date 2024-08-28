@@ -1,9 +1,5 @@
 const testCase = require("../../../../Helpers/testCase");
 
-/**
- * @param {number} n
- * @return {string[]}
- */
 const fizzBuzz = (n) => {
     const result = [];
 

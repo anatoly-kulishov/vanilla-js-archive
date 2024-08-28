@@ -111,6 +111,22 @@ function myPromiseAll(promises) {
   });
 }
 
+/**
+ * function myPromiseAll(promises) {
+ *
+ *     return new Promise((resolve, reject) => {
+ *         const res = []
+ *
+ *         promises.map((el) => {
+ *             el.then((data) => { res.push(data.json()); })
+ *                 .then(() => { if (promises.length === res.length) { resolve() } })
+ *                 .catch((err) => { reject(err);})
+ *         })
+ *         return res
+ *    })
+ * }
+ */
+
 /** (Promise.race) */
 function myPromiseRace(promises) {
   // Возвращаем новый промис

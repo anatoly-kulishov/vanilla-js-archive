@@ -1,10 +1,5 @@
 const testCase = require("../../../../Helpers/testCase");
 
-/**
- * @param a
- * @param b
- * @returns {boolean}
- */
 function deepEqual(a, b) {
   if (Number.isNaN(a) && Number.isNaN(b)) {
     return true
@@ -40,3 +35,5 @@ testCase(deepEqual(source, test2), false);
 testCase(deepEqual(NaN, NaN), true);
 testCase(deepEqual('test', 'test!'), false);
 testCase(deepEqual('', ''), true);
+testCase(deepEqual([1, 2, 3], [1, 2, 3]), true);
+testCase(deepEqual([], []), true);

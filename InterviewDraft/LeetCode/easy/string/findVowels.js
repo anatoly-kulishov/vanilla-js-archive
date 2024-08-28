@@ -1,9 +1,5 @@
 const testCase = require("../../../../Helpers/testCase");
 
-/**
- * @param str
- * @returns {*}
- */
 const findVowels = (str) => {
 	const VOWELS = ['a', 'e', 'i', 'o', 'u'];
 	let count = 0;

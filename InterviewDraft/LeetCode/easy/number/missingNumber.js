@@ -9,10 +9,6 @@
 
 const testCase = require("../../../../Helpers/testCase");
 
-/**
- * @param nums
- * @returns {number}
- */
 const missingNumber = (nums) => {
     const n = nums.length + 1;
     const arr = Array.from({length: n}, (el, index) => index);

@@ -1,22 +1,17 @@
 const testCase = require("../../../../Helpers/testCase");
 
-/**
- * @param source
- * @param test
- * @returns {*|boolean}
- */
 function isStringRotated(source, test) {
     /** 1 **/
-    // if (source.length !== test.length) {
-    //   return false;
-    // }
-    // for (let i = 0; i < source.length; i++) {
-    //   const rotate = source.slice(i, source.length) + source.slice(0, i);
-    //   if (rotate === test) {
-    //     return true;
-    //   }
-    // }
-    // return false;
+    if (source.length !== test.length) {
+      return false;
+    }
+    for (let i = 0; i < source.length; i++) {
+      const rotate = source.slice(i, source.length) + source.slice(0, i);
+      if (rotate === test) {
+        return true;
+      }
+    }
+    return false;
 
     /** 2 **/
     return (source + source).includes(test) && source.length === test.length;

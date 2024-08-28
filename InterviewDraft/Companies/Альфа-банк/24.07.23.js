@@ -33,32 +33,13 @@
 // const PleaseReviewMe = () => {
 //   const [count, setCount] = React.useState(1);
 //   const [items, setItems] = React.useState([{ id: 1 }]);
-//   const myIntervalRef = useRef();
-//
-//   const setIntervalCount = () => {
-//     myIntervalRef.current = setInterval(() => console.log(count), 1000);
-//   }
 //
 //   React.useEffect(() => {
-//     document.addEventListener("click", setIntervalCount);
+//     document.addEventListener("click", setInterval(() => console.log(count), 1000););
+//   }, []);
 //
-//     return () => {
-//       clearInterval(myIntervalRef.current);
-//       document.removeEventListener("click", setIntervalCount);
-//     };
-//   }, []); // Пустой массив зависимостей, чтобы создать/очистить интервал только один раз.
-//
-//   // Output: useCallback здесь не нужен, тк мы передаем его в кнопку, а не мемоизированный компонент!
 //   const click = React.useCallback(() => {
-//     // батчинг #1
-//     // setCount(count + 1); // 1
-//     // setCount(count + 1); // 1
-//
-//     // батчинг #2
-//     // setCount(prev => prev + 1); // 1
-//     // setCount(prev => prev + 1); // 2
-//
-//     setCount(prev => prev + 1);
+//     setCount(count + 1); // 1
 //     setItems((prev) => [...prev, { id: count + 1 }]);
 //   }, [items, count])
 //

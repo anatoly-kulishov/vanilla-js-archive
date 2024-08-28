@@ -1,9 +1,5 @@
 const testCase = require("../../../../Helpers/testCase");
 
-/**
- * @param str
- * @returns {string}
- */
 function rle(str) {
   const dictionary = {};
   let result = '';
@@ -28,10 +24,6 @@ function rle(str) {
   return result;
 }
 
-/**
- * @param str
- * @returns {string}
- */
 function rle2(str) {
   const dictionary = {};
   let result = '';

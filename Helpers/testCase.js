@@ -1,4 +1,4 @@
-const testCase = (arg1, arg2, isStart = false, title = '', time) => {
+function testCase (arg1, arg2, isStart = false, title = '', time) {
 	let isAnObject = false;
 
 	if (isStart && title === '') {
@@ -16,7 +16,7 @@ const testCase = (arg1, arg2, isStart = false, title = '', time) => {
 	logStatus(arg1, arg2, isAnObject)
 }
 
-const logStatus = (arg1, arg2, isAnObject) => {
+function logStatus (arg1, arg2, isAnObject) {
 	let flag = arg1 === arg2;
 	if (isAnObject) {
 		flag = JSON.stringify(arg1) === JSON.stringify(arg2);

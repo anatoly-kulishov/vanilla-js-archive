@@ -80,16 +80,11 @@
 //   const [items, setItems] = React.useState([{ id: 1 }]);
 //   const myIntervalRef = useRef();
 //
-//   const setIntervalCount = () => {
-//     myIntervalRef.current = setInterval(() => console.log(count), 1000);
-//   }
-//
 //   React.useEffect(() => {
-//     document.addEventListener("click", setIntervalCount);
-//   }, [setIntervalCount]);
+//     document.addEventListener("click", setInterval(() => console.log(count), 1000), IntervalCount);
+//   }, []);
 //
 //   const click = React.useCallback(() => {
-//     setCount(count + 1);
 //     setCount(count + 1);
 //     setItems([...items, { id: count + 1 }]);
 //   }, [items, count])

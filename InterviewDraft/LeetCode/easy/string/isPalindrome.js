@@ -8,14 +8,12 @@
 
 const testCase = require("../../../../Helpers/testCase");
 
+// #1
 // const isPalindrome = (x) => {
 //   return x.toString() === x.toString().split('').reverse().join('');
 // };
 
-/**
- * @param {string} s
- * @return {boolean}
- */
+// #2
 const isPalindrome = (s) => {
     let str = s.toLowerCase().replace(/[^a-z0-9]/gi, '');
     let reversedStr = '';

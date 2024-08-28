@@ -7,10 +7,6 @@
 
 const testCase = require("../../../../Helpers/testCase");
 
-/**
- * @param {string} s
- * @return {number}
- */
 let firstUniqChar = (s) => {
     let map = new Map();
     const n = s.length;
@@ -25,7 +21,7 @@ let firstUniqChar = (s) => {
         }
     }
 
-    for (let i = 0; i < n; i++) {
+        for (let i = 0; i < n; i++) {
         let current = s[i];
 
         if (map.get(current) === 1) {

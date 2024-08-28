@@ -17,11 +17,6 @@
 
 const testCase = require("../../../../Helpers/testCase");
 
-/**
- * @param {string} password
- * @return {boolean}
- */
-
 const strongPasswordChecker = (password) => {
     const specialCharacters = "\"!@#$%^&*()-+\"";
     const n = password.length;

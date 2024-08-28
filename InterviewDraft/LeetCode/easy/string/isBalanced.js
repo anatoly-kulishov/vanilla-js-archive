@@ -10,10 +10,6 @@
  */
 const testCase = require("../../../../Helpers/testCase");
 
-/**
- * @param string
- * @returns {boolean}
- */
 function isBalanced(string) {
     const queue = [];
     const start = '{[(';

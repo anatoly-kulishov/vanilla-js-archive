@@ -9,10 +9,6 @@
  */
 const testCase = require("../../../../Helpers/testCase");
 
-/**
- * @param matrix
- * @returns {*}
- */
 const setZeroes = function (matrix) {
 	let ROWS = matrix.length;
 	let COLS = matrix[0].length;

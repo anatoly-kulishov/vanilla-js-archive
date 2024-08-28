@@ -5,11 +5,6 @@
  */
 const testCase = require("../../../../Helpers/testCase");
 
-/**
- * @param nums
- * @param target
- * @returns {number}
- */
 const searchInsert = (nums, target) => {
   let pos = 0;
 

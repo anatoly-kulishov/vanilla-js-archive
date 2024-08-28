@@ -2,7 +2,6 @@ const testCase = require("../../../../Helpers/testCase");
 const timePerformanceStart = require("../../../../Helpers/timePerfomanceStart");
 const timePerformanceResult = require("../../../../Helpers/timePerfomanceResult");
 
-
 const time = timePerformanceStart();
 
 const classNames = [
@@ -11,11 +10,6 @@ const classNames = [
 
 const correctAnswer = ['link', 'menu-item', 'menu', 'header', 'footer'];
 
-/**
- * O(n)
- * @param classNames
- * @returns {*[]}
- */
 const filterClassNames = (classNames) => {
 	const classNamesCount = {};
 	const arrayUniq = [];

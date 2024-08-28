@@ -5,11 +5,6 @@
 
 const testCase = require("../../../../Helpers/testCase");
 
-/**
- * @param strA
- * @param strB
- * @returns {boolean}
- */
 const anagram = (strA, strB) => {
 	const aCharObj = buildCharObject(strA);
 	const bCharObj = buildCharObject(strB);

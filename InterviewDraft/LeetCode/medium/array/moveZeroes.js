@@ -9,10 +9,6 @@
 
 const testCase = require("../../../../Helpers/testCase");
 
-/**
- * @param nums
- * @returns {*}
- */
 const moveZeroes = (nums) => {
 	const n = nums.length;
 

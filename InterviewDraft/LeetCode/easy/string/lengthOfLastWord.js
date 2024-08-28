@@ -1,9 +1,5 @@
 const testCase = require("../../../../Helpers/testCase");
 
-/**
- * @param {string} s
- * @return {number}
- */
 const lengthOfLastWord = (s) => {
     return s.trim().split(' ').at(-1).length;
 };

@@ -4,10 +4,6 @@ const timePerformanceResult = require("../../../../Helpers/timePerfomanceResult"
 
 const time = timePerformanceStart();
 
-/**
- * @param n
- * @returns {*}
- */
 function fibonacciRecursion(n) {
 	if (n < 2) {
 		return n;

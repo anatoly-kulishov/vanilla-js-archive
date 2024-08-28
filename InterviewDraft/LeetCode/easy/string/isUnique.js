@@ -1,9 +1,5 @@
 const testCase = require("../../../../Helpers/testCase");
 
-/**
- * @param str
- * @returns {boolean}
- */
 function isUnique(str) {
     /** 1 **/
     // for (let i = 0; i < str.length; i++) {
@@ -28,7 +24,7 @@ function isUnique(str) {
     // return true
 
     /** 3 **/
-    return new Set(str).size === str.length;
+    // return new Set(str).size === str.length;
 }
 
 testCase(isUnique('123'), true, true);

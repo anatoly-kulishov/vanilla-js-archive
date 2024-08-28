@@ -23,10 +23,6 @@
 
 const testCase = require("../../../../Helpers/testCase");
 
-/**
- * @param s
- * @returns {number}
- */
 function romanToInt(s) {
   const arrayStrings = s.split("");
   let sum = 0;

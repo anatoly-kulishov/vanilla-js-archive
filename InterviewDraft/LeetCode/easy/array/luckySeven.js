@@ -1,10 +1,5 @@
 const testCase = require("../../../../Helpers/testCase");
 
-/**
- * O(n)
- * @param arr
- * @returns {boolean}
- */
 const luckySeven = (arr) => {
     const luckyNumber = 7;
     const n = arr.length;

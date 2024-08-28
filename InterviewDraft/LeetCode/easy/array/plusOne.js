@@ -6,10 +6,6 @@
 
 const testCase = require("../../../../Helpers/testCase");
 
-/**
- * @param {number[]} digits
- * @return {number[]}
- */
 const plusOne = (digits) => {
   let digitsCopy = digits.reverse();
   let len = digits.length;
