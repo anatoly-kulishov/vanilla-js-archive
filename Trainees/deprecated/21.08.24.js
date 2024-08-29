@@ -76,29 +76,29 @@
 // import React from "react";
 //
 // const PleaseReviewMe = () => {
-//   const [count, setCount] = React.useState(1);
-//   const [items, setItems] = React.useState([{ id: 1 }]);
-//   const myIntervalRef = useRef();
+//     const [count, setCount] = React.useState(1);
+//     const [items, setItems] = React.useState(() => [{id: 1}]);
 //
-//   React.useEffect(() => {
-//     document.addEventListener("click", setInterval(() => console.log(count), 1000), IntervalCount);
-//   }, []);
+//     React.useEffect(() => {
+//         document.addEventListener("click", setInterval(() => console.log(count), 1000));
+//     }, []);
 //
-//   const click = React.useCallback(() => {
-//     setCount(count + 1);
-//     setItems([...items, { id: count + 1 }]);
-//   }, [items, count])
+//     const click = React.useCallback(() => {
+//         setCount(count + 1);
+//         setItems([...items, {id: count + 1}]);
+//     }, [items, count])
 //
-//   return (
-//     <React.Fragment>
-//       <ul>
-//         {items.map((item) => (
-//           <li>{item.id}</li>
-//         ))}
-//       </ul>
-//       <button onClick={click}>add one</button>
-//     </React.Fragment>
-//   );
+//     return (
+//         <React.Fragment>
+//             <h2>Count: {count}</h2>
+//             <ul>
+//                 {items.map((item) => (
+//                     <li>{item.id}</li>
+//                 ))}
+//             </ul>
+//             <button onClick={() => click()}>add one</button>
+//         </React.Fragment>
+//     );
 // };
 //
 // export default PleaseReviewMe;

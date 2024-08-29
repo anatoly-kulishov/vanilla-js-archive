@@ -1,5 +1,5 @@
 // const backspace = (str1, str2) => {
-//     // code here...
+//     // Code here...
 // }
 
 const backspace = (str1, str2) => {
@@ -34,6 +34,6 @@ const backspace = (str1, str2) => {
     return str1Arr.join('') === str2Arr.join('')
 }
 
-// console.log(backspace('ab#d', 'ac#d')) // true (ad === ad)
+console.log(backspace('ab#d', 'ac#d')) // true (ad === ad)
 console.log(backspace('ab##', 'ab##')) // true (a === a)
-// console.log(backspace('ab#d', 'ab#c')) // false (ad !== ac)
+console.log(backspace('ab#d', 'ab#c')) // false (ad !== ac)

@@ -9,8 +9,6 @@
 // foo();
 //
 // console.log("end");
-
-// Output: start, 1, 2, end, 3
 /** ************************************************************************ */
 // function a() {
 //   console.log("1");
@@ -24,7 +22,6 @@
 //
 // a();
 // b();
-// Output: 1, 2, 1...
 /** ************************************************************************ */
 // console.log(1);
 //
@@ -44,17 +41,16 @@
 // });
 //
 // console.log(5);
-// Output: 1, 6, 5, 2, name, 4, 3
 /** ************************************************************************ */
-// Promise.reject("a") // a
-//   .then(p => p + "1", p => p + "2") // a2
+// Promise.reject("a") //
+//   .then(p => p + "1", p => p + "2") //
 //   .catch(p => p + "b") //
 //   .catch(p => p + "с") //
-//   .then(p => p + "d1") // a2d1
+//   .then(p => p + "d1") //
 //   .then("d2") //
-//   .then(p => p + "d3") // a2d1d3
-//   .finally(p => p + "e") // undefined + e
-//   .then(p => console.log(p)); // a2d1d3
+//   .then(p => p + "d3") //
+//   .finally(p => p + "e") //
+//   .then(p => console.log(p)); //
 /** ************************************************************************ */
 // let foo = {
 //   bar: 1,
@@ -68,7 +64,7 @@
 //   bar: 3
 // }
 //
-// console.log (baz.bar); // 2
+// console.log (baz.bar); //
 /** ************************************************************************ */
 // class Animal {
 //   constructor(name) {
@@ -96,11 +92,11 @@
 // }
 //
 // let animal = new Animal("Petya");
-// animal.getName(); // Petya
-// Animal.Hello(); // Hello
+// animal.getName(); //
+// Animal.Hello(); //
 //
 // let cat = new Cat("Vasya", 28);
-// cat.getName(); // Vasya 28
+// cat.getName(); //
 /** ************************************************************************ */
 // let a = {
 //   foo: function() {
@@ -111,41 +107,41 @@
 //   }
 // }
 //
-// a.foo(); // a
-// a.bar(); // window
+// a.foo(); //
+// a.bar(); //
 //
 // let c = a.foo;
 //
-// c(); // window
+// c(); //
 //
 // const fn = (cb) => cb()
-// fn(a.foo); // window
+// fn(a.foo); //
 /** ************************************************************************ */
-// console.log(x); // undefined
+// console.log(x); //
 //
 // var x = 1;
 //
-// console.log(x); // 1
+// console.log(x); //
 //
 // function car() {
 //   // x = undefined;
 //   if (false) {
 //     var x = 2;
 //   }
-//   console.log(x); // undefined
+//   console.log(x); //
 // }
 //
 // car();
-// console.log(x); // 1
+// console.log(x); //
 /** ************************************************************************ */
 // let x = 2;
 //
 // const foo = () => {
-//   console.log(x); // error ~ 2
+//   console.log(x); //
 // };
 //
 // const bar = () => {
-//   console.log(x); // error
+//   console.log(x); //
 //   let x = 1;
 //   foo();
 // };
@@ -165,15 +161,15 @@
 //   b.j = 1;
 // })();
 //
-// console.log(i, b); // 2 {j: 1}
+// console.log(i, b); //
 //
 // (function(i, b) {
 //   i++;
 //   b.k = 1;
-//   console.log(i); // 3
+//   console.log(i); //
 // })(i, b);
 //
-// console.log(i, b); // 2 {j: 1, k: 1}
+// console.log(i, b); //
 /** ************************************************************************ */
 // var a = {};
 //
@@ -181,10 +177,10 @@
 //   a.b = 2;
 //   a = null;
 //
-//   console.log(a); // null
+//   console.log(a); //
 // }
 //
 // clear(a);
 //
-// console.log(a); // { b: 2 }
-// console.log(a.b); // 2
+// console.log(a); //
+// console.log(a.b); //

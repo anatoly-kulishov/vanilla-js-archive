@@ -69,18 +69,18 @@
 // где будут только уникальные нечетные числа, отсортированый по возрастанию
 
 // const x = [3, 6, [1, 6], 4, [2], [9, [1, [2, 8, [3], 7], 4], 9, [4]]];
-//
+
 // const sortedArr = (arr) => {
-//     const newArr = new Set(arr.flat(Infinity))
-//     const res = []
+//         const newArr = new Set(arr.flat(Infinity))
+//         const res = []
 //
-//     for(let el of newArr) {
-//         if (el % 2 === 1) {
-//             res.push(el)
+//         for(let el of newArr) {
+//             if (el % 2 === 1) {
+//                 res.push(el)
+//             }
 //         }
-//     }
 //
-//     return res.sort((prev, next) => prev - next)
+//         return res.sort((prev, next) => prev - next)
 // }
 //
 // console.log(sortedArr(x))

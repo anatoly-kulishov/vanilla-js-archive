@@ -14,6 +14,7 @@
 
 // // 1 f1 2 a1 f2 a2 f3
 
+////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // const foo = async () => {
 //   console.log("1");
@@ -30,7 +31,6 @@
 // };
 
 // bar();
-
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -69,8 +69,6 @@
 // // logger.call(obj);
 // logger.bind(obj).bind(obj22).call(obj33); // ()
 
-
-
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // function makeCounter() {
@@ -104,11 +102,11 @@
 //   };
 // }
 
-// const person1 = new Person("Александр"); //
+// const person1 = new Person("Александр");
 // const person2 = new Person("Екатерина");
 
 // // const regularFunc = person1.sayHelloRegular.bind(person1);
-// // regularFunc(); //
+// // regularFunc();
 
 // // const arrowFunc = person2.sayHelloArrow;
-// // arrowFunc(); // Екатерина
+// // arrowFunc();
