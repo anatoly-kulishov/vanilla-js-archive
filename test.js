@@ -1,12 +1,26 @@
 // const strToObj = (str) => {
-//     return str
-//         .split('.')
-//         .reverse()
-//         .reduce((previousValue, currentValue) => {
-//             let n = {};
+//     // #1
+//     // return str
+//     //     .split('.')
+//     //     .reverse()
+//     //     .reduce((previousValue, currentValue) => {
+//     //         let n = {};
+//     //
+//     //         return n[currentValue] = previousValue, n
+//     //     }, {})
 //
-//             return n[currentValue] = previousValue, n
-//         }, {})
+//     // #2
+//     // const keys = str.split('.'); // Разделяем строку на массив ключей
+//     // const result = {}; // Начальный объект
+//     // let current = result; // Переменная для построения объекта
+//     //
+//     // // Проходим по каждому ключу и создаем вложенные объекты
+//     // for (let i = 0; i < keys.length; i++) {
+//     //     current[keys[i]] = {}; // Создаем новый вложенный объект
+//     //     current = current[keys[i]]; // Переходим на уровень ниже
+//     // }
+//     //
+//     // return result; // Возвращаем финальный объект
 // }
 
 /** **************************************************************************************************************** **/
