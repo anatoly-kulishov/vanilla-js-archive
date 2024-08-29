@@ -1,3 +1,101 @@
+// const strToObj = (str) => {
+//     return str
+//         .split('.')
+//         .reverse()
+//         .reduce((previousValue, currentValue) => {
+//             let n = {};
+//
+//             return n[currentValue] = previousValue, n
+//         }, {})
+// }
+
+/** **************************************************************************************************************** **/
+
+// function makeMemo(fn) {
+//     const cache = {};
+//
+//     return function memoized(...args) {
+//         const key = JSON.stringify(args);
+//
+//         if (cache[key] === undefined) {
+//             cache[key] = fn(...args);
+//         }
+//
+//         return cache[key];
+//     };
+// }
+//
+// const memoSum = makeMemo(sum);
+
+/** **************************************************************************************************************** **/
+
+// Поиск файлов в IDE
+// function search(term, str) {
+//     const strArr = str.split('')
+//     let index = 0;
+//
+//     for (let i = 0; i < strArr.length; i++) {
+//         if (strArr[i] === term[index]) {
+//             index++
+//         }
+//     }
+//
+//     return index === term.length
+// }
+//
+// console.log(search('el', 'crocodile')); // false
+// console.log(search('le', 'crocodile')); // true
+// console.log(search('ccd', 'crocodile')); // true
+// console.log(search('ccod', 'crocoodile')); // true
+// console.log(search('cdc', 'crocodile')); // false
+
+/** **************************************************************************************************************** **/
+
+// Дан многомерный массив нужно вернуть одномерный,
+// где будут только уникальные нечетные числа, отсортированый по возрастанию
+
+// const x = [3, 6, [1, 6], 4, [2], [9, [1, [2, 8, [3], 7], 4], 9, [4]]];
+//
+// const sortedArr = (arr) => {
+//     const newArr = new Set(arr.flat(Infinity))
+//     const res = []
+//
+//     for(let el of newArr) {
+//         if (el % 2 === 1) {
+//             res.push(el)
+//         }
+//     }
+//
+//     return res.sort((prev, next) => prev - next)
+// }
+//
+// console.log(sortedArr(x))
+
+/** **************************************************************************************************************** **/
+
+// const operations = [
+//     {date: "2019-07-31", amount: "5422"},
+//     {date: "2017-06-30", amount: "5220"},
+//     {date: "2017-05-31", amount: "5365"},
+//     {date: "2017-08-31", amount: "5451"},
+//     {date: "2017-09-30", amount: "5303"},
+//     {date: "2018-03-31", amount: "5654"},
+//     {date: "2017-10-31", amount: "5509"},
+//     {date: "2017-12-31", amount: "5567"},
+//     {date: "2018-01-31", amount: "5597"},
+//     {date: "2017-11-30", amount: "5359"},
+//     {date: "2018-02-28", amount: "5082"},
+//     {date: "2018-04-14", amount: "2567"}
+// ]
+//
+// const sortOperations = (operations) => {
+//     return operations.sort((a, b) => new Date(a.amount - new Date(b.amount))
+// }
+//
+// console.log(sortOperations(operations))
+
+/** **************************************************************************************************************** **/
+
 // Приходит массив цифр (arr) и число (total)
 // Написать функцию, которая вернет массив с первой парой чисел, сумма которых ровна total
 

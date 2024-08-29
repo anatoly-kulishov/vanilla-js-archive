@@ -1,3 +1,5 @@
+const testCase = require("../../../../Helpers/testCase");
+
 /**
  * Есть строка вида a.b.c.d.e
  * Необходимо написать функцию, которая преобразует строку в объект вида
@@ -14,7 +16,6 @@
  * }
  */
 
-const testCase = require("../../../../Helpers/testCase");
 
 const strToObj = (str) => {
 	return str
