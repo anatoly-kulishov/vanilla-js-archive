@@ -24,4 +24,4 @@ const text = "ppoal";
 
 const result = countCharacters(text);
 
-console.log(result);
+console.log(result); // { p: 2, o: 1, a: 1, l: 1 }

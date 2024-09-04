@@ -17,7 +17,7 @@ const reverseString = (s) => {
     let b_pointer = s.length - 1;
 
     while (a_pointer <= b_pointer) {
-        // [s[a_pointer], s[b_pointer]] = [s[b_pointer], s[a_pointer]];
+        [s[a_pointer], s[b_pointer]] = [s[b_pointer], s[a_pointer]];
 
         let temp = s[a_pointer];
         s[a_pointer] = s[b_pointer];

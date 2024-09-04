@@ -103,7 +103,7 @@
 // ]
 //
 // const sortOperations = (operations) => {
-//     return operations.sort((a, b) => new Date(a.amount - new Date(b.amount))
+//     return operations.sort((a, b) => new Date(a.date) - new Date(b.date))
 // }
 //
 // console.log(sortOperations(operations))

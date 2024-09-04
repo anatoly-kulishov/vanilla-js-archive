@@ -1,18 +1,6 @@
 // O(log n)
 function isPalindrome(str) {
-  let a_pointer = 0;
-  let b_pointer = str.length - 1;
 
-  while (a_pointer < b_pointer) {
-    if(str[a_pointer].toLowerCase() !== str[b_pointer].toLowerCase()) {
-      return false
-    }
-
-    a_pointer++;
-    b_pointer--;
-  }
-
-  return true
 }
 
 

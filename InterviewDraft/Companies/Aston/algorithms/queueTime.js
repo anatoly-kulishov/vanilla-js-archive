@@ -33,8 +33,6 @@ function queueTime(customers, tillCount) {
 	return Math.max(...tills);
 }
 
-
-
 testCase(queueTime([5, 3, 4], 1), 12, true);
 testCase(queueTime([10, 2, 3, 3], 2), 10);
 testCase(queueTime([2,2,3,3,4,4], 2), 9);
