@@ -1,4 +1,4 @@
-const testCase = require("../../Helpers/testCase");
+const testCase = require("../../../Helpers/testCase");
 
 function deepCopy(obj) {
     // Если obj не является объектом или массивом (т.е. это примитив), просто возвращаем его

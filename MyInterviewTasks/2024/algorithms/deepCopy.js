@@ -1,4 +1,4 @@
-const testCase = require("../../Helpers/testCase");
+const testCase = require("../../../Helpers/testCase");
 
 function deepCopy(obj) {
     let result;
