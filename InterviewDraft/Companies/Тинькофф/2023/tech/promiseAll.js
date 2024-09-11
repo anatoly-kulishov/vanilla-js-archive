@@ -1,15 +1,15 @@
 const promiseAll = (promises) => {
     return new Promise((resolve, reject) => {
         const finishPromises = [];
-        let secondIndex = 0
+        let counter = 0
 
         for(let index in promises) {
             promises[index]
                 .then((data) => {
                     finishPromises[index] = data
-                    secondIndex++;
+                    counter++;
 
-                    if(secondIndex === promises.length) {
+                    if(counter === promises.length) {
                         resolve(finishPromises)
                     }
                 })

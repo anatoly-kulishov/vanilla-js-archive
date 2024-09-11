@@ -35,7 +35,7 @@
 //   const [items, setItems] = React.useState([{ id: 1 }]);
 //
 //   React.useEffect(() => {
-//     document.addEventListener("click", setInterval(() => console.log(count), 1000););
+//     document.addEventListener("click", setInterval(() => console.log(count), 1000));
 //   }, []);
 //
 //   const click = React.useCallback(() => {
@@ -50,7 +50,7 @@
 //           <li key={item.id}>{item.id}</li>
 //         ))}
 //       </ul>
-//       <button onClick={click}>add one</button>
+//       <button onClick={() => click()}>add one</button>
 //     </React.Fragment>
 //   );
 // };

@@ -8,23 +8,22 @@
 const testCase = require("../../../../Helpers/testCase");
 
 let firstUniqChar = (s) => {
-    let map = new Map();
-    const n = s.length;
+    let map = {};
 
-    for (let i = 0; i < n; i++) {
+    for (let i = 0; i < s.length; i++) {
         let current = s[i];
 
-        if (map.has(current)) {
-            map.set(current, map.get(current) + 1);
+        if (map[current] !== undefined) {
+            map[current] = map[current] + 1;
         } else {
-            map.set(current, 1);
+            map[current] = 1
         }
     }
 
-        for (let i = 0; i < n; i++) {
+    for (let i = 0; i < s.length; i++) {
         let current = s[i];
 
-        if (map.get(current) === 1) {
+        if (map[current] === 1) {
             return i;
         }
     }

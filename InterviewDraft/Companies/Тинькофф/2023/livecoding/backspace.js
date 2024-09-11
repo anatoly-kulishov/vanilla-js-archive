@@ -1,7 +1,3 @@
-// const backspace = (str1, str2) => {
-//     // Code here...
-// }
-
 const backspace = (str1, str2) => {
     const str1Arr = [];
     const str2Arr = [];
@@ -27,9 +23,6 @@ const backspace = (str1, str2) => {
 
         str2Arr.push(current)
     }
-
-    console.log(str1Arr, str2Arr)
-
 
     return str1Arr.join('') === str2Arr.join('')
 }

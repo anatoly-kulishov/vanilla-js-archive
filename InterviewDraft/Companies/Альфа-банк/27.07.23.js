@@ -8,7 +8,7 @@
 // Exclude vs Omit, declare, type vs interface
 
 // type Arr = number | Array<Arr>;
-// let arr: Arr = [1, 2, 4, 5, [1, 2], [4, 5, [3, 2, [5, 6], 4], 6]];
+// let arr: any = [1, 2, 4, 5, [1, 2], [4, 5, [3, 2, [5, 6], 4], 6]];
 
 // interface Animal { name: string; age: number; }
 // function a(obj: Animal, keyof Animal) {}
@@ -29,7 +29,7 @@
 /** countVowels */
 // console.log('привет'.match(/[aeiouаеёиоуыюя]/gi).length); // 2
 /** unique value */
-// console.log([...new Set('AAAAbbbbcccee332')].join(''));
+// console.log([...new Set('')].join(''));
 // 'Abce32'
 /** sort by number in the string */
 // console.log(['app4le', 'melon2', 'b5anana'].sort((a,b) => a.match(/\d/) - b.match(/\d/)));

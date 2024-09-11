@@ -81,6 +81,17 @@ function myPromiseAll(promises) {
     const results = []; // Массив для хранения результатов промисов
     let completedPromises = 0; // Счетчик завершенных промисов
 
+    // Если массив промисов пустой, сразу выполняем промис с пустым массивом результатов
+    if (promises.length === 0) {
+      resolve(results);
+    }
+
+    for (let i = 0; i < promises.length; i++) {
+      promises[i]
+          .then(result => handleResolve(result, i))
+          .catch(handleReject);
+    }
+
     // Функция обратного вызова, которая будет вызвана после выполнения каждого промиса
     function handleResolve(result, index) {
       results[index] = result; // Сохраняем результат промиса в массив
@@ -92,40 +103,12 @@ function myPromiseAll(promises) {
       }
     }
 
-    // Функция обратного вызова для обработки отклоненных промисов
+      // Функция обратного вызова для обработки отклоненных промисов
     function handleReject(error) {
       reject(error); // Если хотя бы один промис отклоняется, возвращаем ошибку
     }
-
-    // Итерируемся по всем промисам и навешиваем обработчики на каждый из них
-    for (let i = 0; i < promises.length; i++) {
-      promises[i]
-        .then(result => handleResolve(result, i))
-        .catch(handleReject);
-    }
-
-    // Если массив промисов пустой, сразу выполняем промис с пустым массивом результатов
-    if (promises.length === 0) {
-      resolve(results);
-    }
   });
 }
-
-/**
- * function myPromiseAll(promises) {
- *
- *     return new Promise((resolve, reject) => {
- *         const res = []
- *
- *         promises.map((el) => {
- *             el.then((data) => { res.push(data.json()); })
- *                 .then(() => { if (promises.length === res.length) { resolve() } })
- *                 .catch((err) => { reject(err);})
- *         })
- *         return res
- *    })
- * }
- */
 
 /** (Promise.race) */
 function myPromiseRace(promises) {

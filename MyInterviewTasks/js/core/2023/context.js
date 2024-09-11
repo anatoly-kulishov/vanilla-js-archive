@@ -1,5 +1,5 @@
 /** Output: [F = 10, F2 = undefined, F3 = 10, F4 = undefined, F5 = 10] */
-// var a = 404;
+// a = 404;
 //
 // const obj = {
 //   a: 10,
