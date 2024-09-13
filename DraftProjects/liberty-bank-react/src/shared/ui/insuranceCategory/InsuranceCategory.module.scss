@@ -1,0 +1,36 @@
+@import '../../../shared/styles/';
+
+.category {
+  width: 100%;
+  height: 100%;
+  padding: 24px;
+  background: $bg_base;
+  border-radius: 14px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  display: inline-flex;
+}
+
+.frame {
+  width: 100%;
+  height: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  display: inline-flex;
+}
+
+.icon {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.name {
+  width: 100%;
+  color: $text_primary;
+  line-height: 24px;
+  word-wrap: break-word;
+  font-size: 16px;
+}

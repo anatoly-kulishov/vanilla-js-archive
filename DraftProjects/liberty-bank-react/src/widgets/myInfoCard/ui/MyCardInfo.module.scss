@@ -1,0 +1,81 @@
+@import '../../../shared/styles/index.scss';
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  background-color: $bg_blocks;
+  border-radius: $borderRadiusL;
+  padding: 32px;
+  margin: 56px 0 40px;
+}
+
+.infoWrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 715px;
+  height: 100%;
+  gap: 16px;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.statusWrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.balance {
+  margin-top: 10px;
+}
+
+.body {
+  display: flex;
+  gap: 60px;
+  margin-top: 20px;
+}
+
+.columnWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.itemWrapper {
+  display: flex;
+  gap: 6px;
+}
+
+.textValue {
+  color: $text_secondary;
+}
+
+.textCaption {
+  color: $separator;
+}
+
+.copyBtnWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.buttonWrapper {
+  margin-top: 24px;
+  width: 244px;
+}
+
+.button {
+  height: 56px;
+}

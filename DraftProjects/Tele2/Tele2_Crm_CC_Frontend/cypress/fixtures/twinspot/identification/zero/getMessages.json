@@ -1,0 +1,31 @@
+{
+  "Data": [
+    {
+      "MessageTechId": 543112,
+      "Id": 93336,
+      "ConversationId": 99999,
+      "From": "artem.karpenko@external.tele2.ru",
+      "DisplayFrom": "Карпенко Артем Константинович",
+      "To": "GOZStage@tele2.ru",
+      "DisplayTo": "GOZStage",
+      "HasAttachments": false,
+      "CreatedOn": "2021-02-08T10:41:25",
+      "Subject": "TEST",
+      "IsIncoming": true,
+      "StatusId": 2,
+      "User": null,
+      "UserFullName": null,
+      "Channel": "Exchange",
+      "Body": null,
+      "UniqueBody": "<html><body><div>\r\n<div><span lang=\"ru\">\r\n<div>\r\n<div style=\"margin:0;\"><font face=\"Calibri,sans-serif\" size=\"2\"><span style=\"font-size:11pt;\"><span lang=\"en-US\">Test message</span></span></font></div>\r\n</div>\r\n</span></div>\r\n</div>\r\n</body></html>",
+      "TextBody": "Test message\r\n",
+      "Cc": "",
+      "Bcc": "",
+      "Attachments": null
+    }
+  ],
+  "IsSuccess": true,
+  "MessageText": null,
+  "ResultType": 1,
+  "ResultCode": 0
+}

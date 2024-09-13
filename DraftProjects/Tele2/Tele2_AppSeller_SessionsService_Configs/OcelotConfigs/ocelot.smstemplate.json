@@ -1,0 +1,34 @@
+{
+  "Routes": [
+    {
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "$HOST_CC",
+          "Port": "$PORT_CC"
+        }
+      ],
+      "DownstreamPathTemplate": "/service/smstemplateservice/SmsTemplateService/GetFilteredTemplates",
+      "DownstreamScheme": "https",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Options"
+      ],
+      "UpstreamPathTemplate": "/smstemplateservice/SmsTemplate/GetFilteredTemplates"
+    },
+    {
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "$HOST_CC",
+          "Port": "$PORT_CC"
+        }
+      ],
+      "DownstreamPathTemplate": "/service/smstemplateservice/SmsTemplateService/GetTopTemplates",
+      "DownstreamScheme": "https",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Options"
+      ],
+      "UpstreamPathTemplate": "/smstemplateservice/SmsTemplate/GetTopTemplates"
+    }
+  ]
+}

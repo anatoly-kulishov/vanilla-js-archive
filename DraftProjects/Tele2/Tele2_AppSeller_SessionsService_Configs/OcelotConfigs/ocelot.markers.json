@@ -1,0 +1,154 @@
+{
+  "Routes": [
+    {
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "$HOST_ENV_MARKERS",
+          "Port": "$PORT_ENV_MARKERS"
+        }
+      ],
+      "DownstreamPathTemplate": "/service/marker/marker/getBlackListInfo",
+      "DownstreamScheme": "https",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Options"
+      ],
+      "UpstreamPathTemplate": "/markerservice/marker/getBlackListInfo"
+    },
+    {
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "$HOST_ENV_MARKERS",
+          "Port": "$PORT_ENV_MARKERS"
+        }
+      ],
+      "DownstreamPathTemplate": "/service/marker/marker/getWebimBlackListInfo",
+      "DownstreamScheme": "https",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Options"
+      ],
+      "UpstreamPathTemplate": "/markerservice/marker/getWebimBlackListInfo"
+    },
+    {
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "$HOST_ENV_MARKERS",
+          "Port": "$PORT_ENV_MARKERS"
+        }
+      ],
+      "DownstreamPathTemplate": "/service/marker/marker/getAllocatedInfo",
+      "DownstreamScheme": "https",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Options"
+      ],
+      "UpstreamPathTemplate": "/markerservice/marker/getAllocatedInfo"
+    },
+    {
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "$HOST_ENV_MARKERS",
+          "Port": "$PORT_ENV_MARKERS"
+        }
+      ],
+      "DownstreamPathTemplate": "/service/marker/marker/getMarkers",
+      "DownstreamScheme": "https",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Options"
+      ],
+      "UpstreamPathTemplate": "/markerservice/marker/getMarkers"
+    },
+    {
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "$HOST_ENV_MARKERS",
+          "Port": "$PORT_ENV_MARKERS"
+        }
+      ],
+      "DownstreamPathTemplate": "/service/marker/marker/getRtkSegment",
+      "DownstreamScheme": "https",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Options"
+      ],
+      "UpstreamPathTemplate": "/markerservice/marker/getRtkSegment"
+    },
+    {
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "$HOST_ENV_MARKERS",
+          "Port": "$PORT_ENV_MARKERS"
+        }
+      ],
+      "DownstreamPathTemplate": "/service/marker/marker/getMarkerMnp",
+      "DownstreamScheme": "https",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Options"
+      ],
+      "UpstreamPathTemplate": "/markerservice/marker/getMarkerMnp"
+    },
+    {
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "$HOST_ENV_MARKERS",
+          "Port": "$PORT_ENV_MARKERS"
+        }
+      ],
+      "DownstreamPathTemplate": "/service/marker/marker/getMarkerTariffHold",
+      "DownstreamScheme": "https",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Options"
+      ],
+      "UpstreamPathTemplate": "/markerservice/marker/getMarkerTariffHold"
+    },
+    {
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "$HOST_ENV_MARKERS",
+          "Port": "$PORT_ENV_MARKERS"
+        }
+      ],
+      "DownstreamPathTemplate": "/service/marker/marker/getSubscriberPsychotype",
+      "DownstreamScheme": "https",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Options"
+      ],
+      "UpstreamPathTemplate": "/markerservice/marker/getSubscriberPsychotype"
+    },
+    {
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "$HOST_ENV_MARKERS",
+          "Port": "$PORT_ENV_MARKERS"
+        }
+      ],
+      "DownstreamPathTemplate": "/service/marker/api/v2/Markers",
+      "DownstreamScheme": "https",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Options"
+      ],
+      "UpstreamPathTemplate": "/markerservice/api/v2/Markers"
+    },
+    {
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "$HOST_ENV_MARKERS",
+          "Port": "$PORT_ENV_MARKERS"
+        }
+      ],
+      "DownstreamPathTemplate": "/service/marker/marker/Anonymous",
+      "DownstreamScheme": "https",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Options"
+      ],
+      "UpstreamPathTemplate": "/markerservice/marker/Anonymous"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+@import '../../shared/styles/colors';
+@import '../../shared/styles/rounding';
+
+.userData__block {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  background: $bg_blocks;
+  border-radius: 0 0 $borderRadiusL $borderRadiusL;
+  padding: 0 32px 40px 32px;
+
+  .userData__item_doc {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 16px;
+  }
+
+  .userData__item_contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .contacts_items {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+
+      .contactTel {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        flex-basis: 49%;
+
+        .inputTel {
+          background: $bg_primary;
+        }
+      }
+
+      .contactEmail {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        flex-basis: 49%;
+
+        .inputEmail {
+          background: $bg_primary;
+        }
+        .button {
+          display: inline;
+          background: $bg_blocks;
+          text-align: start;
+        }
+      }
+    }
+  }
+
+  .item__input {
+    height: 72px;
+    width: 100%;
+    padding: 12px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    color: $text_secondary;
+    background: $bg_primary;
+    border-radius: $borderRadiusM;
+  }
+
+  .userData__item_address {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .inputs__block {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+
+      .item__input {
+        flex-basis: 49%;
+      }
+    }
+  }
+}

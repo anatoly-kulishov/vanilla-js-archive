@@ -1,0 +1,29 @@
+.itemWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  padding: 16px 40px;
+  border-radius: $borderRadiusM;
+  background-color: $bg_primary;
+  cursor: pointer;
+}
+
+.selectedItem {
+  padding: 15px 39px;
+  border: 1px solid $ctrl_Liberty;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bankBranch {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.caption {
+  color: #001a3480;
+}

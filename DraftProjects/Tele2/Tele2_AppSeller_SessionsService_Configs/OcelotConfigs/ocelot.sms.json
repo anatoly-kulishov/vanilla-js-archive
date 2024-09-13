@@ -1,0 +1,79 @@
+{
+  "Routes": [
+    {
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "$HOST_CC",
+          "Port": "$PORT_CC"
+        }
+      ],
+      "DownstreamPathTemplate": "/service/smsservice/Sms/GetSmsRecipients",
+      "DownstreamScheme": "https",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Options"
+      ],
+      "UpstreamPathTemplate": "/smsservice/Sms/GetSmsRecipients"
+    },
+    {
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "$HOST_CC",
+          "Port": "$PORT_CC"
+        }
+      ],
+      "DownstreamPathTemplate": "/service/smsservice/Sms/GetSilencePeriod",
+      "DownstreamScheme": "https",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Options"
+      ],
+      "UpstreamPathTemplate": "/smsservice/Sms/GetSilencePeriod"
+    },
+    {
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "$HOST_CC",
+          "Port": "$PORT_CC"
+        }
+      ],
+      "DownstreamPathTemplate": "/service/smsservice/Sms/GetLteContactNumber",
+      "DownstreamScheme": "https",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Options"
+      ],
+      "UpstreamPathTemplate": "/smsservice/Sms/GetLteContactNumber"
+    },
+    {
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "$HOST_CC",
+          "Port": "$PORT_CC"
+        }
+      ],
+      "DownstreamPathTemplate": "/service/smsservice/Sms/AddSms",
+      "DownstreamScheme": "https",
+      "UpstreamHttpMethod": [
+        "Post",
+        "Options"
+      ],
+      "UpstreamPathTemplate": "/smsservice/Sms/AddSms"
+    },
+    {
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "$HOST_CC",
+          "Port": "$PORT_CC"
+        }
+      ],
+      "DownstreamPathTemplate": "/service/smsservice/Sms/CancelSms",
+      "DownstreamScheme": "https",
+      "UpstreamHttpMethod": [
+        "Post",
+        "Options"
+      ],
+      "UpstreamPathTemplate": "/smsservice/Sms/CancelSms"
+    }
+  ]
+}

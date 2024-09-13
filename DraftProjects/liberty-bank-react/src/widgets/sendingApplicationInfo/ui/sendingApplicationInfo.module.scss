@@ -1,0 +1,39 @@
+.containerInfo {
+  display: flex;
+  width: 580px;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  align-self: center;
+  padding: 40px 120px;
+  margin-top: 24px;
+  gap: 24px;
+  background-color: #f6f7fa;
+
+  > .desc {
+    color: #001a34;
+  }
+  > img {
+    height: 200px;
+  }
+  > .btn {
+    padding: 16px 24px;
+    height: 50px;
+    width: 100%;
+    text-wrap: nowrap;
+    line-height: normal;
+  }
+  > .fail-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    width: 526px;
+
+    > .btn {
+      padding: 16px 24px;
+      height: 50px;
+      text-wrap: nowrap;
+      line-height: normal;
+    }
+  }
+}

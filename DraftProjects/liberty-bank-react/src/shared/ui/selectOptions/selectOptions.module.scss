@@ -1,0 +1,35 @@
+@import '../../styles/index.scss';
+
+.option-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  .option-block {
+    color: black;
+    background-color: white;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    cursor: pointer;
+    &__default {
+      padding: 12px 24px;
+      color: #757f8a;
+      background-color: #d8dfea;
+      border: 0.33px solid #757f8a;
+    }
+  }
+
+  .option-block_active {
+    background: #00a3ff;
+  }
+
+  .option-text_active {
+    color: $text_secondary_buttons;
+  }
+}
+
+.option-container button:hover:not(.option-block_active) {
+  color: $text_action;
+}

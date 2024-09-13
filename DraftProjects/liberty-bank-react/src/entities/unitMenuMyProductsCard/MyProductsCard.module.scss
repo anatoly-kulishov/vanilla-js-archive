@@ -1,0 +1,49 @@
+.card {
+  padding: 16px;
+  border-radius: $borderRadiusM;
+  background-color: $bg_base;
+  width: 100%;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.top {
+  display: flex;
+  align-items: start;
+}
+
+.texts {
+  display: flex;
+  justify-content: space-between;
+  width: 83%;
+}
+
+.text {
+  margin-left: 16px;
+}
+
+.bonus {
+  display: flex;
+  align-items: center;
+  margin-top: -20px;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.type {
+  color: $text_secondary;
+}
+
+.bonus-text {
+  margin-left: 4px;
+  color: $text_action;
+}
+
+.date {
+  margin-top: 12px;
+}

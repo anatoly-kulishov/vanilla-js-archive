@@ -1,0 +1,98 @@
+.condition-item {
+  max-width: 380px;
+  min-height: 140px;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+
+  &-inner-calendar-blue {
+    width: 210px;
+    height: 140px;
+  }
+
+  &-inner-ruble-currency {
+    width: 243px;
+    height: 140px;
+  }
+
+  &-inner-cash {
+    width: 256px;
+    height: 138px;
+  }
+
+  &-inner-people {
+    width: 215px;
+    height: 138px;
+  }
+
+  .condition-title {
+    display: flex;
+    gap: 12px;
+    margin-top: 24px;
+
+    > h5 {
+      line-height: 36px;
+    }
+
+    .tooltip {
+      margin-top: 5px;
+      flex-shrink: 0;
+    }
+  }
+
+  .condition-description {
+    color: $text_secondary;
+    margin-top: 8px;
+  }
+
+  .tooltip-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .tooltip-item {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      width: max-content;
+
+      .tooltip-item-title {
+        line-height: 24px;
+      }
+
+      .tooltip-item-description {
+        color: $text_secondary;
+        font-family: 'SF Pro Display', Roboto;
+        max-width: 380px;
+        font-size: 14px;
+        line-height: 16px;
+        white-space: normal;
+        overflow-wrap: normal;
+
+        .tooltip-bold-span {
+          font-weight: 600;
+        }
+      }
+    }
+
+    .tooltip-list {
+      li {
+        display: flex;
+        flex-direction: row;
+        ::before {
+          content: '•';
+          margin-right: 8px;
+        }
+      }
+      * {
+        display: flex;
+      }
+    }
+  }
+
+  .price-tooltip {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}

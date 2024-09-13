@@ -1,0 +1,15 @@
+@import '../../../../shared/styles/index.scss';
+
+.text-item {
+  align-self: stretch;
+  color: $text_secondary;
+  font-size: 14px;
+  font-family: 'SF Pro Display', sans-serif;
+  line-height: 16px;
+  word-wrap: break-word;
+  margin-bottom: 4px;
+}
+
+.btn {
+  height: 56px;
+}

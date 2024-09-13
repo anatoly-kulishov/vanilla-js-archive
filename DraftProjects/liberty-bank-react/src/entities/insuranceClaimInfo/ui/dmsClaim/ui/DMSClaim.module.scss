@@ -1,0 +1,16 @@
+@import '../../../../../shared/styles/colors';
+
+.dms__body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 609px;
+}
+
+.dms__text {
+  color: $text_secondary;
+
+  &_span {
+    color: $text-action;
+  }
+}

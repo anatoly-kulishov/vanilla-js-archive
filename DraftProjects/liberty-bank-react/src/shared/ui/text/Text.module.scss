@@ -1,0 +1,88 @@
+@import '../../styles/fonts.scss';
+
+.text {
+  &_h1 {
+    font-size: map-get($font-size, XL);
+    line-height: map-get($line-height, XL);
+  }
+
+  &_h2 {
+    font-size: map-get($font-size, L);
+    line-height: map-get($line-height, L);
+  }
+
+  &_h3 {
+    font-size: map-get($font-size, M);
+    line-height: map-get($line-height, M);
+  }
+
+  &_h4 {
+    font-size: map-get($font-size, S);
+    line-height: map-get($line-height, S);
+  }
+
+  &_h5 {
+    font-size: map-get($font-size, XS);
+    line-height: map-get($line-height, XS);
+  }
+
+  &_light {
+    font-weight: map-get($font-weight, L);
+  }
+
+  &_regular {
+    font-weight: map-get($font-weight, R);
+  }
+
+  &_medium {
+    font-weight: map-get($font-weight, M);
+  }
+
+  &_semibold {
+    font-weight: map-get($font-weight, SB);
+  }
+
+  &_bold {
+    font-weight: map-get($font-weight, B);
+  }
+
+  &_xs {
+    font-size: map-get($font-size, XS);
+    line-height: map-get($line-height, XS);
+  }
+
+  &_xss {
+    font-size: map-get($font-size, XS);
+    line-height: map-get($line-height, XSS);
+  }
+
+  &_s {
+    font-size: map-get($font-size, S);
+    line-height: map-get($line-height, S);
+  }
+
+  &_m {
+    font-size: map-get($font-size, M);
+    line-height: map-get($line-height, M);
+  }
+
+  &_l {
+    font-size: map-get($font-size, L);
+    line-height: map-get($line-height, L);
+  }
+
+  &_xl {
+    font-size: map-get($font-size, XL);
+    line-height: map-get($line-height, XL);
+  }
+
+  &_ml {
+    font-size: map-get($font-size, M);
+    line-height: map-get($line-height, L);
+  }
+
+  &_sxs {
+    font-size: map-get($font-size, S);
+    line-height: map-get($line-height, XS);
+  }
+}

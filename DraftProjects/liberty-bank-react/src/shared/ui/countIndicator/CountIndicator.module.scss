@@ -1,0 +1,12 @@
+@import '../../styles/index.scss';
+
+.indicator {
+  background-color: $ctrl_Liberty;
+  color: $bg_primary;
+  padding: 0 10px;
+  border-radius: 16px;
+  font-size: map-get($font-size, S);
+  line-height: map-get($line-height, S);
+  height: 24px;
+  width: fit-content;
+}

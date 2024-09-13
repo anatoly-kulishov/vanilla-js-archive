@@ -1,0 +1,7 @@
+export const DONE = '_DONE_'
+export const RESUME = '_RESUME_'
+export const FINISH = '_FINISH_'
+export const SERVICES = '_SERVICES_'
+export const REASONCATEGORY = '_REASONCATEGORY_'
+export const TICKET = '_TICKET_'
+export const RESTRICTIONS = '_RESTRICTIONS_'

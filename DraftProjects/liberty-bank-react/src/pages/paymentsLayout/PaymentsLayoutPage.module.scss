@@ -1,0 +1,18 @@
+.paymentLayout {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  & > ul {
+    margin: 0;
+
+    & > a {
+      padding: 0 0 8px;
+
+      &:hover {
+        color: $text_action;
+      }
+    }
+  }
+}

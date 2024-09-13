@@ -1,0 +1,16 @@
+{
+    "Data":[
+       {
+          "Id":14,
+          "Name":"Повторный звонок"
+       },
+       {
+          "Id":15,
+          "Name":"Прочее"
+       }
+    ],
+    "IsSuccess":true,
+    "MessageText":null,
+    "ResultType":1,
+    "ResultCode":0
+ }

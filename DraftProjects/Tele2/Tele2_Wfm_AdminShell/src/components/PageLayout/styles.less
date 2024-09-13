@@ -1,0 +1,73 @@
+.@{app-prefix}-layout {
+ 
+  &__header {
+    display: flex;
+    align-items: center;
+    padding: 0 var(--wfm-padding-lg);
+    justify-content: flex-end;
+    background-color: var(--ant-component-background);
+    min-width: 1024px;
+    height: var(--wfm-header-size);
+  }
+
+  &__layout-content {
+    min-height: 100vh;
+  }
+}
+
+.@{app-prefix}-header {
+  &__select-partnerid.ant-select {
+    width: 200px;
+  }
+
+  &__navigation {
+    ol {
+      display: flex;
+  
+      li {
+        &::marker {
+          content: none;
+        }
+
+        &:last-child {
+          .ant-breadcrumb-separator {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  &__information {
+    display: flex;
+    align-items: center;
+  }
+
+  &__switches {
+    margin-right: var(--wfm-margin-lg, 24px);
+  }
+
+  &__theme-switch {
+    margin-bottom: var(--wfm-margin-xss, 4px);
+  }
+
+  &__theme {
+    margin-right: var(--wfm-margin-sm, 12px);
+
+    > *:not(:last-child) {
+      margin-right: var(--wfm-margin-xss, 4px);
+    }
+  }
+}
+
+.@{app-prefix}-sider {
+  .ant-menu.ant-menu-inline-collapsed > .ant-menu-item {
+    white-space: inherit;
+  }
+
+  .ant-menu-title-content {
+    word-wrap: break-word;
+    white-space: normal;
+    line-height: initial;
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "Routes": [
+    {
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "$HOST_CC",
+          "Port": "$PORT_CC"
+        }
+      ],
+      "DownstreamPathTemplate": "/service/messagetemplateservice/messageTemplate/GetMessageTemplate",
+      "DownstreamScheme": "https",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Options"
+      ],
+      "UpstreamPathTemplate": "/messagetemplateservice/messageTemplate/GetMessageTemplate"
+    }
+  ]
+}

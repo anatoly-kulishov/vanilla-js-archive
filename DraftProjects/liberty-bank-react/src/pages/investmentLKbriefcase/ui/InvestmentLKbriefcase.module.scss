@@ -1,0 +1,62 @@
+.body {
+  margin-top: 40px;
+  display: flex;
+}
+
+.block-left {
+  width: 279px;
+  margin-right: 105px;
+  margin-bottom: 125px;
+}
+
+.block-right {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 796px;
+}
+
+.check-block {
+  background: $bg_blocks;
+  border-radius: $borderRadiusM;
+  margin-bottom: 16px;
+  padding: 16px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.check-block-title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.check-block-name {
+  width: 160px;
+  margin-right: 8px;
+}
+
+.check-title {
+  margin-bottom: 16px;
+}
+
+.actions-title {
+  margin-top: 24px;
+}
+
+.actions-item {
+  background: $bg_blocks;
+  border-radius: $borderRadiusM;
+  margin-top: 16px;
+  padding: 16px 0 16px 16px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: all 0.3s ease;
+
+  &_active {
+    background-color: #c5daff;
+  }
+}

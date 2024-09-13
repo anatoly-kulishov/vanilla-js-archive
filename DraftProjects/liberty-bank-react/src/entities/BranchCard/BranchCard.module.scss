@@ -1,0 +1,57 @@
+@import '../../shared/styles';
+
+.color_ {
+  &text_action {
+    color: $text_action;
+  }
+  &text_primary {
+    color: $text_primary;
+  }
+}
+
+.branch_card {
+  background-color: $bg_primary;
+  padding: 16px 24px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 330px;
+  box-sizing: content-box;
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .title {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .metro {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .schedule {
+      display: flex;
+      gap: 8px;
+      align-items: flex-start;
+
+      .body {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+      }
+    }
+
+    .button {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

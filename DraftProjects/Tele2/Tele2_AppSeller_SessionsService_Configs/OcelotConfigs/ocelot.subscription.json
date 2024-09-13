@@ -1,0 +1,64 @@
+{
+  "Routes": [
+    {
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "$HOST_CC",
+          "Port": "$PORT_CC"
+        }
+      ],
+      "DownstreamPathTemplate": "/service/subscriptionservice/Subscription/GetSubscriptions",
+      "DownstreamScheme": "https",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Options"
+      ],
+      "UpstreamPathTemplate": "/subscriptionservice/Subscription/GetSubscriptions"
+    },
+    {
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "$HOST_CC",
+          "Port": "$PORT_CC"
+        }
+      ],
+      "DownstreamPathTemplate": "/service/subscriptionservice/Subscription/SendSms",
+      "DownstreamScheme": "https",
+      "UpstreamHttpMethod": [
+        "Post",
+        "Options"
+      ],
+      "UpstreamPathTemplate": "/subscriptionservice/Subscription/SendSms"
+    },
+    {
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "$HOST_CC",
+          "Port": "$PORT_CC"
+        }
+      ],
+      "DownstreamPathTemplate": "/service/subscriptionservice/Subscription/Unsubscribe",
+      "DownstreamScheme": "https",
+      "UpstreamHttpMethod": [
+        "Post",
+        "Options"
+      ],
+      "UpstreamPathTemplate": "/subscriptionservice/Subscription/Unsubscribe"
+    },
+    {
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "$HOST_CC",
+          "Port": "$PORT_CC"
+        }
+      ],
+      "DownstreamPathTemplate": "/service/subscriptionservice/Subscription/GetUnsibscribeReasons",
+      "DownstreamScheme": "https",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Options"
+      ],
+      "UpstreamPathTemplate": "/subscriptionservice/Subscription/GetUnsibscribeReasons"
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+@import '@/shared/styles/index.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 94px;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.columnLeft {
+  width: 786px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tab {
+  width: 23%;
+  height: 40px;
+  border-radius: $borderRadiusL;
+}
+
+.columnRight {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn {
+  width: 60px;
+  height: 32px;
+  border-radius: $borderRadiusM;
+}
+
+.list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 16px;
+}
+
+.item {
+  width: 380px;
+  height: 134px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: $borderRadiusM;
+  padding: 16px 16px 10px;
+}
+
+.topRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.round {
+  width: 40px;
+  height: 40px;
+}
+
+.status {
+  width: 80px;
+  height: 16px;
+  border-radius: $borderRadiusL;
+}
+
+.footer {
+  width: 110px;
+  height: 48px;
+  margin-top: 61px;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+}
+
+.text {
+  width: 100%;
+  height: 24px;
+  border-radius: $borderRadiusL;
+}
+
+.chevron {
+  width: 17px;
+  height: 17px;
+}

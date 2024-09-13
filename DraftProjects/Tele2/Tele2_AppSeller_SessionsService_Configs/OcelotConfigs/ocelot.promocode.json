@@ -1,0 +1,79 @@
+{
+  "Routes": [
+    {
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "$HOST_CC",
+          "Port": "$PORT_CC"
+        }
+      ],
+      "DownstreamPathTemplate": "/service/promocode/PromoCode/GetPromoCodeHistory",
+      "DownstreamScheme": "https",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Options"
+      ],
+      "UpstreamPathTemplate": "/promocodeservice/PromoCode/GetPromoCodeHistory"
+    },
+    {
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "$HOST_CC",
+          "Port": "$PORT_CC"
+        }
+      ],
+      "DownstreamPathTemplate": "/service/promocode/PromoCode/GetPromoCodeFilters",
+      "DownstreamScheme": "https",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Options"
+      ],
+      "UpstreamPathTemplate": "/promocodeservice/PromoCode/GetPromoCodeFilters"
+    },
+    {
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "$HOST_CC",
+          "Port": "$PORT_CC"
+        }
+      ],
+      "DownstreamPathTemplate": "/service/promocode/PromoCode/ActivatePromoCode",
+      "DownstreamScheme": "https",
+      "UpstreamHttpMethod": [
+        "Post",
+        "Options"
+      ],
+      "UpstreamPathTemplate": "/promocodeservice/PromoCode/ActivatePromoCode"
+    },
+    {
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "$HOST_CC",
+          "Port": "$PORT_CC"
+        }
+      ],
+      "DownstreamPathTemplate": "/service/promocode/PromoCode/CancelPromoCode",
+      "DownstreamScheme": "https",
+      "UpstreamHttpMethod": [
+        "Post",
+        "Options"
+      ],
+      "UpstreamPathTemplate": "/promocodeservice/PromoCode/CancelPromoCode"
+    },
+    {
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "$HOST_CC",
+          "Port": "$PORT_CC"
+        }
+      ],
+      "DownstreamPathTemplate": "/service/promocode/PromoCode/CreatePromoCodeNotification",
+      "DownstreamScheme": "https",
+      "UpstreamHttpMethod": [
+        "Post",
+        "Options"
+      ],
+      "UpstreamPathTemplate": "/promocodeservice/PromoCode/CreatePromoCodeNotification"
+    }
+  ]
+}

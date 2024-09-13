@@ -1,0 +1,31 @@
+.background {
+  &_health {
+    background: $bg_elevated_1;
+  }
+  &_product {
+    background: $bg_elevated_2;
+  }
+}
+
+.bgImg {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.container {
+  width: 357px;
+  height: 175px;
+  border-radius: $borderRadiusM;
+  padding: 16px 16px 8px;
+  color: $text_primary;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  cursor: pointer;
+}
+
+.title {
+  margin-bottom: 8px;
+}

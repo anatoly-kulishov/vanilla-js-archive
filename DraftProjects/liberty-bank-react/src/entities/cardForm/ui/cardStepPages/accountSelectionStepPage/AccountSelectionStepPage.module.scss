@@ -1,0 +1,30 @@
+.account-selection-step-page {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+
+  &__box-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    &_width_50 {
+      width: calc(50% - 10px);
+    }
+  }
+
+  &__account-radio-box {
+    display: flex;
+    gap: 20px;
+    height: 56px;
+  }
+
+  &__account-select-box {
+    width: calc(50% - 10px);
+  }
+
+  &__paymentSystem-radio-box {
+    display: flex;
+    gap: 20px;
+    height: 56px;
+  }
+}

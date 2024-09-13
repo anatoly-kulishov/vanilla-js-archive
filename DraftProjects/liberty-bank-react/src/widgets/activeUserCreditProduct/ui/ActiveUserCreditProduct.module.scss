@@ -1,0 +1,111 @@
+@import '/src/shared/styles/index.scss';
+
+.container {
+  max-width: 1180px;
+  height: 278px;
+  margin: 40px 0px 100px;
+  padding: 24px;
+  background-color: $bg_blocks;
+  border-radius: $borderRadiusL;
+}
+
+.infoBlock {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.accountInfo {
+  display: flex;
+  justify-content: space-between;
+  min-width: 100%;
+  max-height: 132px;
+  gap: 16px;
+  color: $text_secondary;
+}
+
+.accountDescriptionContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.accountDetails {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.accountNumber {
+  display: flex;
+  gap: 4px;
+
+  &__text {
+    color: $text_secondary;
+  }
+}
+
+.paymentBlock {
+  display: flex;
+  justify-content: space-between;
+  min-width: 321px;
+  max-height: 138px;
+  gap: 44px;
+}
+
+.contractBlock {
+  max-width: 628px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+.contractBlockContainer {
+  display: flex;
+  flex-direction: column;
+  width: 182px;
+
+  &__title {
+    color: $text_secondary;
+    font-size: 14px;
+  }
+
+  &__repay {
+    width: 220px;
+  }
+
+  &__alert {
+    font-size: 14px;
+    width: 220px;
+    color: $text_alert;
+  }
+}
+
+.repayContainer {
+  width: 460px;
+  height: 138px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+
+  .numberContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+  }
+}
+
+.buttonsContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+}
+
+.buttonPay {
+  max-width: 220px;
+  height: 56px;
+}

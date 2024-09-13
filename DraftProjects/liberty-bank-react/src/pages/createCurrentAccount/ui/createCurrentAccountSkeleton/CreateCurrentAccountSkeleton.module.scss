@@ -1,0 +1,28 @@
+@import '@/shared/styles/index.scss';
+
+.container {
+  margin: 40px auto 100px;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  padding: 40px 120px;
+  border-radius: $borderRadiusL;
+}
+
+.image {
+  width: 252px;
+  height: 190px;
+  border-radius: $borderRadiusL;
+}
+
+.btn {
+  width: 100%;
+  height: 56px;
+  border-radius: $borderRadiusM;
+}

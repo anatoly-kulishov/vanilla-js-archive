@@ -1,0 +1,30 @@
+.currency-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 3fr repeat(3, 3fr);
+  align-items: center;
+  width: 100%;
+  padding: 15px;
+  background: $bg_primary;
+  border-radius: $borderRadiusML;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.currency-item__button {
+  margin-left: auto;
+  max-width: 160px;
+}
+
+.green {
+  color: $text_success;
+}
+.red {
+  color: $text_alert;
+}
+.currency-item-name-block {
+  display: flex;
+  align-items: center;
+}
+.svg-icon {
+  margin-right: 10px;
+}

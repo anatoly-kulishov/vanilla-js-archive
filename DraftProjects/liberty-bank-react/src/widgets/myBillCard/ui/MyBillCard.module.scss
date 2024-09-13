@@ -1,0 +1,95 @@
+@import '../../../shared/styles/index.scss';
+
+.my-bill-card {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  background-color: $bg_blocks;
+  height: 200px;
+  border-radius: $borderRadiusL;
+  padding: 32px 42px 34px 32px;
+  margin: 40px 0 100px;
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    gap: 16px;
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__top {
+    &-desc {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+
+      &-text {
+        display: flex;
+        align-items: center;
+
+        svg {
+          cursor: pointer;
+        }
+      }
+    }
+
+    &-number {
+      margin-top: 9px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+
+      &-text {
+        color: $text_secondary;
+      }
+    }
+  }
+
+  &__bot {
+    &-items {
+      display: flex;
+    }
+
+    &-item {
+      margin: 0 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &-text-title {
+        font-size: 14px;
+        line-height: map-get($line-height, XXS);
+        color: $text_secondary;
+      }
+    }
+  }
+
+  &__actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__balance {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  &__button {
+    width: 220px;
+    display: flex;
+    align-self: flex-end;
+  }
+}

@@ -1,0 +1,10 @@
+.dropdown {
+  display: flex;
+  position: absolute;
+  z-index: 999;
+  justify-content: flex-start;
+}
+
+.right {
+  justify-content: flex-end;
+}

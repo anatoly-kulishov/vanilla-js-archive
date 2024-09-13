@@ -1,0 +1,34 @@
+@import '../../../shared/styles/colors';
+@import '../../../shared/styles/rounding';
+
+.descriptionBank__container {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 34px;
+  padding-right: 20px;
+
+  .descriptionBank_clock {
+    width: 100px;
+    display: flex;
+    gap: 12px;
+    padding: 8px;
+    background: $bg_blocks;
+    border-radius: $borderRadiusM;
+    color: $text_action;
+  }
+
+  .border::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 168px;
+    width: 0.5px;
+    background: $separator;
+  }
+
+  .clock_text {
+    display: grid;
+    place-content: center;
+  }
+}

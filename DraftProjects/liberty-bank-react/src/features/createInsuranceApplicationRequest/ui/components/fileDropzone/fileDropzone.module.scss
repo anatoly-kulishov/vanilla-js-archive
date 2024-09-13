@@ -1,0 +1,52 @@
+.dropzone {
+  background-color: $bg_primary;
+  width: 100%;
+  margin-top: 16px;
+  min-height: 144px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgba(0, 26, 52, 0.5);
+  font-size: 14px;
+  border: dashed 0.33px $text_action;
+  gap: 16px;
+  cursor: pointer;
+  &__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  &__button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $text_action;
+    font-size: 16px;
+    font-weight: 700;
+    gap: 8px;
+  }
+  &__label {
+    line-height: 18px;
+    color: $text_primary;
+  }
+  &__label_required::after {
+    content: ' *';
+    color: $text_alert;
+  }
+
+  &__filelist {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 16px;
+  }
+  &_error {
+    border: dashed 0.33px $text_alert;
+    color: $text_alert;
+  }
+  &_error > &__button {
+    color: $text_alert;
+  }
+}

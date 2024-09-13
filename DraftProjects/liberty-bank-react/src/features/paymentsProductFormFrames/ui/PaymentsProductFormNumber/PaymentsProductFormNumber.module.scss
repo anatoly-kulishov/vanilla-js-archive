@@ -1,0 +1,18 @@
+.form-number {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $bg_blocks;
+  gap: 32px;
+  border-radius: 8px;
+}
+.input-container {
+  width: 550px;
+  padding: 16px, 24px, 16px, 24px;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}

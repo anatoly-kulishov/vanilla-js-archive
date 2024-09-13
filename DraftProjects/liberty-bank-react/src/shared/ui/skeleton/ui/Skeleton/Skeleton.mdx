@@ -1,0 +1,21 @@
+import { Canvas, Meta, Primary, Controls } from '@storybook/blocks';
+
+import * as SkeletonStories from './Skeleton.stories.tsx';
+
+<Meta of={SkeletonStories} />
+
+# Skeleton
+
+Каркасный компонент Skeleton для заполнения страницы в момент её загрузки.
+
+Рекомендуется использовать помещая данный компонент внутрь компонеента `SkeletonContainer`.
+
+## Песочница
+
+<Primary />
+
+<Controls />
+
+## Композиция в `SkeletonContainer`
+
+<Canvas of={SkeletonStories.Composition} />

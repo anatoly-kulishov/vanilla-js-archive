@@ -1,0 +1,55 @@
+@import '../../../shared/styles/index.scss';
+
+.container {
+  max-width: 1190px;
+  padding: 40px 0 100px;
+}
+
+.depositWrapper {
+  background-color: $bg_blocks;
+  border-radius: $borderRadiusM;
+  padding: 40px 0;
+}
+
+.nameDeposit {
+  padding-bottom: 40px;
+}
+
+.menuWrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 16px;
+  padding: 0 32px;
+  margin-bottom: 72px;
+}
+
+.wrapper {
+  display: grid;
+}
+
+.title {
+  color: $text_primary;
+}
+
+.subtitle {
+  margin-bottom: 24px;
+  color: $text_secondary;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  max-width: 280px;
+  margin-top: 46px;
+  height: 56px;
+  padding: 16px 80.5px;
+  line-height: map-get($line-height, S);
+  font-weight: map-get($font-weight, SB);
+  white-space: nowrap;
+}
+
+.buttonWrapper {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}

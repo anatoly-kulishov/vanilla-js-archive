@@ -1,0 +1,50 @@
+@import '../../styles/index.scss';
+
+.container {
+  height: 100%;
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  font-size: map-get($font-size, 'S');
+  line-height: map-get($line-height, 'S');
+  a {
+    text-decoration: none;
+  }
+  .colorText {
+    &_primary {
+      color: $text_primary;
+    }
+    &_secondary {
+      color: $text_secondary;
+    }
+    &_action {
+      color: $text_action;
+    }
+  }
+
+  .textWeight {
+    &_regular {
+      font-weight: map-get($font-weight, 'R');
+    }
+    &_medium {
+      font-weight: map-get($font-weight, 'M');
+    }
+  }
+
+  .active {
+    border-bottom: 3px solid $text_action;
+    &ColorText {
+      &_action {
+        color: $text_action;
+      }
+    }
+    &Padding {
+      &_S {
+        padding: 6px 0 3px;
+      }
+      &_M {
+        padding: 16px 0 13px;
+      }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+@import '../../../../shared/styles/colors';
+
+.tickerList {
+  &__item {
+    border-bottom: 1px solid rgb(215, 215, 215);
+    display: flex;
+    padding: 0 15px;
+    column-gap: 20px;
+    padding: 5px;
+    cursor: pointer;
+
+    &_active {
+      background-color: rgb(229, 234, 251);
+    }
+  }
+
+  &__ticker {
+    flex: 0 0 15%;
+  }
+
+  &__text {
+    flex: 0 0 20%;
+    text-align: right;
+  }
+
+  &__value {
+    flex: 1 0 25%;
+    text-align: right;
+  }
+}
+
+.negative {
+  color: $color-number-negative;
+}
+
+.positive {
+  color: $color-number-positive;
+}
+
+.zero {
+  color: $color-number-zero;
+}
+
+.negativeBG {
+  animation-duration: 1.5s;
+  animation-name: negativeBG;
+}
+
+.positiveBG {
+  animation-duration: 1.5s;
+  animation-name: positiveBG;
+}
+
+@keyframes negativeBG {
+  from {
+    background-color: #ffd2d2;
+  }
+
+  50% {
+    background-color: #fde6e6;
+  }
+
+  to {
+    background-color: none;
+  }
+}
+
+@keyframes positiveBG {
+  from {
+    background-color: #bdfac8;
+  }
+
+  50% {
+    background-color: #d0fcd8;
+  }
+
+  to {
+    background-color: none;
+  }
+}

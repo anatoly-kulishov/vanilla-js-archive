@@ -1,0 +1,21 @@
+@import '../../shared/styles/fonts';
+@import '../../shared/styles/colors';
+
+.registration {
+  text-align: center;
+  margin-top: 16px;
+}
+
+.title {
+  margin-bottom: 8px;
+  color: $text_primary;
+  &_bottom {
+    margin-bottom: 32px;
+  }
+}
+
+.widget {
+  max-width: 580px;
+  width: 100%;
+  margin: 100px auto min(102px, 20vh);
+}

@@ -1,0 +1,40 @@
+.catalog-container-div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 38px;
+}
+.catalog-widgets-div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-bottom: 20px;
+}
+.widget-popular,
+.widget-last {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  border-radius: $borderRadiusL;
+  background: $bg_blocks;
+}
+.catalog-list-popular,
+.catalog-list-last {
+  display: flex;
+}
+.catalog-item-popular,
+.catalog-item-last {
+  width: 32px;
+  height: 32px;
+  margin-left: 10px;
+  border-radius: $borderRadiusL;
+  overflow: hidden;
+}
+
+.catalog-filters {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  border-radius: 16px;
+  background: #f3f4f8;
+}

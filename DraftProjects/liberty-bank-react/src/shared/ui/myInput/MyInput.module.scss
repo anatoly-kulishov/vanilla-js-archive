@@ -1,0 +1,205 @@
+@import '../../styles';
+
+.inputWrapper {
+  position: relative;
+  background-color: $bg_blocks;
+  border-color: $bg_blocks;
+  text-align: left;
+  &.white {
+    background-color: $bg_primary;
+    border-color: $bg_primary;
+  }
+  &.focus {
+    border-color: $separator;
+  }
+  &.error {
+    border-color: $separator_alert;
+  }
+  &:hover {
+    cursor: text;
+  }
+  &.m {
+    height: 72px;
+  }
+  &.s {
+    height: 56px;
+  }
+  &.l {
+    height: 46px;
+  }
+  &.svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    :last-child {
+      right: 8px;
+    }
+  }
+}
+
+.label {
+  position: absolute;
+  left: 24px;
+  @include absoluteVerticalCenter();
+  color: $text_secondary;
+  font-weight: map-get($font-weight, M);
+  font-size: map-get($font-size, S);
+  line-height: map-get($line-height, S);
+  letter-spacing: 0;
+  text-align: left;
+  transition: all 0.2s ease-in-out;
+  // при событии onInput исчезает лейбл
+  z-index: 1;
+  &_required::after {
+    content: ' *';
+    color: $text_alert;
+  }
+  &.focus {
+    top: 34%;
+    font-size: map-get($font-size, XS);
+    font-weight: map-get($font-weight, R);
+  }
+  &.error {
+    color: $text_alert;
+  }
+  &:hover {
+    cursor: text;
+  }
+}
+
+.input {
+  box-sizing: border-box;
+  background: none;
+  border-radius: $borderRadiusM;
+  height: 100%;
+  border: 0;
+  font-weight: map-get($font-weight, M);
+  font-size: map-get($font-size, S);
+  line-height: map-get($line-height, XS);
+  letter-spacing: 0;
+  text-align: left;
+  color: $text_secondary;
+  caret-color: $ctrl_Liberty;
+  &::-ms-clear {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+  &:focus {
+    outline: none;
+    color: $text_primary;
+  }
+  &::placeholder {
+    color: $text_secondary;
+  }
+  &.error {
+    color: $text_alert;
+    caret-color: $separator_alert;
+  }
+  &.placeholdered {
+    padding: 28px 24px;
+  }
+  &.search {
+    &_m {
+      padding: 28px 24px 28px 56px;
+    }
+    &_s {
+      padding: 20px 24px 20px 56px;
+    }
+  }
+  &.sms {
+    color: $text_primary;
+    text-align: center;
+    font-weight: map-get($font-weight, B);
+    font-size: map-get($font-size, L);
+    line-height: map-get($line-height, L);
+  }
+  &.svg {
+    padding: 0;
+  }
+  &::-ms-reveal {
+    display: none;
+  }
+}
+
+.buttonInput {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  border: none;
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  @include absoluteVerticalCenter();
+  left: 100%;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  &.search {
+    right: unset;
+    left: 24px;
+  }
+  &:active,
+  &:focus {
+    border: none;
+    outline: none;
+  }
+}
+
+.inputBox {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.labelBox {
+  display: flex;
+  flex-direction: column;
+  width: 210px;
+  .inputLabelWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    text-align: right;
+  }
+  .placeholdered {
+    padding: 12px 24px;
+    text-align: right;
+  }
+  .textAlign {
+    padding: 16px 24px;
+    text-align: left;
+  }
+  .outerLabel {
+    position: relative;
+    margin-bottom: 24px;
+    font-weight: map-get($font-weight, R);
+    font-size: map-get($font-size, S);
+    line-height: map-get($line-height, XS);
+    letter-spacing: 0;
+  }
+  .star {
+    position: absolute;
+    margin-left: 4px;
+    color: $text_alert;
+  }
+  .labelBoxError {
+    color: $text_alert;
+    font-size: map-get($font-size, XS);
+    margin: 5px 0 5px 0;
+  }
+}
+
+.body {
+  display: flex;
+  gap: 8px;
+  padding: 0 8px;
+  width: 100%;
+  align-items: center;
+
+  svg {
+    flex-shrink: 0;
+  }
+}

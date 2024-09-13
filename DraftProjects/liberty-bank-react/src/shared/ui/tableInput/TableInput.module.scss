@@ -1,0 +1,18 @@
+.input_value {
+  font-size: map-get($font-size, S);
+  line-height: map-get($line-height, S);
+  font-weight: map-get($font-weight, M);
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input_container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10;
+}

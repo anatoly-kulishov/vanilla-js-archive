@@ -1,0 +1,28 @@
+.userData__container {
+  margin-bottom: 100px;
+}
+
+.bgContainer {
+  padding-top: 16px;
+  background: $bg_base;
+}
+
+.backButton {
+  padding-bottom: 40px;
+}
+
+.userData__block {
+  padding-top: 40px;
+
+  .userLabel {
+    padding: 40px 32px 32px 32px;
+    background: $bg_blocks;
+    border-radius: $borderRadiusL $borderRadiusL 0 0;
+    display: flex;
+    gap: 32px;
+  }
+}
+
+.wrapper {
+  position: relative;
+}

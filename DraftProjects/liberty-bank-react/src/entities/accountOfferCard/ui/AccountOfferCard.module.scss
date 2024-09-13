@@ -1,0 +1,42 @@
+@import '@/shared/styles/index.scss';
+
+.wrapper:active,
+.wrapper:hover,
+.wrapper {
+  width: 380px;
+  height: 175px;
+  border-radius: 6px;
+  background: $bg_blocks;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0 16px 16px;
+  position: relative;
+  color: $text_primary;
+}
+
+.textWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  line-height: map-get($line-height, S);
+}
+
+.description {
+  margin-top: 6px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.link {
+  color: $text_action;
+  margin-top: 29px;
+}
+
+.image {
+  position: absolute;
+  top: -8px;
+  right: 0;
+}

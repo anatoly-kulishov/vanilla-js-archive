@@ -1,0 +1,41 @@
+@import '../../shared/styles/colors';
+
+.contactWithTheBank__block {
+  display: flex;
+  gap: 40px;
+  padding-top: 12px;
+
+  .contactWithTheBank__item {
+    width: 740px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    .contactWithTheBank_input {
+      border: none;
+      height: 248px;
+    }
+
+    .contactWithTheBank_btn {
+      width: 380px;
+      margin-right: 0;
+      margin-left: auto;
+    }
+  }
+
+  .contactWithTheBank__phone {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    .contactWithTheBank__phone_item {
+      display: flex;
+      gap: 24px;
+
+      .text {
+        color: $text_secondary;
+        margin-top: 9px;
+      }
+    }
+  }
+}

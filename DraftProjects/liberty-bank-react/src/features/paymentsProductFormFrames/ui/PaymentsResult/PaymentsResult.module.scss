@@ -1,0 +1,42 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  background-color: $bg_blocks;
+  border-radius: 8px;
+
+  &__title {
+    font-size: 30px;
+    line-height: 46px;
+    color: $text_action;
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__icons {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  &__icon {
+    width: 117px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 4px;
+    cursor: pointer;
+    svg {
+      width: 64px;
+      height: 64px;
+    }
+  }
+}

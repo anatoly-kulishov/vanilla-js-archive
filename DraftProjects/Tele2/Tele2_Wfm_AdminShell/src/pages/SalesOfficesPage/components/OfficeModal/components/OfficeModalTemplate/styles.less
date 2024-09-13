@@ -1,0 +1,85 @@
+.@{app-prefix}-office-modal {
+  & &__spin {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__data-line {
+    display: flex;
+    align-items: center;
+  }
+
+  &__dot {
+    display: inline-block;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: var(--wfm-black-8, #808080);
+    margin: 0 var(--wfm-margin-xs, 8px);
+  }
+
+  &__missing-value {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    background-color: var(--ant-popover-customize-border-color, rgba(0, 0, 0, 0.06));
+    padding: var(--wfm-padding-xs, 8px) var(--wfm-padding-md, 16px);
+  }
+
+  &__missing-value &__error-icon {
+    font-size: 20px;
+    color: var(--ant-error-color);
+    margin-right: var(--wfm-margin-xs, 8px);
+  }
+
+  &__patterns-title {
+    margin-right: var(--wfm-margin-xs, 8px);
+  }
+
+  &__work-hours {
+    margin-bottom: var(--wfm-margin-sm, 12px);
+  }
+
+  &__work-hours-skeleton {
+    > *:not(:last-child) {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__patterns-title {
+    display: inline-block;
+  }
+  
+  &__office-data {
+    &:not(&_not_pattern) {
+      display: flex;
+      justify-content: space-between;
+      gap: var(--wfm-margin-lg);
+    }
+  }
+
+  &__office-data_not_pattern &__patterns,
+  &__office-data_not_pattern &__office-info {
+    width: 100%;
+  }
+
+  &__office-data_not_pattern &__office-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &-item {
+      width: 45%;
+    }
+  }
+
+  &__patterns {
+    flex: 3;
+    margin-right: 16px;
+  }
+
+  &__office-info {
+    flex: 2;
+  }
+}

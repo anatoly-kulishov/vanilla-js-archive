@@ -1,0 +1,110 @@
+{
+  "Routes": [
+    {
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "$HOST_CC",
+          "Port": "$PORT_CC"
+        }
+      ],
+      "DownstreamPathTemplate": "/service/questionary/Questionary/GetQuestionaryUseList",
+      "DownstreamScheme": "https",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Options"
+      ],
+      "UpstreamPathTemplate": "/questionaryservice/Questionary/GetQuestionaryUseList"
+    },
+    {
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "$HOST_CC",
+          "Port": "$PORT_CC"
+        }
+      ],
+      "DownstreamPathTemplate": "/service/questionary/Questionary/GetQuestionaryUseListWithoutCheck",
+      "DownstreamScheme": "https",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Options"
+      ],
+      "UpstreamPathTemplate": "/questionaryservice/Questionary/GetQuestionaryUseListWithoutCheck"
+    },
+    {
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "$HOST_CC",
+          "Port": "$PORT_CC"
+        }
+      ],
+      "DownstreamPathTemplate": "/service/questionary/Questionary/GetQuestionsList",
+      "DownstreamScheme": "https",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Options"
+      ],
+      "UpstreamPathTemplate": "/questionaryservice/Questionary/GetQuestionsList"
+    },
+    {
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "t2ru-crmcchp-pp",
+          "Port": "11410"
+        }
+      ],
+      "DownstreamPathTemplate": "/service/questionary/Questionary/GetQuestionaryHistory",
+      "DownstreamScheme": "https",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Post",
+        "Options"
+      ],
+      "UpstreamPathTemplate": "/questionaryservice/Questionary/GetQuestionaryHistory"
+    },
+    {
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "t2ru-crmcchp-pp",
+          "Port": "11410"
+        }
+      ],
+      "DownstreamPathTemplate": "/service/questionary/Questionary/WriteNewQuestionary",
+      "DownstreamScheme": "https",
+      "UpstreamHttpMethod": [
+        "Post",
+        "Options"
+      ],
+      "UpstreamPathTemplate": "/questionaryservice/Questionary/WriteNewQuestionary"
+    },
+    {
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "$HOST_CC",
+          "Port": "$PORT_CC"
+        }
+      ],
+      "DownstreamPathTemplate": "/service/questionary/Questionary/GetQuestionaryForRedirectedAbonent",
+      "DownstreamScheme": "https",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Options"
+      ],
+      "UpstreamPathTemplate": "/questionaryservice/Questionary/GetQuestionaryForRedirectedAbonent"
+    },
+    {
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "$HOST_CC",
+          "Port": "$PORT_CC"
+        }
+      ],
+      "DownstreamPathTemplate": "/Questionary/GetQuestionsHistory",
+      "DownstreamScheme": "https",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Options"
+      ],
+      "UpstreamPathTemplate": "/questionaryservice/Questionary/GetQuestionsHistory"
+    }
+  ]
+}

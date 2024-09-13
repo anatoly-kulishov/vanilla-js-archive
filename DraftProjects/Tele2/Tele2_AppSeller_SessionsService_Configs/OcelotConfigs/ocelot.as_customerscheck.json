@@ -1,0 +1,19 @@
+{
+  "Routes": [
+    {
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "$HOST_AS",
+          "Port": "$PORT_AS"
+        }
+      ],
+      "DownstreamPathTemplate": "/customerscheckservice/api/v1/CustomersCard/category",
+      "DownstreamScheme": "https",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Options"
+      ],
+      "UpstreamPathTemplate": "/customerscheckservice/api/v1/CustomersCard/category"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+.filters {
+  display: flex;
+  flex-flow: column;
+  line-height: map-get($line-height, S);
+  font-weight: map-get($font-weight, M);
+
+  margin-top: 1.875rem;
+
+  .list-item {
+    position: relative;
+    padding-bottom: 0.625rem;
+    cursor: pointer;
+    transition: color 300ms;
+
+    &:not(:first-child) {
+      margin-top: 0.625rem;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      left: 0;
+      bottom: 0;
+      height: 3px;
+      background-color: $text_action;
+      transition: width 300ms;
+    }
+  }
+
+  .list-item[aria-selected='true'] {
+    color: $text_action;
+    &::after {
+      width: 100%;
+    }
+  }
+}

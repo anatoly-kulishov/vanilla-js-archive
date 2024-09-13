@@ -1,0 +1,52 @@
+.back-button {
+  padding-top: 16px;
+  margin-bottom: 40px;
+}
+
+.body-block {
+  padding: 40px 32px;
+  border-radius: 16px;
+  background: $bg_blocks;
+  margin-bottom: 108px;
+}
+
+.enterSms-title {
+  margin-bottom: 24px;
+}
+
+.enterPhone-input {
+  width: 580px;
+  margin-bottom: 8px;
+}
+
+.block-button {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+
+.reset-button {
+  font-weight: 500;
+  text-decoration: none;
+  background: $bg_blocks;
+  &:active {
+    background: $bg_blocks;
+  }
+}
+
+.step-button {
+  display: block;
+  width: 220px;
+  height: 56px;
+}
+
+.enterSms-code {
+  background-color: $bg_primary;
+}
+
+.enterSms-new {
+  background-color: $bg_blocks;
+  &:active {
+    background-color: $bg_blocks;
+  }
+}

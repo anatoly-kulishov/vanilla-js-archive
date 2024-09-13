@@ -1,0 +1,66 @@
+@import 'src/shared/styles/colors';
+
+.policy-card {
+  background: $bg_blocks;
+  width: 578px;
+  border-radius: 8px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 152px;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &_data {
+      color: #001a34;
+    }
+
+    &_const {
+      color: $separator;
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+
+  &__insuranceItem {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  &__insuranceSubject {
+    max-width: 288px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &_type {
+      color: $text_action;
+    }
+
+    &_subject {
+      color: $separator;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  &__button {
+    max-width: 255px;
+  }
+}

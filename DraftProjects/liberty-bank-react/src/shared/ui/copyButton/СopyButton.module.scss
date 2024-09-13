@@ -1,0 +1,9 @@
+@import '../../styles/fonts.scss';
+@import '../../styles/colors';
+
+.copyIcon {
+  color: $text_success;
+  margin-left: 10px;
+  font-size: map-get($font-size, S);
+  line-height: map-get($line-height, XS);
+}

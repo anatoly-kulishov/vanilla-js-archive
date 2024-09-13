@@ -1,0 +1,42 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch Local Chrome DEV Debugger",
+      "type": "chrome",
+      "request": "launch",
+      "runtimeExecutable": "C:\\Users\\${env:USERNAME}\\AppData\\Local\\Google\\Chrome Dev\\Application\\chrome.exe",
+      "url": "http://localhost:3000/card/history/appeals?msisdn=79022334365",
+      "webRoot": "${workspaceRoot}/src",
+    },
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Launch Chrome against localhost",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "type": "chrome",
+      "request": "attach",
+      "name": "Attach to Chrome",
+      "port": 9222,
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "type": "node",
+      "name": "vscode-jest-tests",
+      "request": "launch",
+      "program": "${workspaceFolder}/scripts/test",
+      "args": [
+        "--env=jsdom",
+        "--runInBand"
+      ],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "protocol": "inspector",
+      "internalConsoleOptions": "neverOpen",
+      "disableOptimisticBPs": true
+    }
+  ]
+}

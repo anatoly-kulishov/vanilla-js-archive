@@ -1,0 +1,44 @@
+@import '../../../shared/styles/index.scss';
+
+.cardContainer {
+  width: 580px;
+  height: 268px;
+  position: relative;
+  border-radius: $borderRadiusL;
+  overflow: hidden;
+}
+
+.imgFrame {
+  width: 252px;
+  height: 268px;
+  left: 328px;
+  position: absolute;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  display: inline-flex;
+  pointer-events: none;
+}
+
+.infoFrame {
+  width: 440px;
+  height: 196px;
+  left: 36px;
+  top: 36px;
+  position: absolute;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  display: inline-flex;
+}
+
+.title {
+  width: 440px;
+  color: white;
+  word-wrap: break-word;
+}
+
+.button {
+  border: none;
+  height: 56px;
+}

@@ -1,0 +1,23 @@
+@import '../../styles/index.scss';
+
+.link {
+  display: flex;
+  gap: 4px;
+  padding: 16px 0;
+  font-size: map-get($font-size, S);
+  line-height: map-get($line-height, S);
+  color: inherit;
+
+  &--active {
+    padding-bottom: 13px;
+    color: $ctrl_Liberty;
+    border-bottom: 3px solid $ctrl_Liberty;
+  }
+}
+
+.count {
+  padding: 0 10px;
+  color: $bg_primary;
+  border-radius: $borderRadiusL;
+  background: $ctrl_Liberty;
+}

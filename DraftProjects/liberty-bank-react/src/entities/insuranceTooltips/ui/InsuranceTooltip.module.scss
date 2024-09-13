@@ -1,0 +1,30 @@
+.tooltip-container {
+  position: absolute;
+  width: 420px;
+  height: auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0px 0px 20px rgba(39.66, 42.62, 48.03, 0.07);
+  border-radius: 16px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
+  display: inline-flex;
+  right: 0px;
+  top: 30px;
+}
+
+.left-style {
+  left: 0px;
+  gap: 20px;
+}
+
+.none-tooltip {
+  display: none;
+}
+
+.tooltip-trigger {
+  cursor: pointer;
+  position: relative;
+}

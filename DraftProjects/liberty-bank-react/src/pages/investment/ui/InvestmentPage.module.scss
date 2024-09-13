@@ -1,0 +1,62 @@
+@import '../../../shared/styles/colors';
+
+.title {
+  margin: 40px 0;
+}
+
+.wrapper-padding {
+  padding: 0px;
+}
+
+.body-block {
+  display: flex;
+  justify-content: center;
+  height: 423px;
+  margin-bottom: 108px;
+
+  .body-content-block {
+    color: $text_primary;
+    .condition-items {
+      display: grid;
+      grid-template-columns: 312px 312px;
+      grid-template-rows: 140px 140px;
+      gap: 32px 24px;
+      .condition-item {
+        display: flex;
+        flex-direction: column;
+        .condition-title {
+          margin-top: 24px;
+        }
+        .condition-description {
+          color: $text_secondary;
+          margin-top: 8px;
+        }
+      }
+    }
+  }
+  .body-image-block {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 572px;
+    flex: none;
+    margin-right: 24px;
+  }
+}
+
+.body-button {
+  margin-top: 32px;
+  display: flex;
+}
+
+.body-block-button {
+  height: 56px;
+  width: 280px;
+  &:first-child {
+    margin-right: 20px;
+  }
+}
+
+.account-open-button {
+  height: 100%;
+}

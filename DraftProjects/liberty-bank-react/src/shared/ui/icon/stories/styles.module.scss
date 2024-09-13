@@ -1,0 +1,23 @@
+.image {
+  width: 65px;
+  height: 65px;
+  position: absolute;
+}
+
+.image:hover {
+  transform: scale(2.5);
+}
+
+.icon {
+  display: flex;
+  width: 75px;
+  height: 75px;
+  background-color: rgba(204, 204, 204, 0.6);
+}
+
+.icon:hover {
+  position: absolute;
+  background-color: rgba(204, 204, 204, 0.6);
+  border-radius: $borderRadiusM;
+  transform: scale(1.3);
+}

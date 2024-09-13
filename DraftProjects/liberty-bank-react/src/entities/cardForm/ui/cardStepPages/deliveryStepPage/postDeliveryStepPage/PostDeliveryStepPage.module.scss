@@ -1,0 +1,11 @@
+.form {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 20px;
+}
+
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+}

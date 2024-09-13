@@ -1,0 +1,11 @@
+.cardList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.title {
+  color: $text_primary;
+  margin-bottom: 24px;
+  padding-top: 12px;
+}

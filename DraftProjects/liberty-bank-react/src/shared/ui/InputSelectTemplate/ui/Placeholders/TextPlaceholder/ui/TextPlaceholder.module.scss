@@ -1,0 +1,12 @@
+.wrapper {
+  height: 72px;
+  width: 100%;
+  padding: 13px 24px;
+  background-color: $bg_primary;
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  color: $text_secondary;
+}

@@ -1,0 +1,14 @@
+@import '../../shared/styles/index.scss';
+
+.cards-page {
+  margin-top: 16px;
+  margin-bottom: 100px;
+}
+
+.nav-wrapper {
+  margin-top: 24px;
+
+  & > ul {
+    margin-top: 0;
+  }
+}

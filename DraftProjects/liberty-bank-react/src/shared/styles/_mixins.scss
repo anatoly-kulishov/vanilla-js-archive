@@ -1,0 +1,13 @@
+@mixin absoluteVerticalCenter() {
+  top: 50%;
+  transform: translate(0, -50%);
+}
+@mixin wordWrapAndMargin() {
+  word-wrap: break-word;
+  margin-top: 8px;
+}
+@mixin absoluteVerticalAndHorizontalCenter() {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

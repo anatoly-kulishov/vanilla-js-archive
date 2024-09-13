@@ -1,0 +1,30 @@
+.backBtn {
+  margin-bottom: 50px;
+}
+.news-title {
+  margin-bottom: 35px;
+}
+.news-text-div {
+  padding: 6px 0 50px 47px;
+  border-top: 1px solid $separator;
+  .news-text {
+    text-align: justify;
+    margin-bottom: 10px;
+    color: $text_primary;
+  }
+  .news-info {
+    display: flex;
+    justify-content: space-between;
+    color: $text_secondary;
+    margin-bottom: 30px;
+    .info-date {
+      margin-right: 5px;
+    }
+  }
+  .news-img {
+    width: 500px;
+    height: 300px;
+    float: right;
+    margin: 0 0 32px 53px;
+  }
+}

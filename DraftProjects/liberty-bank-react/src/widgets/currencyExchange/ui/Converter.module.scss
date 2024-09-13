@@ -1,0 +1,60 @@
+@import '../../../shared/styles/index.scss';
+@import '../../../shared/styles/rounding.scss';
+
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1em;
+  align-items: center;
+  margin-bottom: 9em;
+  margin-top: 1em;
+  color: $text_primary;
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  .currency_block {
+    display: flex;
+    flex-direction: column;
+    &__title {
+      width: 100%;
+      display: flex;
+      justify-content: left;
+    }
+    &__inputs {
+      display: flex;
+      height: 56px;
+
+      .selector {
+        grid-area: selector;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0);
+        border-color: rgba(0, 0, 0, 0);
+        outline: none;
+      }
+      .input {
+        grid-area: input;
+        height: 100%;
+      }
+    }
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+    aspect-ratio: 1/1;
+    margin-top: 1.6em;
+    padding: 8px;
+    background-color: $bg_blocks;
+    border-radius: $borderRadiusM;
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  .icon:hover {
+    cursor: pointer;
+  }
+}

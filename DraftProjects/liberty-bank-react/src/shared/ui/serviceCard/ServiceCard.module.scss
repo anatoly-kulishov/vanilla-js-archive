@@ -1,0 +1,19 @@
+@import '../../styles/index.scss';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.title {
+  margin-top: 24px;
+  line-height: map-get($line-height, L);
+}
+
+.description {
+  max-width: 312px;
+  margin-top: 8px;
+  white-space: pre-line;
+  color: $text_secondary;
+}

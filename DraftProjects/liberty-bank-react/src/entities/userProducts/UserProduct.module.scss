@@ -1,0 +1,52 @@
+@import '../../shared/styles/index.scss';
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 1180px;
+  height: 117px;
+  padding: 24px;
+  gap: 56px;
+  background-color: $bg_blocks;
+  border-radius: $borderRadiusM;
+}
+
+.blockWrapper {
+  :first-child {
+    color: $separator;
+    font-family: 'SF Pro Display', R;
+    font-size: 14px;
+    text-wrap: nowrap;
+  }
+}
+
+.titleBlock {
+  display: flex;
+  align-items: center;
+  min-width: 272px;
+  gap: 24px;
+}
+
+.depositTitle {
+  line-height: map-get($line-height, XL);
+}
+
+.blockWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-start;
+}
+
+.link {
+  text-decoration: underline;
+}
+
+button {
+  text-wrap: nowrap;
+}
+
+.warning {
+  color: $text_alert;
+}

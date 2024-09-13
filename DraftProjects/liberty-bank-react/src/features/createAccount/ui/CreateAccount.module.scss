@@ -1,0 +1,35 @@
+@import '@/shared/styles/index.scss';
+
+.from {
+  margin: 24px 0 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: $bg_blocks;
+  padding: 28px 32px;
+  border-radius: $borderRadiusL;
+}
+
+.inputsWrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.switcherWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.submitBtn {
+  width: 220px;
+  height: 56px;
+}

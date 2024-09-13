@@ -1,0 +1,59 @@
+@import '../../shared/styles/index.scss';
+.backButtton {
+  color: $text_primary;
+  margin-top: 16px;
+}
+.availableBalanceContainer {
+  width: 1180px;
+  padding: 40px 160px 40px 160px;
+  margin-top: 40px;
+  margin-bottom: 104px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: $borderRadiusL;
+  background-color: $bg_blocks;
+  gap: 24px;
+
+  .availableBalanceTitle {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+  }
+
+  .availableBalanceControl {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 860px;
+
+    .availableBalanceControlBackBtn {
+      flex: 1 1 0;
+      font-size: map-get($font-size, S);
+      font-weight: map-get($font-weight, M);
+      line-height: map-get($line-height, S);
+      color: $text_action;
+      display: inline-flex;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.7;
+      }
+
+      &:active {
+        opacity: 0.5;
+      }
+    }
+    .availableBalanceControlSend {
+      width: 235px;
+      height: 56px;
+      font-size: map-get($font-size, S);
+      font-weight: map-get($font-weight, SB);
+      line-height: map-get($line-height, S);
+      padding: 12px 24px;
+      word-wrap: break-word;
+    }
+  }
+}

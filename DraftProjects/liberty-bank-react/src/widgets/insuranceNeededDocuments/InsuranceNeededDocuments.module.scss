@@ -1,0 +1,41 @@
+@import '../../shared/styles/colors';
+
+.needed-documents-block {
+  display: flex;
+  width: 1180px;
+  gap: 64px;
+  background-color: $bg_base;
+  border-radius: 16px;
+  padding: 64px 84px;
+  margin-top: 72px;
+  color: $text_primary;
+  .document-image {
+    width: 480px;
+    height: 468px;
+  }
+  .needed-documents-content {
+    display: flex;
+    flex-direction: column;
+    gap: 68px;
+    .needed-documents-list {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      .list-item {
+        display: flex;
+        gap: 24px;
+        .list-item-icon {
+          min-width: 40px;
+          min-height: 40px;
+        }
+        .list-item-title-block {
+          display: flex;
+          flex-direction: column;
+          .list-item-description {
+            color: $text_secondary;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+@import '@/shared/styles/index.scss';
+
+.wrapper {
+  width: 100%;
+  margin-bottom: 94px;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+}
+
+.btnWrapper {
+  margin-top: 61px;
+  display: flex;
+  justify-content: center;
+}

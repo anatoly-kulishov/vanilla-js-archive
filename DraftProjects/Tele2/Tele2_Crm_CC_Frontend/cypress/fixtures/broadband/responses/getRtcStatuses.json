@@ -1,0 +1,32 @@
+{
+    "Data":[
+       {
+          "StatusId":30,
+          "StatusName":"Передана в РТК",
+          "OperationId":104,
+          "IsReasonNeeded":true
+       },
+       {
+          "StatusId":50,
+          "StatusName":"Назначен монтажник",
+          "OperationId":6,
+          "IsReasonNeeded":false
+       },
+       {
+          "StatusId":60,
+          "StatusName":"Инсталляция выполнена",
+          "OperationId":7,
+          "IsReasonNeeded":false
+       },
+       {
+          "StatusId":100,
+          "StatusName":"Закрыта",
+          "OperationId":100,
+          "IsReasonNeeded":false
+       }
+    ],
+    "IsSuccess":true,
+    "MessageText":null,
+    "ResultType":1,
+    "ResultCode":0
+ }

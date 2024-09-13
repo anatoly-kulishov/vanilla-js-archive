@@ -1,0 +1,11 @@
+@import '../../shared/styles/index.scss';
+
+.active-cards {
+  margin-top: 24px;
+}
+
+.cards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}

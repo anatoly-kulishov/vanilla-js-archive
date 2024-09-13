@@ -1,0 +1,13 @@
+{
+    "rtcOrderId": null,
+    "operationId": 104,
+    "orderId": 285,
+    "msisdn": "79022334365",
+    "subscriberId": 47200838,
+    "subscriberBranchId": 51,
+    "contactPoint": null,
+    "systemId": 5,
+    "reasonId": 5,
+    "reasonComment": "коммент",
+    "channelId": "e67615b1-ccbc-e811-8129-001dd8b71cff"
+}

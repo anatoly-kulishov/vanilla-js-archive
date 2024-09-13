@@ -1,0 +1,18 @@
+.withdrawal-money {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.transfer-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.btn-transfer {
+  margin-top: 30px;
+  width: 100%;
+  height: 80px;
+}

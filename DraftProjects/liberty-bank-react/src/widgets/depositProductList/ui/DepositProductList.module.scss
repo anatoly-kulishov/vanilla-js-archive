@@ -1,0 +1,15 @@
+.container {
+  max-width: 1180px;
+  margin-bottom: 100px;
+}
+
+.deposits_wrapper,
+.frame_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.deposits_wrapper {
+  gap: 24px;
+}

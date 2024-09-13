@@ -1,0 +1,94 @@
+{
+  "Routes": [
+    {
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "$HOST_CC",
+          "Port": "$PORT_CC"
+        }
+      ],
+      "DownstreamPathTemplate": "/service/broadbandconnectionequipment/BroadbandConnectionEquipment/GetSpeedToTechnology",
+      "DownstreamScheme": "https",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Options"
+      ],
+      "UpstreamPathTemplate": "/broadbandconnectionequipmentservice/BroadbandConnectionEquipment/GetSpeedToTechnology"
+    },
+    {
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "$HOST_CC",
+          "Port": "$PORT_CC"
+        }
+      ],
+      "DownstreamPathTemplate": "/service/broadbandconnectionequipment/BroadbandConnectionEquipment/GetTechnology",
+      "DownstreamScheme": "https",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Options"
+      ],
+      "UpstreamPathTemplate": "/broadbandconnectionequipmentservice/BroadbandConnectionEquipment/GetTechnology"
+    },
+    {
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "$HOST_CC",
+          "Port": "$PORT_CC"
+        }
+      ],
+      "DownstreamPathTemplate": "/service/broadbandconnectionequipment/BroadbandConnectionEquipment/GetEquipmentType",
+      "DownstreamScheme": "https",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Options"
+      ],
+      "UpstreamPathTemplate": "/broadbandconnectionequipmentservice/BroadbandConnectionEquipment/GetEquipmentType"
+    },
+    {
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "$HOST_CC",
+          "Port": "$PORT_CC"
+        }
+      ],
+      "DownstreamPathTemplate": "/service/broadbandconnectionequipment/BroadbandConnectionEquipment/GetEquipmentSegment",
+      "DownstreamScheme": "https",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Options"
+      ],
+      "UpstreamPathTemplate": "/broadbandconnectionequipmentservice/BroadbandConnectionEquipment/GetEquipmentSegment"
+    },
+    {
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "$HOST_CC",
+          "Port": "$PORT_CC"
+        }
+      ],
+      "DownstreamPathTemplate": "/service/broadbandconnectionequipment/BroadbandConnectionEquipment/GetEquipmentOwnership",
+      "DownstreamScheme": "https",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Options"
+      ],
+      "UpstreamPathTemplate": "/broadbandconnectionequipmentservice/BroadbandConnectionEquipment/GetEquipmentOwnership"
+    },
+    {
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "$HOST_CC",
+          "Port": "$PORT_CC"
+        }
+      ],
+      "DownstreamPathTemplate": "/service/broadbandconnectionequipment/api/v2/BroadbandConnectionEquipment/SpeedToTechnology",
+      "DownstreamScheme": "https",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Options"
+      ],
+      "UpstreamPathTemplate": "/broadbandconnectionequipmentservice/api/v2/BroadbandConnectionEquipment/SpeedToTechnology"
+    }
+  ]
+}

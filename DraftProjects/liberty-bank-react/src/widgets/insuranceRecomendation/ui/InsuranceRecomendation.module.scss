@@ -1,0 +1,53 @@
+@import '../../../shared/styles/index.scss';
+
+$buttonSize: 36px;
+
+.container {
+  position: relative;
+  height: 455px;
+}
+
+.sliderLayout {
+  position: absolute;
+  width: 1180px;
+}
+
+.title {
+  margin: 100px 0 40px 0;
+  color: $text_primary;
+}
+
+.slider {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.4s ease-out;
+  user-select: none;
+}
+
+.prevButton {
+  position: absolute;
+  left: -$buttonSize;
+  top: calc(50% - $buttonSize);
+  z-index: 1;
+
+  color: white;
+  padding: 18px;
+  background: rgba(3.92, 14.27, 33.14, 0.36);
+  border-radius: 90px;
+  backdrop-filter: blur(21px);
+  display: inline-flex;
+}
+
+.nextButton {
+  position: absolute;
+  right: -$buttonSize;
+  top: calc(50% - $buttonSize);
+  z-index: 1;
+
+  color: white;
+  padding: 18px;
+  background: rgba(3.92, 14.27, 33.14, 0.36);
+  border-radius: 90px;
+  backdrop-filter: blur(21px);
+  display: inline-flex;
+}

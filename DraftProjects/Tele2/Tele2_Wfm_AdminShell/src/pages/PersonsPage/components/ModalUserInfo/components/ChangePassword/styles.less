@@ -1,0 +1,51 @@
+.@{app-prefix}-change-password {
+  &__line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    > * {
+      width: 100%;
+
+      &:not(:last-child) {
+        margin-right: var(--wfm-padding-md);
+      }
+    }
+  }
+
+  &__validate {
+    width: 12px;
+    height: 12px;
+    display: block;
+    border-radius: 50%;
+
+    &_status {
+      &_fail {
+        background-color: var(--ant-error-color);
+      }
+
+      &_ok {
+        background-color: var(--ant-success-color);
+      }
+    }
+  }
+
+  & &__validate-item {
+    display: flex;
+    align-items: center;
+
+    &-text {
+      font-size: 12px;
+    }
+  }
+
+  & &__passwords {
+    width: 60%;
+  }
+
+  &__change-password {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: var(--wfm-margin-sm);
+  }
+}

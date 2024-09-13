@@ -1,0 +1,42 @@
+.step {
+  outline: 1px solid tan;
+
+  &__title {
+    margin-bottom: 32px;
+  }
+
+  &__input {
+    margin-bottom: 24px;
+  }
+
+  &__pwd_input {
+    margin-bottom: 16px;
+  }
+
+  &__caption {
+    margin-bottom: 16px;
+  }
+
+  &__button {
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-bottom: 16px;
+  }
+
+  &__resend_sms,
+  &__timer {
+    display: block;
+    margin-top: -18px;
+    margin-bottom: 24px;
+  }
+}
+
+.enterSms {
+  &__title {
+    margin-bottom: 24px;
+  }
+
+  &__timer {
+    margin: 8px 0 24px;
+  }
+}

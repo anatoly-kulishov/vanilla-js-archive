@@ -1,0 +1,128 @@
+{
+  "Data": [
+    {
+      "EquipmentTypeId": 1,
+      "EquipmentTypeName": "Wifi-роутер",
+      "MaxSpeed": 500,
+      "IsRequired": true,
+      "Segments": [
+        {
+          "SegmentId": 1,
+          "SegmentName": "Премиум"
+        },
+        {
+          "SegmentId": 2,
+          "SegmentName": "Стандарт"
+        }
+      ],
+      "PurchaseTypes": [
+        {
+          "PurchaseTypeId": 2,
+          "PurchaseTypeName": "Аренда",
+          "EquipmentTypeId": 1,
+          "SegmentId": 2,
+          "RtcCode": "T2_WIFI_RENT"
+        },
+        {
+          "PurchaseTypeId": 2,
+          "PurchaseTypeName": "Аренда",
+          "EquipmentTypeId": 1,
+          "SegmentId": 1,
+          "RtcCode": "T2_WIFI_PR_RENT"
+        },
+        {
+          "PurchaseTypeId": 1,
+          "PurchaseTypeName": "Полная стоимость",
+          "EquipmentTypeId": 1,
+          "SegmentId": 2,
+          "RtcCode": "T2_WIFI_SOLD"
+        },
+        {
+          "PurchaseTypeId": 1,
+          "PurchaseTypeName": "Полная стоимость",
+          "EquipmentTypeId": 1,
+          "SegmentId": 1,
+          "RtcCode": "T2_WIFI_PR_SOLD"
+        },
+        {
+          "PurchaseTypeId": 3,
+          "PurchaseTypeName": "Рассрочка 12 мес",
+          "EquipmentTypeId": 1,
+          "SegmentId": 2,
+          "RtcCode": "T2_WIFI_CR12"
+        },
+        {
+          "PurchaseTypeId": 3,
+          "PurchaseTypeName": "Рассрочка 12 мес",
+          "EquipmentTypeId": 1,
+          "SegmentId": 1,
+          "RtcCode": "T2_WIFI_PR_CR12"
+        }
+      ]
+    },
+    {
+      "EquipmentTypeId": 2,
+      "EquipmentTypeName": "ТВ-Приставка",
+      "MaxSpeed": 500,
+      "IsRequired": false,
+      "Segments": [
+        {
+          "SegmentId": 1,
+          "SegmentName": "Премиум"
+        },
+        {
+          "SegmentId": 2,
+          "SegmentName": "Стандарт"
+        }
+      ],
+      "PurchaseTypes": [
+        {
+          "PurchaseTypeId": 2,
+          "PurchaseTypeName": "Аренда",
+          "EquipmentTypeId": 2,
+          "SegmentId": 2,
+          "RtcCode": "T2_TVBOX_RENT"
+        },
+        {
+          "PurchaseTypeId": 2,
+          "PurchaseTypeName": "Аренда",
+          "EquipmentTypeId": 2,
+          "SegmentId": 1,
+          "RtcCode": "T2_TVBOX_PR_RENT"
+        },
+        {
+          "PurchaseTypeId": 1,
+          "PurchaseTypeName": "Полная стоимость",
+          "EquipmentTypeId": 2,
+          "SegmentId": 2,
+          "RtcCode": "T2_TVBOX_SOLD"
+        },
+        {
+          "PurchaseTypeId": 1,
+          "PurchaseTypeName": "Полная стоимость",
+          "EquipmentTypeId": 2,
+          "SegmentId": 1,
+          "RtcCode": "T2_TVBOX_PR_SOLD"
+        },
+        {
+          "PurchaseTypeId": 4,
+          "PurchaseTypeName": "Рассрочка 24 мес",
+          "EquipmentTypeId": 2,
+          "SegmentId": 2,
+          "RtcCode": "T2_TVBOX_CR24"
+        },
+        {
+          "PurchaseTypeId": 4,
+          "PurchaseTypeName": "Рассрочка 24 мес",
+          "EquipmentTypeId": 2,
+          "SegmentId": 1,
+          "RtcCode": "T2_TVBOX_PR_CR24"
+        }
+      ]
+    }
+  ],
+  "IsSuccess": true,
+  "MessageText": null,
+  "ResultType": 1,
+  "ResultCode": 0
+}

@@ -1,0 +1,74 @@
+@import '../../../../shared/styles';
+
+.backBtn {
+  margin-bottom: 50px;
+}
+
+.container {
+  width: 720px;
+  margin: 0 auto;
+}
+
+.textWrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.title {
+  margin: 50px 0 20px 0;
+}
+
+.success {
+  display: flex;
+  justify-content: center;
+  margin-top: 64px;
+  padding: 32px 0;
+}
+
+.successBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  width: 720px;
+  padding: 56px 12px;
+  border-radius: $borderRadiusXL;
+  background-color: $bg_base;
+}
+
+.lesson {
+  display: flex;
+  height: 200px;
+  border-radius: $borderRadiusXL;
+  overflow: hidden;
+  background-color: $bg_base;
+  box-shadow: 0 4px 24px $bg_shadow;
+  transition:
+    box-shadow 0.3s ease-out,
+    transform 0.3s ease-out;
+  transform: translateY(-4px);
+}
+
+.lessonImg {
+  flex-shrink: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 200px;
+}
+
+.lessonText {
+  padding: 16px;
+}
+
+.descriptionWrapper {
+  display: flex;
+}
+
+.description {
+  margin-top: 24px;
+}
+
+.descriptionLesson {
+  margin: 37px 0;
+}

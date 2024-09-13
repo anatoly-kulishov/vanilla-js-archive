@@ -1,0 +1,34 @@
+{
+  "Data": {
+    "Conversations": [
+      {
+        "ConversationId": 99999,
+        "User": null,
+        "UserFullName": null,
+        "From": "artem.karpenko@external.tele2.ru",
+        "DisplayFrom": "Карпенко Артем Константинович",
+        "ClientId": null,
+        "ClientName": null,
+        "Subject": "TEST",
+        "StatusId": 1,
+        "StatusName": "Ожидание",
+        "ChannelId": 4,
+        "ChannelName": "Mail",
+        "ConversationTechId": "AAQkADA4NDJhYWMyLTJmOWItNDM0NC1hMmNkLTZhMDMyNTJkZTM4MwAQANaABPSRBUrJoFUulJGcatQ=",
+        "CreatedOn": "2021-02-08T10:42:00.534973",
+        "LastActivity": "2021-02-08T10:41:25",
+        "IdentificationLevelId": 0,
+        "IdentificationLevelName": "Нулевой уровень",
+        "CanBeModified": true,
+        "CanBeReply": true,
+        "BranchId": null,
+        "LastUsedChannelId": null
+      }
+    ],
+    "ConversationsCount": 1
+  },
+  "IsSuccess": true,
+  "MessageText": null,
+  "ResultType": 1,
+  "ResultCode": 0
+}

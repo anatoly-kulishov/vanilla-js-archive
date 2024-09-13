@@ -1,0 +1,48 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "node": true,
+    "jest": true
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true,
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "extends": [
+    "standard",
+    "standard-react",
+    "plugin:react-perf/recommended"
+  ],
+  "rules": {
+    "id-length": [1],
+    "no-var": [1],
+    "no-console": [1],
+    "react/prop-types": [1],
+    "no-debugger": "warn",
+    "standard/no-callback-literal": [0],
+    "react/jsx-curly-spacing": [2, { "when": "never", "allowMultiline": true }],
+    "react/jsx-indent-props": "off",
+    "react/jsx-indent": "off",
+    "react-perf/jsx-no-new-function-as-prop": "warn",
+    "react-perf/jsx-no-new-object-as-prop": "warn",
+    "react-perf/jsx-no-new-array-as-prop": "warn",
+    "react/jsx-no-bind": "warn"
+  },
+  "settings": {
+    "react": {
+      "pragma": "React",
+      "version": "16.3"
+    }
+  },
+  "plugins": [
+    "react-perf"
+  ]
+}

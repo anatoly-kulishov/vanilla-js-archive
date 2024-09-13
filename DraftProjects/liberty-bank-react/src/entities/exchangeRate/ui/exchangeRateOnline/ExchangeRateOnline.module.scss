@@ -1,0 +1,24 @@
+.filtersContainer {
+  padding: 16px;
+  border-radius: $borderRadiusL;
+  box-shadow: 0px 15px 20px 0px $bg_shadow;
+  > div {
+    width: 220px;
+    > :nth-child(2) {
+      z-index: 10;
+      left: 0;
+    }
+  }
+}
+
+.info-container {
+  margin-top: 48px;
+}
+
+.info-heading {
+  margin-bottom: 34px;
+}
+
+.info {
+  line-height: map-get($line-height, 'M');
+}

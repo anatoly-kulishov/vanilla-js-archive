@@ -1,0 +1,36 @@
+@import '../../../../shared/styles/index.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.text-item {
+  height: auto;
+  width: 380px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 4px;
+  display: flex;
+}
+
+.text-header {
+  align-self: stretch;
+  height: 24px;
+  width: 100%;
+  color: $text_primary;
+  font-family: 'Roboto', sans-serif;
+  word-wrap: break-word;
+}
+
+.text {
+  width: 100%;
+  align-self: stretch;
+  color: $text_secondary;
+  font-size: 14px;
+  font-family: 'SF Pro Display', sans-serif;
+  line-height: 16px;
+  word-wrap: break-word;
+}

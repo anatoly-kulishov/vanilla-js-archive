@@ -1,0 +1,9 @@
+.accordion {
+  width: 100%;
+  list-style-type: none;
+  background-color: #dcdcdc;
+  border: 1px solid $separator;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  overflow: hidden;
+}

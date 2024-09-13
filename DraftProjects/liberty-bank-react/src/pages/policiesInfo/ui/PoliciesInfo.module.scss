@@ -1,0 +1,36 @@
+.back-button {
+  padding-top: 16px;
+  margin-bottom: 40px;
+}
+
+.body-container {
+  width: 100%;
+  padding: 40px 160px;
+  margin-bottom: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: $borderRadiusL;
+  background-color: $bg_blocks;
+  gap: 24px;
+}
+
+.btn-container {
+  justify-content: flex-end;
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+
+.btn-footer {
+  display: inline-block;
+  width: 220px;
+  height: 56px;
+  padding: 16px 24px;
+  text-align: center;
+  font-weight: map-get($font-weight, SB);
+}
+
+.btn-footer:last-child {
+  width: auto;
+}

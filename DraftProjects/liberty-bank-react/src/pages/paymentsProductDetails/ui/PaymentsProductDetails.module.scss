@@ -1,0 +1,12 @@
+.cards {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.product-details {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 192px;
+}

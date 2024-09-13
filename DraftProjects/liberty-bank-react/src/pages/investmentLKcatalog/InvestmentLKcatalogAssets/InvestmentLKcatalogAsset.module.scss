@@ -1,0 +1,99 @@
+.backbutton {
+  padding-top: 16px;
+  margin-bottom: 32px;
+}
+
+.columns {
+  display: flex;
+  position: relative;
+
+  &_item {
+    flex: 0 0 33.33%;
+    display: flex;
+  }
+}
+
+.container {
+  display: flex;
+  column-gap: 38px;
+  margin-bottom: 50px;
+}
+
+.head {
+  &_columns {
+    display: flex;
+    position: relative;
+    margin-bottom: 25px;
+
+    &_line {
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -16px;
+        height: 1px;
+        background-color: #757f8a;
+        width: 100%;
+      }
+    }
+  }
+
+  &_item {
+    flex: 0 0 33.33%;
+    display: flex;
+  }
+}
+
+.field {
+  color: #4d5f71;
+  justify-content: center;
+}
+
+.companyName {
+  display: flex;
+  column-gap: 12px;
+  align-items: center;
+  align-self: end;
+  flex-grow: 1;
+}
+
+.tickerName,
+.profitability {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 1;
+}
+
+.negative {
+  color: $color-number-negative;
+}
+
+.positive {
+  color: $color-number-positive;
+}
+
+.zero {
+  color: $text_grey;
+}
+
+.price {
+  margin-top: 82px;
+  flex: 0 0 250px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 8px;
+  background-color: #f3f4f8;
+  align-self: start;
+  padding: 10px 25px 20px;
+}
+
+.ticker {
+  align-self: center;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.aboutCompany {
+  margin-bottom: 15px;
+}

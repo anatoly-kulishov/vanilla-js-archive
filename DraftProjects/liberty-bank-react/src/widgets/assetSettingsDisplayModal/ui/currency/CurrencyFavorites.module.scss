@@ -1,0 +1,23 @@
+.tickerList {
+  width: 100%;
+}
+
+.tickerLine {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.stock-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  width: 100%;
+  padding: 15px;
+  background: #fefefe;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.svg-icon {
+  margin-right: 10px;
+}

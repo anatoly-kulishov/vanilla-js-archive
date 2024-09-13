@@ -1,0 +1,30 @@
+.back-button {
+  padding-top: 28px;
+  margin-bottom: 41px;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 102px;
+}
+
+.first_column {
+  width: 250px;
+  color: black;
+}
+
+.second_column {
+  width: 250px;
+  justify-content: center;
+}
+
+.third_column {
+  width: 250px;
+  justify-content: flex-end;
+}
+
+.currency-table tr:nth-child(3) td:nth-child(odd) {
+  color: red;
+}

@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "allowSyntheticDefaultImports": false,
+    "baseUrl": ".",
+    "paths": {
+      "assets/*": ["./src/assets/*"],
+      "components/*": ["./src/components/*"],
+      "constants/*": ["./src/constants/*"],
+      "containers/*": ["./src/containers/*"],
+      "hocs/*": ["./src/hocs/*"],
+      "hooks/*": ["./src/hooks/*"],
+      "reducers/*": ["./src/reducers/*"],
+      "routes/*": ["./src/routes/*"],
+      "sagas/*": ["./src/sagas/*"],
+      "screens/*": ["./src/screens/*"],
+      "selectors/*": ["./src/selectors/*"],
+      "utils/*": ["./src/utils/*"],
+      "bootstrap/*": ["./src/bootstrap/*"],
+      "webseller/*": ["./src/webseller/*"],
+      "config": ["./config/*"]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}

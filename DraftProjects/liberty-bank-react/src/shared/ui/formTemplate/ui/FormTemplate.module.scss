@@ -1,0 +1,29 @@
+.formTemplate {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 25px;
+  margin-bottom: 80px;
+}
+
+.formBox {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: $bg_blocks;
+  border-radius: $borderRadiusM;
+  padding: 32px;
+
+  gap: 32px;
+}
+
+.formWrapper {
+  flex: 1;
+}
+
+.buttonsBlock {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

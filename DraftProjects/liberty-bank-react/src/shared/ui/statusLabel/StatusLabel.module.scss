@@ -1,0 +1,63 @@
+@import '../../styles/fonts.scss';
+@import '../../styles/colors.scss';
+@import '../../styles/rounding.scss';
+
+.label {
+  height: max-content;
+  padding: 4px 12px 4px 12px;
+  margin: 0;
+  border-radius: $borderRadiusML;
+  color: $text_primary_buttons;
+  white-space: nowrap;
+}
+
+.label-width {
+  &_adjustable {
+    width: max-content;
+  }
+  &_fixed {
+    min-width: 97px;
+    padding: 4px 17px;
+    text-align: center;
+  }
+}
+
+.success {
+  background-color: $ctrl_status_success;
+}
+
+.wait {
+  background-color: $text_secondary;
+}
+
+.warning {
+  background-color: $ctrl_status_wait;
+}
+
+.error {
+  background-color: $separator_alert;
+}
+
+.info {
+  background-color: $ctrl_Liberty;
+}
+
+.link-size {
+  &_xxs {
+    font-size: map-get($font-size, XS);
+    line-height: 8px;
+  }
+  &_xs {
+    font-size: map-get($font-size, XS);
+    line-height: map-get($line-height, XXS);
+  }
+  &_s {
+    font-size: map-get($font-size, XS);
+    line-height: map-get($line-height, XS);
+    font-weight: map-get($font-weight, R);
+  }
+  &_m {
+    font-size: map-get($font-size, S);
+    line-height: map-get($line-height, S);
+  }
+}

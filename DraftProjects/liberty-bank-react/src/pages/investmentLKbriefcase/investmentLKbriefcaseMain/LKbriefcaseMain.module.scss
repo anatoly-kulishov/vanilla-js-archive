@@ -1,0 +1,28 @@
+.start-invest-block {
+  position: relative;
+  padding: 40px;
+  border-radius: 15px;
+  background-color: $bg_base;
+  .start-invest-content-title {
+    margin-bottom: 16px;
+  }
+  .start-invest-content-text {
+    margin-bottom: 32px;
+  }
+  .header-image-block {
+    position: relative;
+    .svg {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+  }
+  .start-invest-svg {
+    position: absolute;
+    top: 37px;
+    right: 66px;
+  }
+  .startInvestBtn {
+    padding: 15px 27px;
+  }
+}

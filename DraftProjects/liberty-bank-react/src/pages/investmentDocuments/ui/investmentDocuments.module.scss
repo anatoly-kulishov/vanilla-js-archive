@@ -1,0 +1,39 @@
+.body_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.backbutton {
+  padding-top: 16px;
+  margin-bottom: 40px;
+}
+
+.documents__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 393px);
+  gap: 16px;
+  margin-top: 40px;
+
+  &-text {
+    text-decoration: underline;
+    text-align: left;
+  }
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  margin-top: 35px;
+  margin-bottom: 19px;
+
+  &-text {
+    margin-left: 8px;
+  }
+}
+
+.btn-signdocs {
+  padding: 16px 53px;
+  margin-bottom: 108px;
+  font-weight: 600;
+}

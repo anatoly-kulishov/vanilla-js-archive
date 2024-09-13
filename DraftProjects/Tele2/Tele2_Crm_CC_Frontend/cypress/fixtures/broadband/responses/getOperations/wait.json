@@ -1,0 +1,20 @@
+{
+   "Data":[
+      {
+         "Id":13,
+         "Name":"Оформление SIM-карты"
+      },
+      {
+         "Id":16,
+         "Name":"Отсутствует таймслот"
+      },
+      {
+         "Id":17,
+         "Name":"Прочее"
+      }
+   ],
+   "IsSuccess":true,
+   "MessageText":null,
+   "ResultType":1,
+   "ResultCode":0
+}

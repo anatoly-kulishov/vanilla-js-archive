@@ -1,0 +1,25 @@
+{
+  "Data": [
+    {
+      "BillingBranch": "Саранск NEW",
+      "BillingBranchId": 51,
+      "ClientType": "Бесконтрактный",
+      "ClientTypeId": 0,
+      "ClientId": 47231054,
+      "SubscriberStatus": "Активен",
+      "Msisdn": "79022334365",
+      "SubscriberName": "Тестирование Рсrf",
+      "Account": "48205927",
+      "ClientStatus": "Активен",
+      "Inn": null,
+      "EntityType": null,
+      "Passport": "Паспорт РФ; 8900; 000000; 01.01.1900;  ;",
+      "ClientName": null,
+      "SubscriberId": 47200838.0,
+      "Success": true,
+      "ErrorMessage": null
+    }
+  ],
+  "IsSuccess": true,
+  "MessageText": null
+}

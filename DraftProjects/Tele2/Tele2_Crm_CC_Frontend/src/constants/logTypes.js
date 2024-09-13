@@ -1,0 +1,5 @@
+export const REDIRECT = 'REDIRECT'
+export const EXT_REDIRECT = 'EXT_REDIRECT'
+export const RENDER = 'RENDER'
+export const MODAL_OPEN = 'MODAL_OPEN'
+export const MODAL_CLOSE = 'MODAL_CLOSE'

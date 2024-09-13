@@ -1,0 +1,45 @@
+@import '../../shared/styles/index.scss';
+
+.closeButton {
+  align-self: flex-end;
+  padding: 7px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.currentCity {
+  display: flex;
+  gap: 8px;
+}
+
+.modal {
+  padding: 16px 24px 24px;
+  border-radius: $borderRadiusL;
+  background-color: $bg_primary;
+  width: 628px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.popularCities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.cityButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.cityButton {
+  font-weight: map-get($font-weight, 'M');
+  text-align: start;
+}

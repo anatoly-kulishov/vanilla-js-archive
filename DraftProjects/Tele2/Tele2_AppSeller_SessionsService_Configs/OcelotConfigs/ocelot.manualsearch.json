@@ -1,0 +1,36 @@
+{
+  "Routes": [
+    {
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "$HOST_CC",
+          "Port": "$PORT_CC"
+        }
+      ],
+      "DownstreamPathTemplate": "/service/manualsearchservice/ManualSearch/GetCustomers",
+      "DownstreamScheme": "https",
+      "UpstreamHttpMethod": [
+        "Post",
+        "Options"
+      ],
+      "UpstreamPathTemplate": "/manualsearchservice/ManualSearch/GetCustomers",
+      "ValidateSession": false
+    },
+    {
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "$HOST_CC",
+          "Port": "$PORT_CC"
+        }
+      ],
+      "DownstreamPathTemplate": "/service/manualsearchservice/api/v1/Customers/{msisdn}/document/{documentNumber}",
+      "DownstreamScheme": "https",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Options"
+      ],
+      "UpstreamPathTemplate": "/manualsearchservice/api/v1/Customers/{msisdn}/document/{documentNumber}",
+      "ValidateSession": false
+    }
+  ]
+}

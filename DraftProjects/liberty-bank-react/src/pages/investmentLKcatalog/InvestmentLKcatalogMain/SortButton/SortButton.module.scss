@@ -1,0 +1,10 @@
+.sort-button {
+  display: flex;
+  justify-content: end;
+  font-size: map-get($font-size, L);
+  line-height: map-get($line-height, L);
+  font-weight: map-get($font-weight, B);
+}
+.sort-svg {
+  transform: translateY(5px);
+}

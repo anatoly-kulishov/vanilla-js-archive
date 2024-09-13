@@ -1,0 +1,184 @@
+{
+  "Routes": [
+    {
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "offersservice.appseller.corp.tele2.ru",
+          "Port": "11130"
+        }
+      ],
+      "DownstreamPathTemplate": "/offerHistory/getHistory",
+      "DownstreamScheme": "https",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Options"
+      ],
+      "UpstreamPathTemplate": "/offersservice/offerHistory/getHistory"
+    },
+    {
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "offersservice.appseller.corp.tele2.ru",
+          "Port": "11130"
+        }
+      ],
+      "DownstreamPathTemplate": "/Offers/GetOffers",
+      "DownstreamScheme": "https",
+      "UpstreamHttpMethod": [
+        "Post",
+        "Options"
+      ],
+      "UpstreamPathTemplate": "/offersservice/Offers/GetOffers"
+    },
+    {
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "offersservice.appseller.corp.tele2.ru",
+          "Port": "11130"
+        }
+      ],
+      "DownstreamPathTemplate": "/Offers/GetRegisteredOffers",
+      "DownstreamScheme": "https",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Options"
+      ],
+      "UpstreamPathTemplate": "/offersservice/Offers/GetRegisteredOffers"
+    },
+    {
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "offersservice.appseller.corp.tele2.ru",
+          "Port": "11130"
+        }
+      ],
+      "DownstreamPathTemplate": "/Offers/AddOffer",
+      "DownstreamScheme": "https",
+      "UpstreamHttpMethod": [
+        "Post",
+        "Options"
+      ],
+      "UpstreamPathTemplate": "/offersservice/Offers/AddOffer"
+    },
+    {
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "offersservice.appseller.corp.tele2.ru",
+          "Port": "11130"
+        }
+      ],
+      "DownstreamPathTemplate": "/Offers/ChangeOffer",
+      "DownstreamScheme": "https",
+      "UpstreamHttpMethod": [
+        "Post",
+        "Options"
+      ],
+      "UpstreamPathTemplate": "/offersservice/Offers/ChangeOffer"
+    },
+    {
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "offersservice.appseller.corp.tele2.ru",
+          "Port": "11130"
+        }
+      ],
+      "DownstreamPathTemplate": "/Offers/DeleteOffer",
+      "DownstreamScheme": "https",
+      "UpstreamHttpMethod": [
+        "Post",
+        "Options"
+      ],
+      "UpstreamPathTemplate": "/offersservice/Offers/DeleteOffer"
+    },
+    {
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "offersservice.appseller.corp.tele2.ru",
+          "Port": "11130"
+        }
+      ],
+      "DownstreamPathTemplate": "/Offers/AutoConnectOffer",
+      "DownstreamScheme": "https",
+      "UpstreamHttpMethod": [
+        "Post",
+        "Options"
+      ],
+      "UpstreamPathTemplate": "/offersservice/Offers/AutoConnectOffer"
+    },
+    {
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "offersservice.appseller.corp.tele2.ru",
+          "Port": "11130"
+        }
+      ],
+      "DownstreamPathTemplate": "/api/v2/Offers/GetOffers",
+      "DownstreamScheme": "https",
+      "UpstreamHttpMethod": [
+        "Post",
+        "Options"
+      ],
+      "UpstreamPathTemplate": "/offersservice/api/v2/Offers/GetOffers"
+    },
+    {
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "offersservice.appseller.corp.tele2.ru",
+          "Port": "11130"
+        }
+      ],
+      "DownstreamPathTemplate": "/api/v2/Offers/GetRegisteredOffers",
+      "DownstreamScheme": "https",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Options"
+      ],
+      "UpstreamPathTemplate": "/offersservice/api/v2/Offers/GetRegisteredOffers"
+    },
+    {
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "offersservice.appseller.corp.tele2.ru",
+          "Port": "11130"
+        }
+      ],
+      "DownstreamPathTemplate": "/api/v2/Offers/AddOffer",
+      "DownstreamScheme": "https",
+      "UpstreamHttpMethod": [
+        "Post",
+        "Options"
+      ],
+      "UpstreamPathTemplate": "/offersservice/api/v2/Offers/AddOffer"
+    },
+    {
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "offersservice.appseller.corp.tele2.ru",
+          "Port": "11130"
+        }
+      ],
+      "DownstreamPathTemplate": "/api/v2/Offers/ChangeOffer",
+      "DownstreamScheme": "https",
+      "UpstreamHttpMethod": [
+        "Post",
+        "Options"
+      ],
+      "UpstreamPathTemplate": "/offersservice/api/v2/Offers/ChangeOffer"
+    },
+    {
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "offersservice.appseller.corp.tele2.ru",
+          "Port": "11130"
+        }
+      ],
+      "DownstreamPathTemplate": "/api/v2/Offers/DeleteOffer",
+      "DownstreamScheme": "https",
+      "UpstreamHttpMethod": [
+        "Post",
+        "Options"
+      ],
+      "UpstreamPathTemplate": "/offersservice/api/v2/Offers/DeleteOffer"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "Routes": [
+    {
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "personaldataservice",
+          "Port": "80"
+        }
+      ],
+      "DownstreamPathTemplate": "/api/v1/PersonalDataChecks/{id}/Status",
+      "DownstreamScheme": "https",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Options"
+      ],
+      "UpstreamPathTemplate": "/personaldataservice/api/v1/PersonalDataChecks/{id}/Status"
+    },
+    {
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "personaldataservice",
+          "Port": "80"
+        }
+      ],
+      "DownstreamPathTemplate": "/api/v1/branches/{BranchId}/clients/{ClientId}",
+      "DownstreamScheme": "https",
+      "UpstreamHttpMethod": [
+        "Put",
+        "Options"
+      ],
+      "UpstreamPathTemplate": "/personaldataservice/api/v1/branches/{BranchId}/clients/{ClientId}"
+    }
+  ]
+}

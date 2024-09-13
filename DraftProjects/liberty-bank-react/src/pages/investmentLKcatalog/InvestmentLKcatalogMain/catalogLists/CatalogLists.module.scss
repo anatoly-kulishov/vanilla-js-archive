@@ -1,0 +1,90 @@
+.stock-list,
+.bonds-list {
+  width: 100%;
+  padding: 30px;
+  border-radius: $borderRadiusL;
+  background: $bg_blocks;
+  margin-bottom: 30px;
+}
+.stock-list-header,
+.stock-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 3.5fr 1fr 1.5fr 0.8fr 0.7fr;
+  width: 100%;
+}
+.bonds-list-header,
+.bonds-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 3fr 2fr repeat(2, 1.5fr) repeat(2, 1fr);
+  width: 100%;
+}
+.stock-list-header,
+.bonds-list-header {
+  padding: 0 15px 15px 15px;
+}
+.stock-item,
+.bonds-item {
+  padding: 15px;
+  background: $bg_primary;
+  border-radius: $borderRadiusML;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.stock-item:last-child,
+.bonds-item:last-child {
+  margin-bottom: 0;
+}
+.stock-list-header p,
+.stock-item p,
+.bonds-list-header p,
+.bonds-item p {
+  text-align: end;
+}
+.stock-list-header > p:first-child,
+.bonds-item > .bonds-name,
+.bonds-list-header > p:first-child {
+  text-align: start;
+}
+.buy-btn-div {
+  margin-left: auto;
+}
+.buy-btn {
+  max-width: 160px;
+}
+.green {
+  color: $text_success;
+}
+.red {
+  color: $text_alert;
+}
+.stock-item-name-block {
+  display: flex;
+}
+.svg-icon {
+  margin-right: 10px;
+}
+.btn-favorites-block {
+  display: flex;
+  flex-direction: row;
+  padding-left: 30px;
+}
+.icon,
+.icon-active {
+  margin-left: auto;
+}
+.icon {
+  fill: transparent;
+}
+.icon-active {
+  fill: yellow;
+}
+.icon-bell {
+  margin-left: 5px;
+}
+.icon-briefcase {
+  position: absolute;
+  top: 20px;
+  left: -25px;
+}

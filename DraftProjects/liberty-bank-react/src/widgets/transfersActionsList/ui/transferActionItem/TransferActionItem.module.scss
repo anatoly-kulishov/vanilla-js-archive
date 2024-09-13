@@ -1,0 +1,10 @@
+.link {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  width: 100%;
+  height: 116px;
+  padding: 16px 16px 10px;
+  background-color: $bg_blocks;
+  border-radius: $borderRadiusM;
+}

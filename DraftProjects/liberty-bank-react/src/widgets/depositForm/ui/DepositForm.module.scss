@@ -1,0 +1,128 @@
+@import '../../../shared/styles/index.scss';
+
+.wrapper {
+  min-width: 1180px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 32px;
+  height: 465px;
+  border-radius: $borderRadiusL;
+  background: $bg_base;
+}
+
+.calculation {
+  display: flex;
+  gap: 39px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+    width: 100%;
+
+    :first-child {
+      white-space: nowrap;
+    }
+  }
+
+  &__title {
+    text-align: right;
+    color: $text_secondary;
+  }
+
+  &__validFields {
+    color: $text_success;
+  }
+}
+
+.title {
+  color: $text_primary;
+  line-height: map-get($line-height, L);
+  margin: 40px 0 24px;
+}
+
+.topPart {
+  display: flex;
+  align-items: center;
+
+  &__title {
+    display: flex;
+    width: 498px;
+    align-items: center;
+    gap: 24px;
+  }
+}
+
+.middlePart {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+
+  .currencies {
+    &__title {
+      margin-bottom: 16px;
+    }
+  }
+}
+
+.smallWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 538px;
+  height: 90px;
+
+  &__input {
+    width: 100%;
+  }
+}
+
+.bottomPart {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.submitButton {
+  width: 185px;
+  height: 56px;
+  padding: 0;
+}
+
+.conditionsWrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.link {
+  display: inline-block;
+  text-decoration: underline;
+}
+
+.resultForm {
+  margin: 40px auto 100px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  &__cancelButton {
+    text-decoration: none;
+    background-color: inherit;
+    font-weight: 600;
+  }
+}
+
+.star {
+  color: $text_alert;
+}

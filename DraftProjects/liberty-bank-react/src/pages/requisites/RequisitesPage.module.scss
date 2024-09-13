@@ -1,0 +1,61 @@
+@import '../../shared/styles/index.scss';
+
+.requisites {
+  &__header-container {
+    margin-top: 16px;
+  }
+
+  &__body-container {
+    width: 1180px;
+    padding: 40px 160px 40px 160px;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: $borderRadiusL;
+    background-color: $bg_blocks;
+    gap: 24px;
+  }
+
+  &__title {
+    width: 100%;
+    text-align: center;
+  }
+
+  &__footer-container {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 860px;
+  }
+
+  &__back-btn {
+    flex: 1 1 0;
+    font-size: map-get($font-size, S);
+    font-weight: map-get($font-weight, M);
+    line-height: map-get($line-height, S);
+    color: $text_action;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
+
+  &__btn-container {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  &__action-btn {
+    width: 220px;
+    height: 56px;
+  }
+}

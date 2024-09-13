@@ -1,0 +1,16 @@
+{
+    "Data":[
+       {
+          "Id":5,
+          "Name":"Исправление ошибки"
+       },
+       {
+          "Id":6,
+          "Name":"Прочее"
+       }
+    ],
+    "IsSuccess":true,
+    "MessageText":null,
+    "ResultType":1,
+    "ResultCode":0
+ }

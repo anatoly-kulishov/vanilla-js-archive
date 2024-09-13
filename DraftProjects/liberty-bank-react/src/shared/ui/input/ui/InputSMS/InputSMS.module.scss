@@ -1,0 +1,19 @@
+.inputSMS {
+  display: flex;
+  justify-content: space-between;
+
+  .item {
+    width: 76px;
+    height: 72px;
+    font-size: map-get($font-size, L);
+    font-weight: map-get($font-weight, B);
+    line-height: map-get($line-height, L);
+    border-radius: $borderRadiusM;
+    text-align: center;
+
+    &:focus {
+      outline: 1px solid $separator;
+      outline-offset: -1px;
+    }
+  }
+}

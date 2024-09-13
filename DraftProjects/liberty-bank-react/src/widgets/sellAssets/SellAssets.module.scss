@@ -1,0 +1,146 @@
+.container {
+  padding: 32px;
+  background-color: $bg_blocks;
+  border-radius: $borderRadiusL;
+  color: $text_primary;
+  display: flex;
+  justify-content: center;
+}
+
+.contentItems {
+  display: flex;
+  justify-content: flex-end;
+}
+
+tbody {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  max-height: 300px;
+  overflow-y: auto;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  padding: 0px;
+}
+
+.use_calc_width {
+  width: calc(100% + 17px);
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 860px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 12px;
+  width: 860px;
+}
+
+table {
+  width: 100%;
+  color: $text_secondary;
+  border-spacing: 0;
+  border-radius: $borderRadiusM;
+
+  table-layout: fixed;
+}
+
+thead {
+  background: $bg_primary;
+  width: 100%;
+  position: sticky;
+  top: 0;
+}
+
+.table_item_text {
+  text-align: center;
+  white-space: nowrap;
+}
+
+.default_column {
+  padding: 16px;
+  width: 120px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.first_column {
+  padding: 16px;
+  width: 250px;
+  display: flex;
+  color: black;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.first_red_column {
+  padding: 16px;
+  width: 250px;
+  display: flex;
+  color: red;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.third_red_column {
+  padding: 16px;
+  width: 250px;
+  display: flex;
+  color: red;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.second_column {
+  padding: 16px;
+  width: 250px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.third_column {
+  padding: 16px;
+  width: 250px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+tr {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  .cancel {
+    padding: 0;
+    color: $text_action;
+  }
+
+  .submit {
+    width: 220px;
+    height: 56px;
+  }
+}

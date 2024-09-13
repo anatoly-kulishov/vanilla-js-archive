@@ -1,0 +1,7 @@
+{
+  "isSuccess": true,
+  "data": "Bearer some_token_doesnt_matter",
+  "messageText": null,
+  "resultCode": 0,
+  "resultType": 1
+}

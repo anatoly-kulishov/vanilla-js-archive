@@ -1,0 +1,34 @@
+{
+  "Routes": [
+    {
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "$HOST_CC",
+          "Port": "$PORT_CC"
+        }
+      ],
+      "DownstreamPathTemplate": "/service/likeservice/api/v1/Features",
+      "DownstreamScheme": "https",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Options"
+      ],
+      "UpstreamPathTemplate": "/likeservice/like/getFeature"
+    },
+    {
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "asstage.tele2.ru",
+          "Port": "11270"
+        }
+      ],
+      "DownstreamPathTemplate": "/service/likeservice/api/v1/Likes",
+      "DownstreamScheme": "https",
+      "UpstreamHttpMethod": [
+        "Post",
+        "Options"
+      ],
+      "UpstreamPathTemplate": "/likeservice/like/setLike"
+    }
+  ]
+}

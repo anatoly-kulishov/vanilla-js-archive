@@ -1,0 +1,47 @@
+.accountOption {
+  height: 72px;
+  width: 100%;
+  padding: 13px 24px;
+  background-color: $bg_primary;
+  display: flex;
+  gap: 8px;
+  cursor: pointer;
+
+  &.isInDropdown {
+    &:hover {
+      background-color: $text_secondary_buttons;
+    }
+
+    &:active {
+      background-color: $bg_base;
+    }
+
+    &.selected {
+      background-color: $text_secondary_buttons;
+    }
+  }
+
+  & > .accountIconBlock {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  & > .accountTextBlock {
+    height: 100%;
+    flex: 1;
+    display: flex;
+    gap: 4px;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.accountName {
+  color: $text_secondary;
+}
+
+.text {
+  user-select: none;
+}

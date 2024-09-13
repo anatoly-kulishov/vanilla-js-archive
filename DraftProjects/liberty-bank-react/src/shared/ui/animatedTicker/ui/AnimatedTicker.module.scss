@@ -1,0 +1,37 @@
+.negativeBG {
+  animation-duration: 1.5s;
+  animation-name: negativeBG;
+}
+
+.positiveBG {
+  animation-duration: 1.5s;
+  animation-name: positiveBG;
+}
+
+@keyframes negativeBG {
+  from {
+    background-color: #ffd2d2;
+  }
+
+  50% {
+    background-color: #fde6e6;
+  }
+
+  to {
+    background-color: none;
+  }
+}
+
+@keyframes positiveBG {
+  from {
+    background-color: #bdfac8;
+  }
+
+  50% {
+    background-color: #d0fcd8;
+  }
+
+  to {
+    background-color: none;
+  }
+}

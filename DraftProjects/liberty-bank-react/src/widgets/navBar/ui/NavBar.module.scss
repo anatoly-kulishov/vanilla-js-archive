@@ -1,0 +1,18 @@
+@import '../../../shared/styles/index.scss';
+
+.list {
+  display: flex;
+}
+
+.header {
+  gap: 32px;
+  font-weight: map-get($font-weight, R);
+  color: $text_primary;
+}
+
+.content {
+  margin-top: 24px;
+  gap: 24px;
+  font-weight: map-get($font-weight, M);
+  color: $text_secondary;
+}

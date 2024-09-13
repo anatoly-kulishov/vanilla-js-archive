@@ -1,0 +1,112 @@
+@import '../../styles/index.scss';
+
+.radio {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $bg_primary;
+  padding: 16px 24px;
+  border-radius: $borderRadiusM;
+  border: 1px solid transparent;
+  cursor: pointer;
+
+  &_width {
+    &_max {
+      width: 100%;
+    }
+    &_auto {
+      width: auto;
+    }
+  }
+
+  &_transparent {
+    gap: 8px;
+    padding: 0;
+    background-color: transparent;
+
+    .content {
+      .label {
+        margin: 0;
+        font-size: map-get($map: $font-size, $key: S);
+      }
+    }
+  }
+
+  &_checked {
+    border: solid 1px $text_action;
+  }
+  &_no-checked {
+    border: $bg_primary;
+  }
+
+  &_circle {
+    transform: scale(0);
+  }
+
+  &_side {
+    flex-direction: row-reverse;
+  }
+  &__input[type='radio'] {
+    cursor: pointer;
+    appearance: none;
+    background-color: $bg_primary;
+    margin: 0;
+    width: 16px;
+    height: 16px;
+    border: 0.01em solid $text_action;
+    border-radius: 50%;
+    position: relative;
+    &::before {
+      transform: scale(0);
+    }
+    &:checked::before {
+      content: '';
+      display: block;
+      width: 12px;
+      height: 12px;
+      background-color: $text_action;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__label-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__label-content {
+    display: flex;
+    align-items: center;
+  }
+
+  &__label {
+    margin-left: 8px;
+    font-size: map-get($map: $font-size, $key: M);
+    font-weight: map-get($map: $font-weight, $key: M);
+
+    &_size_s {
+      margin-left: 16px;
+      font-size: map-get($map: $font-size, $key: S);
+      font-weight: map-get($map: $font-weight, $key: M);
+      color: $text_secondary;
+    }
+
+    &_no-margin {
+      margin-left: 0;
+    }
+  }
+
+  &__sub-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__sub-label {
+    color: $text_secondary;
+    margin-left: 8px;
+  }
+}

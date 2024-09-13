@@ -1,0 +1,47 @@
+.modal {
+  border-radius: 16px;
+  background-color: white;
+}
+
+.assetSettings {
+  display: inline-flex;
+  flex-direction: column;
+  background: #d6dae7;
+  justify-content: flex-start;
+  align-items: center;
+  width: 1180px;
+  height: 500px;
+  padding: 20px 38px;
+  border-radius: $borderRadiusL;
+  gap: 24px;
+  border: solid 2px black;
+  overflow-x: auto;
+}
+.assetSettings::-webkit-scrollbar {
+  width: 24px;
+  background-color: white;
+  border-radius: 15px;
+}
+.assetSettings::-webkit-scrollbar-thumb {
+  background-color: $ctrl_Liberty_hover;
+  border-radius: 15px;
+}
+.input-search {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+.navBar {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+
+  &__button__active {
+    color: $text_action;
+  }
+}
+.save-btn {
+  margin-top: 20px;
+}

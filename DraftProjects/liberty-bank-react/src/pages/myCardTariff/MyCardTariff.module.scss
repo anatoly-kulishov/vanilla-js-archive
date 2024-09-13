@@ -1,0 +1,14 @@
+@import '../../shared/styles/index.scss';
+
+.my-card-page {
+  width: 1180px;
+  margin: 0 auto 100px;
+
+  &__back-btn {
+    margin-top: 16px;
+  }
+
+  &__table {
+    margin-top: 16px;
+  }
+}

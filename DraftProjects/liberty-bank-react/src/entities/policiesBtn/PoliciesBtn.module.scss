@@ -1,0 +1,12 @@
+.action-container {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 16px;
+}
+
+.btn-title {
+  color: $ctrl_Liberty;
+  display: flex;
+  gap: 8px;
+}

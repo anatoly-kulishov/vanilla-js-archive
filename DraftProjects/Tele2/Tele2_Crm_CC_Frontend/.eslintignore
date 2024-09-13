@@ -1,0 +1,11 @@
+config/*
+scripts/*
+cypress/*
+src\components\SmartGisMap\components\TorusGeocoder
+
+**/*.svg
+**/*.test.js
+**/*.test.js.snap
+**/*.png
+**/*.less
+**/*.json

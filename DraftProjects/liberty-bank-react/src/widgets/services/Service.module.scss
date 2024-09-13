@@ -1,0 +1,35 @@
+@import '../../shared/styles/colors';
+@import '../../shared/styles/rounding';
+
+.serviceBlock {
+  max-width: 784px;
+  display: flex;
+  flex-direction: column;
+
+  .text {
+    margin-bottom: 24px;
+  }
+
+  .serviceBlock__items {
+    display: flex;
+    gap: 24px;
+
+    .serviceBlock__item {
+      width: 380px;
+      padding: 34px 24px;
+      margin-bottom: 24px;
+      display: flex;
+      justify-content: space-between;
+      color: $text_primary;
+      align-items: center;
+      border-radius: $borderRadiusM;
+      box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.05);
+    }
+  }
+
+  .serviceBlock_btn {
+    width: 380px;
+    margin-right: 0;
+    margin-left: auto;
+  }
+}

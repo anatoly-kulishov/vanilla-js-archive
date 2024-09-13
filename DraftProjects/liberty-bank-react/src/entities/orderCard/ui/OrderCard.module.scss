@@ -1,0 +1,44 @@
+@import 'src/shared/styles/colors';
+
+.order-card {
+  background: $bg_blocks;
+  width: 578px;
+  border-radius: 8px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__insuranceItem {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  &__insuranceSubject {
+    max-width: 288px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &_type {
+      color: $text_action;
+    }
+
+    &_subject {
+      color: $separator;
+    }
+  }
+}

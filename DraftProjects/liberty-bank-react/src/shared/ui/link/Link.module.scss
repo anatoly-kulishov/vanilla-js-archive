@@ -1,0 +1,59 @@
+@import '../../styles/index.scss';
+
+.link {
+  text-decoration: underline;
+  color: $text_action;
+  font-weight: map-get($font-weight, R);
+  &_withIcon {
+    color: $separator;
+    text-decoration: none;
+    display: flex;
+    gap: 8px;
+  }
+  &:hover,
+  &:focus {
+    color: $ctrl_Liberty_hover;
+  }
+  &:active {
+    color: $ctrl_Liberty_pressed;
+  }
+}
+
+.link-size {
+  &_xs {
+    font-size: map-get($font-size, XS);
+    line-height: map-get($line-height, XS);
+  }
+  &_m {
+    font-size: map-get($font-size, S);
+    line-height: map-get($line-height, S);
+  }
+}
+
+.theme {
+  &_button {
+    padding: 16px 26px;
+    background-color: $ctrl_Liberty;
+    border-radius: $borderRadiusM;
+    color: $text_primary_buttons;
+    transition: background-color 300ms ease-out;
+
+    &:hover {
+      background-color: $ctrl_Liberty_hover;
+      color: $text_primary_buttons;
+    }
+
+    &:focus,
+    &:focus-visible {
+      color: $text_primary_buttons;
+    }
+
+    &:active {
+      background-color: $ctrl_Liberty_pressed;
+    }
+  }
+}
+
+.nowrap {
+  white-space: nowrap;
+}

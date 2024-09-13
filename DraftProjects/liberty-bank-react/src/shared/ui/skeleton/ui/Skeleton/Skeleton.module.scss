@@ -1,0 +1,39 @@
+@import '../../../../styles/index.scss';
+
+.light {
+  background-color: $bg_blocks;
+}
+
+.regular {
+  background-color: #e6eaf1;
+}
+
+.dark {
+  background-color: $ctrl_Liberty_secondary;
+}
+
+.title {
+  width: 40%;
+  height: map-get($line-height, M);
+  border-radius: $borderRadiusL;
+}
+
+.text {
+  width: 85%;
+  height: map-get($line-height, S);
+  border-radius: $borderRadiusL;
+}
+
+.caption {
+  width: 35%;
+  height: map-get($line-height, XS);
+  border-radius: $borderRadiusL;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+.round {
+  border-radius: 50%;
+}

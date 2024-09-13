@@ -1,0 +1,18 @@
+@import '../../styles/index.scss';
+
+.wrapper {
+  width: 565px;
+  height: 396px;
+  border-radius: $borderRadiusL;
+  position: absolute;
+  @include absoluteVerticalAndHorizontalCenter();
+  background-color: $bg_base;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  .btn {
+    width: 325px;
+  }
+}

@@ -1,0 +1,78 @@
+@import '../../../shared/styles';
+
+.backBtn {
+  margin-bottom: 50px;
+}
+
+.containerInfo {
+  display: flex;
+  justify-content: space-between;
+  padding: 19px 45px;
+  border-radius: $borderRadiusXL;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 600px;
+  color: $bg_primary;
+}
+
+.description {
+  margin-top: 24px;
+}
+
+.buttonMain {
+  margin-top: 32px;
+  width: 215px;
+}
+
+.items {
+  display: flex;
+  gap: 25px;
+  margin-top: 32px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  min-width: 121px;
+  padding: 16px;
+  border-radius: $borderRadiusL;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.button {
+  margin-top: 40px;
+}
+
+.containerLessons {
+  display: flex;
+  justify-content: space-between;
+  margin: 48px 0 128px 0;
+}
+
+.lessons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.progressWrapper {
+  height: 100%;
+  padding: 30px;
+  border-radius: $borderRadiusXL;
+  text-align: center;
+  background: $bg_blocks;
+}
+
+.link {
+  color: $text_primary;
+  &:hover {
+    color: $text_primary;
+  }
+}

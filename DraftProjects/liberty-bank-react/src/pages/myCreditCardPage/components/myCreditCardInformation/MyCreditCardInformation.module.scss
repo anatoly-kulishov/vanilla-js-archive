@@ -1,0 +1,47 @@
+@import '../../../../shared/styles/index.scss';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  background-color: $bg_blocks;
+  border-radius: $borderRadiusM;
+  padding-bottom: 40px;
+  margin-top: 56px;
+}
+
+.buttons__group {
+  margin-top: 25px;
+
+  &_title {
+    padding-left: 22px;
+  }
+}
+
+.buttons_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px 44px;
+  margin-top: 15px;
+}
+
+.flat_button {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 24px;
+  color: $text_primary;
+
+  & > * {
+    white-space: wrap;
+    text-align: left;
+  }
+}
+
+.closeCardHeader {
+  margin-bottom: 18px;
+}
+
+.message {
+  font-weight: bold;
+}

@@ -1,0 +1,72 @@
+.filter-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background-color: $bg_primary;
+  border-radius: $borderRadiusM;
+  box-shadow: 0px 15px 20px 0px $bg_shadow;
+  padding: 20px 24px;
+
+  .filter-button-content {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-bottom: 20px;
+    font-size: map-get($font-size, S);
+    line-height: map-get($line-height, S);
+    font-weight: map-get($font-weight, SB);
+    width: 385px;
+  }
+
+  .filter-content,
+  .form,
+  .filter-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .filter-list {
+    gap: 16px;
+
+    .filter-list-item {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+  }
+}
+
+.button-container {
+  display: flex;
+  gap: 24px;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 16px 24px 24px;
+  border-radius: $borderRadiusL;
+  background-color: $bg_primary;
+  width: 764px;
+
+  .modal-title {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    overflow-y: auto;
+    height: 404px;
+  }
+
+  .list-item {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+}

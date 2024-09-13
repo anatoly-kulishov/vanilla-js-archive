@@ -1,0 +1,56 @@
+@import '../../shared/styles/colors';
+
+.tariff {
+  margin-top: 72px;
+}
+.tariff-table {
+  margin-top: 48px;
+  border: 1px solid #e4e7ea;
+  border-radius: 10px;
+}
+
+.tariff-table-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+  overflow: hidden;
+  border-radius: 10px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $text_primary;
+
+  > thead {
+    td {
+      height: 82px;
+    }
+    > tr > td:not(:first-child) {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 34px;
+    }
+  }
+
+  > tbody {
+    td {
+      height: 72px;
+    }
+  }
+}
+
+.td-index {
+  background-color: $bg_base;
+  width: 356px;
+  padding: 24px 28px;
+  border: 1px solid #e4e7ea;
+  text-align: start;
+}
+
+td {
+  width: 206px;
+  padding: 24px 14px;
+  text-align: center;
+  border: 1px solid #e4e7ea;
+}
+td:not(:first-child) {
+  padding: 0;
+}

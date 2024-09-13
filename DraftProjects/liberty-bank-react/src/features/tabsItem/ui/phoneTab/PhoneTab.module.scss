@@ -1,0 +1,25 @@
+.password-container {
+  margin-bottom: 8px;
+}
+
+.phone-container {
+  margin-bottom: 16px;
+}
+
+.reset-link-container {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 24px;
+}
+
+.errors {
+  display: flex;
+  align-items: center;
+
+  .link {
+    margin-top: 8px;
+    color: $text_alert;
+    font-size: map-get($font-size, XS);
+    text-decoration: underline;
+  }
+}

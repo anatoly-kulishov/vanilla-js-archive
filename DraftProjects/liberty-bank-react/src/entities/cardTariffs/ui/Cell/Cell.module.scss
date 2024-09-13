@@ -1,0 +1,16 @@
+@import '../../../../shared/styles/index.scss';
+
+.cell {
+  border-right: 1px solid #e4e7ea;
+  border-bottom: 1px solid #e4e7ea;
+  padding: 24px;
+  text-align: center;
+
+  &:last-of-type {
+    border-right: none;
+  }
+
+  &_place_bottom {
+    border-bottom: none;
+  }
+}

@@ -1,0 +1,86 @@
+@mixin centrify {
+  display: flex;
+  align-items: center;
+}
+
+.icon:hover {
+  cursor: pointer;
+}
+
+.selectBlock {
+  width: 100%;
+  position: relative;
+  max-width: 550px;
+
+  .optionsBlock {
+    position: absolute;
+    width: min(100%, 548px);
+    max-height: 257px;
+    margin-top: 8px;
+    overflow-y: auto;
+    z-index: 1;
+    border-radius: $borderRadiusM;
+  }
+
+  .optionItem {
+    @include centrify;
+    justify-content: space-between;
+    position: relative;
+    background-color: $bg_primary;
+    max-width: 548px;
+    height: 100%;
+    padding: 16px 24px;
+    gap: 16px;
+    border: $bg_base solid;
+    border-width: 1px 0;
+    &:first-child {
+      border-bottom: 1px solid $bg_base;
+    }
+    &:last-child {
+      border-top: 1px solid $bg_base;
+    }
+
+    &.active {
+      background-color: $text_secondary_buttons;
+    }
+
+    &__iconSelected {
+      min-width: 24px;
+      max-height: 24px;
+    }
+
+    &__contentBlock {
+      @include centrify;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    &__textValue {
+      @include centrify;
+      position: relative;
+      word-wrap: break-word;
+      max-width: 460.5px;
+      height: 24px;
+      gap: 8px;
+    }
+
+    &__decriptionBlock {
+      max-width: 35%;
+      color: $text_secondary;
+    }
+  }
+  .optionItem:hover {
+    background-color: $text_secondary_buttons;
+    width: 100%;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+    border-radius: $borderRadiusScroll;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: $bg_input_scroll;
+    border-radius: $borderRadiusScroll;
+  }
+}

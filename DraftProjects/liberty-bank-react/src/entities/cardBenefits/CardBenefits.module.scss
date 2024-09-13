@@ -1,0 +1,40 @@
+@import '../../shared/styles/index.scss';
+
+.benefits {
+  margin-top: 72px;
+
+  &__title {
+    margin-bottom: 48px;
+  }
+
+  &__list {
+    margin-top: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 48px 20px;
+
+    &_align_start {
+      justify-content: start;
+    }
+  }
+}
+
+.benefit {
+  max-width: 280px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  &__description-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__description {
+    color: $text_secondary;
+  }
+}

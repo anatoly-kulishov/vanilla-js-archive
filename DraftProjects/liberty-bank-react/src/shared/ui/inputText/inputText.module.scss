@@ -1,0 +1,40 @@
+.inputText {
+  width: 100%;
+  height: 100%;
+  background-color: $bg_blocks;
+  padding: 16px 24px;
+  font-size: map-get($font-size, S);
+  line-height: map-get($line-height, S);
+  border-radius: $borderRadiusM;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  &_focus {
+    border: 1px solid #757f8a;
+  }
+}
+
+.label {
+  font-weight: map-get($font-weight, M);
+  color: $text_secondary;
+}
+
+.labelContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text {
+  resize: none;
+  font-size: map-get($font-size, S);
+  line-height: map-get($line-height, S);
+  font-weight: map-get($font-weight, R);
+  width: 100%;
+  color: $text_secondary;
+  caret-color: $ctrl_Liberty;
+  flex: 1;
+  &:focus {
+    outline: none;
+    color: $text_primary;
+  }
+}

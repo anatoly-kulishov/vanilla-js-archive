@@ -1,0 +1,17 @@
+@import '../../shared/styles/index.scss';
+
+.main {
+  margin-bottom: 31px;
+  padding-top: 24px;
+  min-height: 600px;
+}
+
+.modal {
+  top: 348px;
+  right: 10px;
+}
+
+.title {
+  color: $text_primary;
+  margin-bottom: 24px;
+}

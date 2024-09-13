@@ -1,0 +1,27 @@
+@import '../../shared/styles/colors';
+
+.registration {
+  margin: 100px auto;
+  max-width: 580px;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 32px;
+    color: $text_action;
+    width: max-content;
+  }
+
+  &__header:hover {
+    cursor: pointer;
+  }
+
+  &__content {
+    margin-top: 16px;
+  }
+
+  &__caption {
+    text-align: center;
+  }
+}

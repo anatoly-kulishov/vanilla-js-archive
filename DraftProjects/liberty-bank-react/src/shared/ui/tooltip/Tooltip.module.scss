@@ -1,0 +1,89 @@
+.container {
+  position: relative;
+  width: fit-content;
+}
+
+.info-circle {
+  box-sizing: content-box;
+  display: flex;
+  align-items: center;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.content_wrapper {
+  position: absolute;
+  z-index: 10;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(39.66, 42.62, 48.03, 0.07);
+  background-color: white;
+}
+
+.content {
+  position: relative;
+  padding: 20px;
+  white-space: nowrap;
+}
+
+.right {
+  left: 0;
+}
+
+.left {
+  right: 0;
+}
+
+.top {
+  bottom: 120%;
+}
+
+.bottom {
+  top: 120%;
+}
+
+.arrow {
+  position: absolute;
+  display: block;
+  width: 10px;
+  height: 10px;
+  rotate: 45deg;
+  background-color: white;
+}
+
+.content_wrapper.top .arrow {
+  bottom: -3px;
+}
+
+.content_wrapper.bottom .arrow {
+  top: -3px;
+}
+
+.content_wrapper.left .arrow {
+  right: 2px;
+}
+
+.content_wrapper.right .arrow {
+  left: 2px;
+}
+
+.content_wrapper.top.left {
+  border-bottom-right-radius: 2px;
+}
+
+.content_wrapper.top.right {
+  border-bottom-left-radius: 2px;
+}
+
+.content_wrapper.bottom.left {
+  border-top-right-radius: 2px;
+}
+
+.content_wrapper.bottom.right {
+  border-top-left-radius: 2px;
+}
+
+.normal-wrapping {
+  box-sizing: border-box;
+  white-space: normal;
+}

@@ -1,0 +1,39 @@
+.textBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.priceBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.formWrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.inputNumPriceWrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.inputPercentPriceWrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+}
+
+.buttonBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.submitButton {
+  margin-top: 15px;
+}

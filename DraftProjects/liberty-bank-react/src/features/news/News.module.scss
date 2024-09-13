@@ -1,0 +1,25 @@
+@import '../../shared/styles';
+
+.section {
+  padding-top: 1.5rem;
+  padding-bottom: 0.625rem;
+}
+
+.title {
+  padding-left: 2.625rem;
+}
+
+.cards-wrapper {
+  margin-top: 0.625rem;
+  flex: 1;
+
+  display: flex;
+  flex-flow: column;
+  gap: 0.9375rem;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  gap: 2.5rem;
+}

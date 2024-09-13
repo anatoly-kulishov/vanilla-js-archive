@@ -1,0 +1,24 @@
+{
+    "Data":[
+       {
+          "Id":1001,
+          "Name":"Отказ абонента"
+       },
+       {
+          "Id":1002,
+          "Name":"Неверные данные"
+       },
+       {
+          "Id":1003,
+          "Name":"Новая заявка"
+       },
+       {
+          "Id":1199,
+          "Name":"Прочее"
+       }
+    ],
+    "IsSuccess":true,
+    "MessageText":null,
+    "ResultType":1,
+    "ResultCode":0
+ }

@@ -1,0 +1,28 @@
+{
+  "Data": {
+    "Questionaries": [
+      {
+        "QuestionaryHistoryId": 10075,
+        "QuestionaryId": 1,
+        "QuestionaryName": "Линия MNP",
+        "CreatedBy": "T2RU\\oleg.butorov",
+        "CreatedFIO": "Буторов Олег Владимирович",
+        "CreatedOn": "2020-05-26T08:18:04.023",
+        "HandlingId": 44587959,
+        "Msisdn": "79022334365"
+      },
+      {
+        "QuestionaryHistoryId": 10074,
+        "QuestionaryId": 1,
+        "QuestionaryName": "Линия MNP",
+        "CreatedBy": "T2RU\\oleg.butorov",
+        "CreatedFIO": "Буторов Олег Владимирович",
+        "CreatedOn": "2020-05-26T08:15:01.013",
+        "HandlingId": 44588383,
+        "Msisdn": "79022334365"
+      }
+    ]
+  },
+  "IsSuccess": true,
+  "MessageText": null
+}

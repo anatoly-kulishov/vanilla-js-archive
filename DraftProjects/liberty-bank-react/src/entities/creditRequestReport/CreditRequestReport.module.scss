@@ -1,0 +1,42 @@
+@import '../../shared/styles/index.scss';
+
+.reportTable {
+  margin: 15px;
+}
+
+.reportTable .reportTr .reportTd:nth-of-type(2) {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.reportBody,
+.reportTd {
+  padding: 7px;
+}
+
+.buttonContainerReport {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 15px 15px;
+  padding: 0 7px;
+}
+
+.reportForm {
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
+  width: 490px;
+  height: auto;
+  padding: 8px;
+  background-color: $bg_blocks;
+  border-radius: $borderRadiusM;
+}
+
+.titleReport {
+  text-align: center;
+  line-height: 42px;
+}
+
+.button {
+  padding: 16px 22.5px;
+}

@@ -1,0 +1,21 @@
+@import '../../styles/index.scss';
+
+.checkbox {
+  height: 0;
+  width: 0;
+  display: none;
+}
+
+.label {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url('../icon/assets/icons/checkbox.svg');
+  transition: all 0.1s;
+  cursor: pointer;
+
+  &.active {
+    border: none;
+    background-image: url('../icon/assets/icons/checkboxActive.svg');
+  }
+}

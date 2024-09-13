@@ -1,0 +1,68 @@
+@import '../../shared/styles/index.scss';
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 32px;
+  border-radius: $borderRadiusM;
+  background-color: $bg_blocks;
+}
+
+.image {
+  flex-shrink: 0;
+}
+
+.info {
+  width: 100%;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__ps-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__card-number {
+    margin-top: 10px;
+    color: $text_secondary;
+  }
+
+  &__body {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+  }
+
+  &__item-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item-text {
+    color: $separator;
+  }
+
+  &__footer {
+    margin-top: 24px;
+    display: flex;
+    gap: 20px;
+  }
+
+  &__got-card-btn {
+    width: 220px;
+    padding: 16px 26px;
+  }
+
+  &__info-btn {
+    width: 220px;
+    padding: 15px 25px;
+    background-color: transparent;
+  }
+}

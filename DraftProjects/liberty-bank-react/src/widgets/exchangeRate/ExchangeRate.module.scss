@@ -1,0 +1,68 @@
+@import '../../shared/styles/index.scss';
+
+.content__total_exchangeRate {
+  width: 100%;
+  padding: 32px 24px 24px 24px;
+  border-radius: $borderRadiusM;
+  background-color: $bg_blocks;
+}
+.exchangeRate {
+  width: 100%;
+  height: 100%;
+  padding: 32px 24px 24px 24px;
+}
+.exchangeRate__title {
+  font-size: map-get($font-size, M);
+  font-style: normal;
+  font-weight: map-get($font-weight, M);
+  line-height: map-get($line-height, L);
+  text-align: center;
+  margin-bottom: 16px;
+  color: $text_primary;
+}
+.exchangeRate__name {
+  display: flex;
+  justify-content: space-between;
+  font-style: normal;
+  font-weight: map-get($font-weight, M);
+  padding: 8px 16px;
+  color: $text_secondary;
+}
+.exchangeRate__name_number {
+  display: flex;
+}
+.number__title {
+  margin-left: 19px;
+}
+.list__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 16px;
+  margin: 0 0 0 0;
+  border-bottom: 1px solid $separator;
+  &:last-child {
+    border-bottom: none;
+  }
+}
+.list__item_text {
+  display: flex;
+  align-items: center;
+}
+.text__country {
+  font-style: normal;
+  font-weight: map-get($font-weight, R);
+  margin-left: 8px;
+  color: $text_primary;
+}
+.list__item_number {
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+.number__data {
+  font-style: normal;
+  font-weight: map-get($font-weight, M);
+  text-align: right;
+  color: $text_primary;
+}

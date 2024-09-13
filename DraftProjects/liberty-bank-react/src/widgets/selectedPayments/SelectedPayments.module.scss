@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 13px;
+
+  &__header {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  &__text {
+    color: $text_secondary;
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  &__all {
+    margin-bottom: 261px;
+  }
+
+  &__count {
+    padding: 0 10px;
+    color: $bg_primary;
+    border-radius: $borderRadiusL;
+    background: $ctrl_Liberty;
+  }
+}
