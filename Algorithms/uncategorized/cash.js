@@ -1,9 +1,6 @@
 /**
  * Cash function
- * @param fn
- * @returns {(function(*): (*))|*}
  */
-
 function cashFunction(fn) {
   const cash = {};
   return function (n) {
