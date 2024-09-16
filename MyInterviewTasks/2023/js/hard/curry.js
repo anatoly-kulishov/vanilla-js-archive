@@ -12,7 +12,7 @@ function curry(fn) {
     }
 }
 
-curridSum = curry(sum)
+const curridSum = curry(sum)
 
 console.log(curridSum(2)(3)(4)) // 9
 console.log(curridSum(2, 3)(4)) // 9

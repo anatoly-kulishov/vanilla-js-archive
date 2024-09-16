@@ -1,18 +1,23 @@
 // Поиск файлов в IDE
 function search(term, str) {
+    if (!term.length) return true;  // Пустая подстрока всегда найдена
+    if (!str.length) return false;  // Если строка пустая, но подстрока не пуста, возвращаем false
+
     let termIndex = 0;
 
-    for(let char of str) {
+    for (let char of str) {
         if (char === term[termIndex]) {
-            termIndex++
+            termIndex++;  // Если символы совпали, идем дальше по подстроке
         }
+
         if (termIndex === term.length) {
-            return true
+            return true;  // Все символы подстроки найдены в правильном порядке
         }
     }
 
-    return false
+    return false;  // Если до конца строки не нашли всю подстроку, возвращаем false
 }
+
 
 console.log(search('el', 'crocodile')); // false
 console.log(search('le', 'crocodile')); // true
