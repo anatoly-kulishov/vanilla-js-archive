@@ -1,7 +1,0 @@
-export const LIMITED_TYPE = {
-  BY_DEALERS: 1,
-  BY_REGION: 2,
-  BY_OWN: 3,
-  BY_POINT_SALE: 4,
-  BY_NUMERIC: 5,
-}

@@ -1,3 +1,8 @@
+/** (Array.prototype.myCall) */
+Function.prototype.myCall = function(obj, ...args) {
+  obj.that = this
+  obj.that(...args)
+};
 /** (Array.prototype.map) */
 Array.prototype.myMap = function(callback) {
   const newArray = [];

@@ -15,7 +15,7 @@ module.exports = class Stack {
   }
 
   push(value) {
-    this.storage [this.count] = value;
+    this.storage[this.count] = value;
     this.count++;
   }
 
@@ -25,12 +25,12 @@ module.exports = class Stack {
     }
     this.count--;
     let result = this.storage [this.count];
-    delete this.storage [this.count];
+    delete this.storage[this.count];
     return result;
   }
 
   peek() {
-    return this.storage [this.count - 1];
+    return this.storage[this.count - 1];
   }
 
   size() {

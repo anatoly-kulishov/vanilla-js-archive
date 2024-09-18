@@ -1,8 +1,0 @@
-version: 2.1
-orbs:
-  k6io: k6io/test@1.1.0
-workflows:
-  load_test:
-    jobs:
-      - k6io/test:
-          script: create-todo-http-request.js

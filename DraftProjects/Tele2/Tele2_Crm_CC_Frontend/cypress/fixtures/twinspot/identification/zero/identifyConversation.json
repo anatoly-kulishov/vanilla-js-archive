@@ -1,8 +1,0 @@
-{
-  "ErrorCode": 0,
-  "ErrorStackTrace": null,
-  "IsSuccess": false,
-  "MessageText": "Не заполнен обязательный параметр: From.",
-  "ResultType": 2,
-  "ResultCode": 0
-}

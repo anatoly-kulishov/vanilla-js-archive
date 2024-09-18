@@ -1,8 +1,0 @@
-.analytics-list::before {
-  content: '';
-  display: block;
-  height: 1px;
-  background: $separator;
-  width: calc(100% - 29px);
-  margin-left: 29px;
-}

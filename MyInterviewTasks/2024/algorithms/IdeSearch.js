@@ -9,13 +9,9 @@ function search(term, str) {
         if (char === term[termIndex]) {
             termIndex++;  // Если символы совпали, идем дальше по подстроке
         }
-
-        if (termIndex === term.length) {
-            return true;  // Все символы подстроки найдены в правильном порядке
-        }
     }
 
-    return false;  // Если до конца строки не нашли всю подстроку, возвращаем false
+    return termIndex === term.length;  // Если до конца строки не нашли всю подстроку, возвращаем false
 }
 
 

@@ -1,1 +1,0 @@
-export { FiltersForm } from './filtersForm';
