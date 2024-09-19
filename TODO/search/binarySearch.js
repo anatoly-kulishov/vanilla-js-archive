@@ -3,7 +3,6 @@
  * O(log n)
  */
 const simpleArray = [1, 4, 5, 8, 5, 1, 2, 7, 5, 2, 11]; // [1, 2, 2, 4, 5, 5, 7, 9, 11]
-let n1 = 0;
 
 const binarySearch = (arr, target) => {
   let start = 0;
@@ -13,7 +12,6 @@ const binarySearch = (arr, target) => {
   let found = false;
 
   while (found === false && start <= end) {
-    n1 += 1;
     const middle = Math.floor((start + end) / 2);
 
     if (arr[middle] === target) {
@@ -31,7 +29,6 @@ const binarySearch = (arr, target) => {
 };
 
 console.log(binarySearch(simpleArray, 11)); // 10
-console.log(`(n) = ${n1}`);
 
 /** **************************************************************************************************************** **/
 

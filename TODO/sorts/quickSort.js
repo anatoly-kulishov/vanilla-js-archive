@@ -3,7 +3,6 @@
  * O(n*log(n))
  */
 const simpleArray = [1, 4, 5, 8, 5, 1, 2, 7, 5, 2, 11];
-let n = 0;
 
 function quickSort(arr) {
   if (arr.length <= 1) return arr;
@@ -15,7 +14,6 @@ function quickSort(arr) {
   let greater = [];
 
   for (let i = 0; i < arr.length; i++) {
-    n += 1;
     if (i === pivotIndex) continue;
     if (arr[i] < pivot) {
       less.push(arr[i]);
@@ -27,5 +25,5 @@ function quickSort(arr) {
   return [...quickSort(less), pivot, ...quickSort(greater)];
 }
 
-console.log("Result =", quickSort(simpleArray));
-console.log(`n = ${n}`);
+console.log(quickSort(simpleArray)); // [1, 1, 2, 2, 4, 5, 5, 5, 7, 8, 11]
+

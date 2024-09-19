@@ -3,7 +3,6 @@
  * O(n^2)
  */
 const simpleArray = [1, 4, 5, 8, 5, 1, 2, 7, 5, 2, 11];
-let n = 0;
 
 const bubbleSort = (arr) => {
   const shallowCopyArray = Array.from(arr);
@@ -13,7 +12,6 @@ const bubbleSort = (arr) => {
     swapped = false;
 
     for (let j = 0; j < shallowCopyArray.length - 1; j++) {
-      n += 1;
       if (shallowCopyArray[j] > shallowCopyArray[j + 1]) {
         const temp = shallowCopyArray[j + 1];
         shallowCopyArray[j + 1] = shallowCopyArray[j];
@@ -30,5 +28,4 @@ const bubbleSort = (arr) => {
   return shallowCopyArray;
 };
 
-console.log(bubbleSort(simpleArray));
-console.log(`n = ${n}`);
+console.log(bubbleSort(simpleArray)); // [1, 1, 2, 2, 4, 5, 5, 5, 7, 8, 11]
