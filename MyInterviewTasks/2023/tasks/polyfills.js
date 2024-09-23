@@ -38,7 +38,6 @@ Array.prototype.myFilter = function(callback) {
   return filteredArray;
 };
 /** (Array.prototype.reduce) */
-// Определяем метод reduce на прототипе Array
 Array.prototype.myReduce = function(callback, initialValue) {
   // Проверяем, является ли переданный колбэк действительно функцией
   if (typeof callback !== "function") {
@@ -50,71 +49,43 @@ Array.prototype.myReduce = function(callback, initialValue) {
     throw new TypeError("Пустой массив без начального значения для reduce");
   }
 
-  // Инициализируем аккумулятор и начальный индекс для итерации
-  let accumulator;
-  let startIndex;
+  // Начальный аккумулятор и индекс
+  let accumulator = initialValue !== undefined ? initialValue : this[0];
+  let startIndex = initialValue !== undefined ? 0 : 1;
 
-  // Если предоставлено начальное значение, используем его как аккумулятор и начинаем итерацию с начала массива
-  if (initialValue !== undefined) {
-    accumulator = initialValue;
-    startIndex = 0;
-  } else {
-    // Если начальное значение не предоставлено, используем первый элемент массива как аккумулятор и начинаем итерацию со второго элемента
-    accumulator = this[0];
-    startIndex = 1;
-  }
-
-  // Проходим по массиву, начиная с соответствующего индекса в зависимости от наличия начального значения
+  // Проходим по массиву и обновляем аккумулятор
   for (let i = startIndex; i < this.length; i++) {
-    // Проверяем, существует ли текущий индекс в массиве (для обработки разреженных массивов)
-    if (i in this) {
-      // Вызываем переданный колбэк с аккумулятором, текущим элементом, текущим индексом и исходным массивом
-      // Результат колбэка становится новым значением аккумулятора
-      accumulator = callback.call(undefined, accumulator, this[i], i, this);
-    }
+    accumulator = callback(accumulator, this[i], i, this);
   }
 
-  // Возвращаем окончательное значение аккумулятора после процесса сокращения
+  // Возвращаем итоговый результат
   return accumulator;
 };
-
 /** ************************** Promise ************************** */
 /** (Promise.all) */
-function myPromiseAll(promises) {
-  // Возвращаем новый промис
-  return new Promise((resolve, reject) => {
-    const results = []; // Массив для хранения результатов промисов
-    let completedPromises = 0; // Счетчик завершенных промисов
+Promise.myAll = function (promises) {
+    return new Promise((resolve, reject) => {
+        const results = []; // Массив для хранения результатов промисов
+        let completedPromises = 0; // Счетчик завершенных промисов
 
-    // Если массив промисов пустой, сразу выполняем промис с пустым массивом результатов
-    if (promises.length === 0) {
-      resolve(results);
-    }
+        if (promises.length === 0) {
+            resolve(results);
+        }
 
-    for (let i = 0; i < promises.length; i++) {
-      promises[i]
-          .then(result => handleResolve(result, i))
-          .catch(handleReject);
-    }
+        for (let i = 0; i < promises.length; i++) {
+            promises[i]
+                .then(result => {
+                    results[i] = result; // Сохраняем результат промиса в массив
+                    completedPromises++; // Увеличиваем счетчик завершенных промисов
 
-    // Функция обратного вызова, которая будет вызвана после выполнения каждого промиса
-    function handleResolve(result, index) {
-      results[index] = result; // Сохраняем результат промиса в массив
-      completedPromises++; // Увеличиваем счетчик завершенных промисов
-
-      // Проверяем, если все промисы завершены
-      if (completedPromises === promises.length) {
-        resolve(results); // Возвращаем массив с результатами всех промисов
-      }
-    }
-
-      // Функция обратного вызова для обработки отклоненных промисов
-    function handleReject(error) {
-      reject(error); // Если хотя бы один промис отклоняется, возвращаем ошибку
-    }
-  });
+                    if (completedPromises === promises.length) {
+                        resolve(results);
+                    }
+                })
+                .catch(error => reject(error));
+        }
+    });
 }
-
 /** (Promise.race) */
 function myPromiseRace(promises) {
   // Возвращаем новый промис
