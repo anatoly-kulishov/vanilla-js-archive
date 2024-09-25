@@ -15,5 +15,5 @@ const twoSum = (nums, target) => {
 };
 
 testCase(twoSum([2, 2, 11, 15], 4), [0, 1], true);
-// testCase(twoSum([3, 2, 4], 6), [1, 2]);
-// testCase(twoSum([3, 3], 6), [0, 1]);
+testCase(twoSum([3, 2, 4], 6), [1, 2]);
+testCase(twoSum([3, 3], 6), [0, 1]);

@@ -38,28 +38,22 @@ Array.prototype.myFilter = function(callback) {
   return filteredArray;
 };
 /** (Array.prototype.reduce) */
-Array.prototype.myReduce = function(callback, initialValue) {
-  // Проверяем, является ли переданный колбэк действительно функцией
-  if (typeof callback !== "function") {
-    throw new TypeError("Колбэк должен быть функцией");
-  }
+Array.prototype.myReduce = function(callback, initialValue = null) {
+    if (!Array.isArray(this)) {
+        throw new Error(`${this} is not an array`)
+    }
 
-  // Проверяем, является ли массив пустым, и нет ли начального значения
-  if (this.length === 0 && initialValue === undefined) {
-    throw new TypeError("Пустой массив без начального значения для reduce");
-  }
+    if (!(callback instanceof Function)) {
+        throw new Error(`${callback} is not a function`)
+    }
 
-  // Начальный аккумулятор и индекс
-  let accumulator = initialValue !== undefined ? initialValue : this[0];
-  let startIndex = initialValue !== undefined ? 0 : 1;
+    let accum = initial;
 
-  // Проходим по массиву и обновляем аккумулятор
-  for (let i = startIndex; i < this.length; i++) {
-    accumulator = callback(accumulator, this[i], i, this);
-  }
+    for (let i = 0; i < this.length; i++) {
+        accum = callback(accum, this[i], i, this)
+    }
 
-  // Возвращаем итоговый результат
-  return accumulator;
+    return accum
 };
 /** ************************** Promise ************************** */
 /** (Promise.all) */

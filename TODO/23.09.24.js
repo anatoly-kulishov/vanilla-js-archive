@@ -1,40 +1,34 @@
-Promise.myAll = function (promises) {
+Promise.polyAll = function (promises) {
     return new Promise((resolve, reject) => {
-        const results = []; // Массив для хранения результатов промисов
-        let completedPromises = 0; // Счетчик завершенных промисов
-
-        if (promises.length === 0) {
-            resolve(results);
-        }
+        let resultArr = [];
+        let counter = 0;
 
         for (let i = 0; i < promises.length; i++) {
-            promises[i]
-                .then(result => {
-                    results[i] = result; // Сохраняем результат промиса в массив
-                    completedPromises++; // Увеличиваем счетчик завершенных промисов
+            Promise.resolve(promises[i]).then((res) => {
+                counter++;
+                resultArr[i] = res
 
-                    if (completedPromises === promises.length) {
-                        resolve(results);
-                    }
-                })
-                .catch(error => reject(error));
+                if (counter === promises.length) {
+                    resolve(resultArr)
+                }
+            }).catch(err=> reject(err))
         }
-    });
-}
+    })}
 
-const x = Promise.myAll([
-    new Promise((r) => setTimeout(r, 100, 'Success 1')),
-    new Promise((r) => setTimeout(r, 1200, 'Success 2')),
-    new Promise((r) => setTimeout(r, 500, 'Success 3')),
-])
+let promise1 = Promise.resolve(1);
 
-x
-    .then((res) => {
-        console.log('res', res)
-    })
-    .catch((err) => {
-        console.log('err', err)
-    })
+let promise2 = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve('Resolved-2');
+    }, 500);
+});
+
+let promise3 = new Promise((resolve, reject) => {
+    resolve('Resolved-3');
+});
+
+const promisesPolyAll = [promise1, promise2, promise3, 10];
+Promise.polyAll(promisesPolyAll).then(console.log).catch(console.log);
 
 /** **************************************************************************************************************** **/
 

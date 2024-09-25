@@ -2,7 +2,7 @@
  * Binary search
  * O(log n)
  */
-const simpleArray = [1, 4, 5, 8, 5, 1, 2, 7, 5, 2, 11]; // [1, 2, 2, 4, 5, 5, 7, 9, 11]
+const simpleArray = [1, 2, 2, 4, 5, 5, 7, 9, 11];
 
 const binarySearch = (arr, target) => {
   let start = 0;
@@ -28,15 +28,12 @@ const binarySearch = (arr, target) => {
   return position;
 };
 
-console.log(binarySearch(simpleArray, 11)); // 10
+console.log(binarySearch(simpleArray, 11)); // 8
 
 /** **************************************************************************************************************** **/
 
-let n2 = 0;
-
 const recursiveBinarySearch = (arr, item, start, end) => {
   let middle = Math.floor((start + end) / 2);
-  n2 += 1;
   if (item === arr[middle]) {
     return middle;
   }
@@ -47,5 +44,4 @@ const recursiveBinarySearch = (arr, item, start, end) => {
   }
 };
 
-console.log(recursiveBinarySearch(simpleArray, 11, 0, simpleArray.length)); // 10
-console.log(`(n) = ${n2}`);
+console.log(recursiveBinarySearch(simpleArray, 11, 0, simpleArray.length)); // 8
