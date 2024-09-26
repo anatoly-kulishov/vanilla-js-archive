@@ -8,8 +8,6 @@ Array.prototype.myMap = function(callback) {
   const newArray = [];
 
   for (let i = 0; i < this.length; i++) {
-    // Вызываем переданную функцию обратного вызова для текущего элемента массива
-    // и добавляем результат в новый массив
     newArray.push(callback(this[i], i, this));
   }
 
