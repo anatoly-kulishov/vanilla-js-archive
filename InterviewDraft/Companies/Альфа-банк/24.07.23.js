@@ -16,7 +16,7 @@
 //   };
 //
 //   return (
-//     <form onClick={onClickForm}>
+//     <form onSubmit={onClickForm}>
 //       <input
 //         value={controlledInputValue}
 //         onChange={(e) => setControlledInputValue(e.target.value)}
