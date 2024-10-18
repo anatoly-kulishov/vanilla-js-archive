@@ -1,20 +1,20 @@
-// const upperCase = str => str.toUpperCase();
-// const exclaim = str => `${str}!`;
-// const repeat = str => `${str} `.repeat(3);
+const upperCase = str => str.toUpperCase();
+const exclaim = str => `${str}!`;
+const repeat = str => `${str} `.repeat(3);
 
-// const compose = (...fns) => x => fns.reduceRight((acc, fn) => fn(acc), x);
+const compose = (...fns) => x => fns.reduceRight((acc, fn) => fn(acc), x);
 
-// const compose2 = (...fns) => {
-//     if(fns.length === 0) {
-//         return (arg) => arg
-//     }
-//
-//     if(fns.length === 1) {
-//         return fns[0]
-//     }
-//
-//     return fns.reduce((a, b) => (...args) => a(b(...args)));
-// }
+const compose2 = (...fns) => {
+    if(fns.length === 0) {
+        return (arg) => arg
+    }
+
+    if(fns.length === 1) {
+        return fns[0]
+    }
+
+    return fns.reduce((a, b) => (...args) => a(b(...args)));
+}
 
 /**
  * Написать собственную реализацию функции compose.
