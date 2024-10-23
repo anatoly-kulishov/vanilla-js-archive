@@ -62,7 +62,7 @@ let foo = {
   bar: 1,
 }
 
-const baz = foo;
+let baz = foo;
 
 foo.bar = 2
 

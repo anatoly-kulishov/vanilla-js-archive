@@ -70,9 +70,10 @@
 //         )
 //         .catch(
 //             () => console.log('9')
-//         ).then(
-//         () => console.log('11'),
-//     );
+//         )
+//         .then(
+//             () => console.log('11'),
+//         );
 //
 //     p
 //         .then(
@@ -80,9 +81,10 @@
 //         )
 //         .catch(
 //             () => console.log('19')
-//         ).then(
-//         () => console.log('21'),
-//     );
+//         )
+//         .then(
+//             () => console.log('21'),
+//         );
 // })();
 
 /** **************************************************************************************************************** **/
@@ -120,8 +122,10 @@
 
 /** **************************************************************************************************************** **/
 
+// baz = 404;
+//
 // (function question5() {
-//     let baz = 0;
+//     let baz = 303;
 //
 //     let foo = {
 //         bar1: function () {return this.baz},
@@ -169,26 +173,25 @@
 
 /** **************************************************************************************************************** **/
 
-// function makeGroup() {
-//     let people = [];
-//
-//     let i = 0;
-//
-//     while (i < 10) {
-//         let man = function () {
-//             console.log(i);
-//         };
-//         people.push(man);
-//         i++;
-//     }
-//
-//     return people
-// }
-//
-// let group = makeGroup();
-//
-// group[0](); //
-// group[5](); //
+/*function makeGroup() {
+    let people = [];
+    let i = 0;
+
+    while (i < 10) {
+        let man = function () {
+            console.log(i);
+        };
+        people.push(man);
+        i++;
+    }
+
+    return people
+}
+
+let group = makeGroup();
+
+group[0](); //
+group[5](); //*/
 
 /** **************************************************************************************************************** **/
 
@@ -207,3 +210,5 @@
 //
 //     return null
 // }
+
+// Output: render, effect run, render, effect clean up, effect run
