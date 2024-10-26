@@ -6,18 +6,15 @@ const simpleArray = [1, 4, 5, 8, 5, 1, 2, 7, 5, 2, 11];
 let n = 0;
 
 const bubbleSort = (arr) => {
-  const shallowCopyArray = Array.from(arr);
   let swapped = false;
 
-  for (let i = 0; i < shallowCopyArray.length; i++) {
+  for (let i = 0; i < arr.length; i++) {
     swapped = false;
 
-    for (let j = 0; j < shallowCopyArray.length - 1; j++) {
+    for (let j = 0; j < arr.length - 1; j++) {
       n += 1;
-      if (shallowCopyArray[j] > shallowCopyArray[j + 1]) {
-        const temp = shallowCopyArray[j + 1];
-        shallowCopyArray[j + 1] = shallowCopyArray[j];
-        shallowCopyArray[j] = temp;
+      if (arr[j] > arr[j + 1]) {
+        [arr[j + 1], arr[j]] = [arr[j], arr[j + 1]]
         swapped = true;
       }
     }
@@ -27,7 +24,7 @@ const bubbleSort = (arr) => {
     }
   }
 
-  return shallowCopyArray;
+  return arr;
 };
 
 console.log(bubbleSort(simpleArray));
