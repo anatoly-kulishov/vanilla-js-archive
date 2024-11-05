@@ -1,25 +1,25 @@
 /**
  * 1
  */
-// console.log(true + false) // 1
-// console.log(12 / "6") // 2
-// console.log('number' + 15 + 3) // number153
-// console.log(15 + 3 + 'number') // 18number
-// console.log([1] > null) // true
-// console.log('foo' + +'bar') // fooNaN
-// console.log('true' == true) // false
-// console.log(false == 'false') // false
-// console.log(null == '') // false
-// console.log(!!'false' == !!'true') // true
-// console.log(['x'] == 'x') // true
-// console.log([] + null + 1) // null1
-// console.log(0 || '0' && {}) // {}
-// console.log([1, 2, 3] == [1, 2, 3]) // false
+// console.log(true + false) //
+// console.log(12 / "6") //
+// console.log('number' + 15 + 3) //
+// console.log(15 + 3 + 'number') //
+// console.log([1] > null) //
+// console.log('foo' + +'bar') //
+// console.log('true' == true) // true
+// console.log(false == 'false') //
+// console.log(null == '') //
+// console.log(!!'false' == !!'true') //
+// console.log(['x'] == 'x') //
+// console.log([] + null + 1) //
+// console.log(0 || '0' && {}) //
+// console.log([1, 2, 3] == [1, 2, 3]) //
 //
 // let a = '42'
 // let b = new String(42)
-// console.log(a == b) // true
-// console.log(a === b) // false
+// console.log(a == b) //
+// console.log(a === b) //
 
 /**
  * 2
@@ -72,12 +72,12 @@
 //     }
 // }
 //
-// f(); // 3
-// new f(); // 5
-// obj.m(); // 4
-// new obj.m(); // und
-// f.call(f); // 5
-// obj.m.call(f); // 5
+// f(); //
+// new f(); //
+// obj.m(); //
+// new obj.m(); //
+// f.call(f); //
+// obj.m.call(f); //
 
 /**
  * 5
@@ -96,24 +96,24 @@
 // }
 //
 // const obj1 = foo();
-// obj1.bar(); // 10
-// obj1.baz(); // 20
+// obj1.bar(); //
+// obj1.baz(); //
 //
 // const obj2 = foo.call({x: 30});
-// obj2.bar(); // 30
-// obj2.baz(); // 20
+// obj2.bar(); //
+// obj2.baz(); //
 
-/**
- * 6
- */
+// /**
+//  * 6
+//  */
 // var a = 5;
 // setTimeout(() => {
-//     console.log(a); // 25
+//     console.log(a); //
 //     a = 10;
 // }, 0)
 //
 // var p = new Promise(function (resolve, reject) {
-//     console.log(a); // 5
+//     console.log(a); //
 //     a = 25;
 //     resolve();
 // })
@@ -122,7 +122,7 @@
 //     // Some code
 // })
 //
-// console.log(a); // 25
+// console.log(a); //
 
 /**
  * 7
