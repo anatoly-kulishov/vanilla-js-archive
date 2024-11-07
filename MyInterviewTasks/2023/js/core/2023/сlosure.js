@@ -1,17 +1,17 @@
 /** Output: [-2, -2] */
-// var i = 10;
-// var result = [];
-//
-// while (i--) {
-//     result.push(() => {
-//         return i + i
-//     })
-// }
-//
-// console.log(
-//     result[0](), // ???
-//     result[1]() // ???
-// );
+  // var i = 10;
+  // var result = [];
+  //
+  // while (i--) {
+  //     result.push(() => {
+  //         return i + i
+  //     })
+  // }
+  //
+  // console.log(
+  //     result[0](), // ???
+  //     result[1]() // ???
+  // );
 /** **************************************************** */
 /** Output: [c = 1] */
 // var c = 1;
@@ -58,16 +58,16 @@
 // console.log(a); //
 // console.log(a.b); //
 /** **************************************************************************************************************** **/
-let foo = {
-  bar: 1,
-}
-
-let baz = foo;
-
-foo.bar = 2
-
-foo = {
-  bar: 3
-}
-
-console.log (baz.bar, foo); //
+// let foo = {
+//   bar: 1,
+// }
+//
+// let baz = foo;
+//
+// foo.bar = 2
+//
+// foo = {
+//   bar: 3
+// }
+//
+// console.log (baz.bar, foo); //

@@ -21,6 +21,7 @@ function App() {
 
     useEffect(() => {
         setState((state) => state + 1);
+        console.log("setState()");
     }, []);
 
     useEffect(() => {

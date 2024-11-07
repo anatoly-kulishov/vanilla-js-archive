@@ -26,4 +26,4 @@ fn3(x);
 console.log(x); // ?
 
 fn4(x);
-console.log(x); // ?
+console.log(x); // S
