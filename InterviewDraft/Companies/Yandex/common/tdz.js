@@ -11,8 +11,8 @@ let d = {}
 d['a'] = 10
 d = { ...d }
 
-// console.log(a) // a is not defined
-// console.log(b) // 4
-// console.log(z) // 1
-// console.log(d) // { a: 10 }
-// console.log(f) // 10
+console.log(a) // a is not defined
+console.log(b) // 4
+console.log(z) // 1
+console.log(d) // { a: 10 }
+console.log(f) // 10
