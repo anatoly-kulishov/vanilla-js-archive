@@ -1,0 +1,16 @@
+.App {
+  font-family: monospace;
+  text-align: center;
+}
+
+ul {
+  text-align: left;
+}
+
+li {
+  margin-top: 5px;
+}
+
+li > button {
+  margin-left: 10px;
+}
