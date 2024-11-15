@@ -173,25 +173,25 @@
 
 /** **************************************************************************************************************** **/
 
-/*function makeGroup() {
-    let people = [];
-    let i = 0;
-
-    while (i < 10) {
-        let man = function () {
-            console.log(i);
-        };
-        people.push(man);
-        i++;
-    }
-
-    return people
-}
-
-let group = makeGroup();
-
-group[0](); //
-group[5](); //*/
+// function makeGroup() {
+//     let people = [];
+//     let i = 0;
+//
+//     while (i < 10) {
+//         let man = function () {
+//             console.log(i);
+//         };
+//         people.push(man);
+//         i++;
+//     }
+//
+//     return people
+// }
+//
+// let group = makeGroup();
+//
+// group[0](); //
+// group[5](); //
 
 /** **************************************************************************************************************** **/
 
