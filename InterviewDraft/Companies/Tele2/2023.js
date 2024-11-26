@@ -1,3 +1,10 @@
+/**
+ * 1
+ * 3
+ * 2
+ * 4
+ */
+
 const C1 = ({children}) => {
     console.log('1')
 
@@ -26,9 +33,3 @@ export default function App() {
     )
 }
 
-/**
- * 1
- * 3
- * 2
- * 4
- */
