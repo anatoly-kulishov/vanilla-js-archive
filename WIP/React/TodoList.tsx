@@ -1,6 +1,4 @@
-// import { useEffect, useState } from 'react';
-//
-// // https://jsonplaceholder.typicode.com/todos
+// import { useEffect, useState } from "react";
 //
 // interface ITodo {
 //     userId: number;
@@ -9,110 +7,103 @@
 //     completed: boolean;
 // }
 //
-// const fetchTodoList = async (): any => {
-//     const res = await fetch('https://jsonplaceholder.typicode.com/todos');
+// interface IGroupedTodo {
+//     userId: number;
+//     todos: ITodo[];
+// }
+//
+// const TODOS_URL = "https://jsonplaceholder.typicode.com/todos";
+//
+// const fetchTodoList = async (): Promise<ITodo[]> => {
+//     const res = await fetch(TODOS_URL);
 //     if (res.ok) {
 //         return await res.json();
 //     } else {
-//         alert('Ошибка HTTP: ' + res.status);
+//         console.error("HTTP Error: " + res.status);
+//         return [];
 //     }
-//     return [];
 // };
 //
 // function App() {
-//     const [list, setList] = useState<ITodo[]>([]);
-//     const [groupList, setGroupList] = useState<any[]>([]);
-//
-//     const [isGroup, setIsGroup] = useState(false);
-//     const [isFiltered, setIsFiltered] = useState(false);
+//     const [todos, setTodos] = useState<ITodo[]>([]);
 //     const [isLoading, setIsLoading] = useState(true);
+//     const [isGrouped, setIsGrouped] = useState(false);
+//     const [isFiltered, setIsFiltered] = useState(false);
 //
-//     const handleSetTodoList = async () => {
-//         const todoList = await fetchTodoList();
-//         setList(todoList.sort((a, b) => b['userId'] - a['userId']));
-//         setIsLoading(false);
-//     };
-//
-//     const handleSetFiltredList = () => {
-//         if (isFiltered && !isGroup) {
-//             let data = list.filter((el) => !el.completed);
-//             setList(data || []);
-//         }
-//
-//         if (!isFiltered && !isGroup) {
-//             handleSetTodoList();
-//         }
-//
-//         if (isGroup && isFiltered) {
-//             let data = groupList.map((group) => {
-//                 const res = [group[0], group[1].filter((el: any) => !el.completed)];
-//                 return res;
-//             });
-//             setGroupList(data);
-//         }
-//
-//         if (!isFiltered && isGroup) {
-//             handleSetGroupList(true);
-//         }
-//
-//         setIsFiltered(!isFiltered);
-//     };
-//
-//     const handleSetGroupList = (flag: boolean) => {
-//         if (flag) {
-//             const groupMap = new Map();
-//
-//             for (let i = 0; i < list.length; i++) {
-//                 const curr = list[i];
-//
-//                 if (!groupMap.has(curr.userId)) {
-//                     groupMap.set(curr.userId, [curr]);
-//                 } else {
-//                     groupMap.get(curr.userId).push(curr);
-//                 }
-//             }
-//
-//             setGroupList(Array.from(groupMap));
-//             setIsGroup(true);
-//         } else {
-//             setIsGroup(false);
-//         }
-//     };
-//
+//     // Fetch TODOs on component mount
 //     useEffect(() => {
-//         handleSetTodoList();
+//         const loadTodos = async () => {
+//             setIsLoading(true);
+//             const todoList = await fetchTodoList();
+//             setTodos(todoList.sort((a, b) => b.userId - a.userId));
+//             setIsLoading(false);
+//         };
+//         loadTodos();
 //     }, []);
+//
+//     // Filter and group TODOs based on user actions
+//     const getFilteredTodos = (): ITodo[] => {
+//         return isFiltered ? todos.filter((todo) => !todo.completed) : todos;
+//     };
+//
+//     const getGroupedTodos = (): IGroupedTodo[] => {
+//         const filteredTodos = getFilteredTodos();
+//         const grouped = filteredTodos.reduce(
+//             (acc: Record<number, ITodo[]>, todo) => {
+//                 acc[todo.userId] = acc[todo.userId] || [];
+//                 acc[todo.userId].push(todo);
+//                 return acc;
+//             },
+//             {}
+//         );
+//         return Object.entries(grouped).map(([userId, todos]) => ({
+//             userId: Number(userId),
+//             todos,
+//         }));
+//     };
+//
+//     const filteredTodos = getFilteredTodos();
+//     const groupedTodos = isGrouped ? getGroupedTodos() : [];
 //
 //     return (
 //         <div>
-//             <h1>{list.length}</h1>
-//             <button onClick={handleSetFiltredList}>Filter</button>
-//             <button onClick={() => handleSetGroupList(!isGroup)}>Group</button>
-//             <ul>
-//                 {isLoading && <div>loading...</div>}
-//                 {!isLoading &&
-//                     !isGroup &&
-//                     list.map((el) => (
-//                         <li key={el.id}>
-//                             <span>{el.userId}</span>
-//                             {el.title}
-//                             <mark>{el.completed ? '+' : '-'}</mark>
-//                         </li>
-//                     ))}
-//                 {isGroup &&
-//                     groupList.map((group) => (
-//                         <div>
-//                             <h2>{group[0]}</h2>
-//                             {group[1].map((el: any) => (
-//                                 <li key={el.id}>
-//                                     <span>{el.userId}</span>
-//                                     {el.title}
-//                                     <mark>{el.completed ? '+' : '-'}</mark>
+//             {isLoading ? (
+//                 <p>Loading...</p>
+//             ) : (
+//                 <>
+//                     <h1>Total TODOs: {filteredTodos.length}</h1>
+//                     <div>
+//                         <button onClick={() => setIsFiltered((prev) => !prev)}>
+//                             {isFiltered ? "Show All" : "Filter Incomplete"}
+//                         </button>
+//                         <button onClick={() => setIsGrouped((prev) => !prev)}>
+//                             {isGrouped ? "Ungroup" : "Group by User"}
+//                         </button>
+//                     </div>
+//                     <ul>
+//                         {!isGrouped
+//                             ? filteredTodos.map((todo) => (
+//                                 <li key={todo.id}>
+//                                     <b>User {todo.userId}</b> - {todo.title}{" "}
+//                                     <mark>{todo.completed ? "✔" : "❌"}</mark>
 //                                 </li>
+//                             ))
+//                             : groupedTodos.map((group) => (
+//                                 <div key={group.userId}>
+//                                     <h2>User {group.userId}</h2>
+//                                     <ul>
+//                                         {group.todos.map((todo) => (
+//                                             <li key={todo.id}>
+//                                                 {todo.title}{" "}
+//                                                 <mark>{todo.completed ? "✔" : "❌"}</mark>
+//                                             </li>
+//                                         ))}
+//                                     </ul>
+//                                 </div>
 //                             ))}
-//                         </div>
-//                     ))}
-//             </ul>
+//                     </ul>
+//                 </>
+//             )}
 //         </div>
 //     );
 // }
