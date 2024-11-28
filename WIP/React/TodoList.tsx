@@ -1,5 +1,6 @@
 // import { useEffect, useState } from "react";
 //
+//
 // interface ITodo {
 //     userId: number;
 //     id: number;
@@ -7,12 +8,15 @@
 //     completed: boolean;
 // }
 //
+//
 // interface IGroupedTodo {
 //     userId: number;
 //     todos: ITodo[];
 // }
 //
+//
 // const TODOS_URL = "https://jsonplaceholder.typicode.com/todos";
+//
 //
 // const fetchTodoList = async (): Promise<ITodo[]> => {
 //     const res = await fetch(TODOS_URL);
@@ -24,11 +28,13 @@
 //     }
 // };
 //
+//
 // function App() {
 //     const [todos, setTodos] = useState<ITodo[]>([]);
 //     const [isLoading, setIsLoading] = useState(true);
 //     const [isGrouped, setIsGrouped] = useState(false);
 //     const [isFiltered, setIsFiltered] = useState(false);
+//
 //
 //     // Fetch TODOs on component mount
 //     useEffect(() => {
@@ -41,29 +47,39 @@
 //         loadTodos();
 //     }, []);
 //
+//
 //     // Filter and group TODOs based on user actions
 //     const getFilteredTodos = (): ITodo[] => {
 //         return isFiltered ? todos.filter((todo) => !todo.completed) : todos;
 //     };
 //
+//
 //     const getGroupedTodos = (): IGroupedTodo[] => {
+//         // Получаем отфильтрованные данные
 //         const filteredTodos = getFilteredTodos();
-//         const grouped = filteredTodos.reduce(
-//             (acc: Record<number, ITodo[]>, todo) => {
-//                 acc[todo.userId] = acc[todo.userId] || [];
-//                 acc[todo.userId].push(todo);
-//                 return acc;
-//             },
-//             {}
-//         );
+//
+//
+//         // Группируем с помощью явного цикла
+//         const grouped: Record<number, ITodo[]> = {};
+//         for (const todo of filteredTodos) {
+//             if (!grouped[todo.userId]) {
+//                 grouped[todo.userId] = [];
+//             }
+//             grouped[todo.userId].push(todo);
+//         }
+//
+//
+//         // Преобразуем объект в массив групп
 //         return Object.entries(grouped).map(([userId, todos]) => ({
-//             userId: Number(userId),
-//             todos,
+//             userId: Number(userId), // Ключи преобразуем в число
+//             todos, // Массив задач в группе
 //         }));
 //     };
 //
+//
 //     const filteredTodos = getFilteredTodos();
 //     const groupedTodos = isGrouped ? getGroupedTodos() : [];
+//
 //
 //     return (
 //         <div>
@@ -108,4 +124,6 @@
 //     );
 // }
 //
+//
 // export default App;
+//
