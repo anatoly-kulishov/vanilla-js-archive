@@ -4,7 +4,6 @@
  * 2
  * 4
  */
-
 const C1 = ({children}) => {
     console.log('1')
 
