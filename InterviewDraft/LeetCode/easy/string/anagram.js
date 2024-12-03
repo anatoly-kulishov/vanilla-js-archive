@@ -6,12 +6,12 @@
 const testCase = require("../../../../Helpers/testCase");
 
 const anagram = (strA, strB) => {
-	const aCharObj = buildCharObject(strA);
-	const bCharObj = buildCharObject(strB);
-
-	if(Object.keys(aCharObj).length !== Object.keys(bCharObj).length) {
+	if(strA.length !== strB.length) {
 		return false;
 	}
+
+	const aCharObj = buildCharObject(strA);
+	const bCharObj = buildCharObject(strB);
 
 	for(let char in aCharObj) {
 		if(aCharObj[char] !== bCharObj[char]) {
@@ -24,7 +24,7 @@ const anagram = (strA, strB) => {
 
 const buildCharObject = (str) => {
 	const charObj = {};
-	str = str.toLowerCase().replace(/[^\w]/g);
+	str = str.toLowerCase();
 
 	for (let char of str) {
 		charObj[char] = charObj[char] + 1 | 1;

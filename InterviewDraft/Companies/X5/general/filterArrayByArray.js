@@ -1,5 +1,6 @@
 const filterArrayByArray = (first, second) => {
     let newArray = [];
+
     for (let k = 0; k < second.length; k++) {
         for (let i = 0; i < first.length; i++) {
             if (first[i].code === second[k]) {
@@ -8,6 +9,7 @@ const filterArrayByArray = (first, second) => {
             }
         }
     }
+
     return newArray;
 };
 

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!-- На каждый клик на кнопку-->
+<!-- 1) при повторном клике должна показаться новая картинка вместо старой-->
+<!-- 2) показать на экране картинку размером 500 х 150, доступной по ссылке "https://random.imagecdn.app/500/150.jpg"-->
+<!-- 3) до момента загрузки показывать плейсхолдер размером с картинку (например, прямоугольник 500 х 150 зеленого цвета) -->
+<!-- 4) в случае ошибки загрузки показать плейсхолдер ошибки (например, прямоугольник 500 х 150 красного цвета)&ndash;&gt;-->
+<!-- 5) в случае успешной загрузки нужно вывести console.log с текстом, что картинка загрузилась-->
+<main>
+    <div id="image-container"></div>
+    <button id="image-loading-button">
+        Load Image
+    </button>
+</main>
+<script>
+    const btn = document.getElementById('image-loading-button');
+    const imgContainer = document.getElementById('image-container');
+
+    btn.addEventListener('click', () => {
+        imgContainer.innerHTML = ''
+        const image = document.createElement('img');
+        image.src = "https://random.imagecdn.app/v1/image?width=500&height=150"
+        image.width = 500;
+        image.height = 150;
+        image.style.backgroundColor = '#eee'
+        image.onload = function () {
+            image.style.backgroundColor = 'green'
+            console.log("картинка загрузилась")
+        }
+        image.onerror = function () {
+            image.style.backgroundColor = 'red'
+        }
+        imgContainer.append(image)
+    })
+</script>
+</body>
+</html>
