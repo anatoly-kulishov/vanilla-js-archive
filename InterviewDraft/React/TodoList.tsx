@@ -35,7 +35,6 @@
 //     const [isGrouped, setIsGrouped] = useState(false);
 //     const [isFiltered, setIsFiltered] = useState(false);
 //
-//
 //     // Fetch TODOs on component mount
 //     useEffect(() => {
 //         const loadTodos = async () => {
@@ -58,7 +57,6 @@
 //         // Получаем отфильтрованные данные
 //         const filteredTodos = getFilteredTodos();
 //
-//
 //         // Группируем с помощью явного цикла
 //         const grouped: Record<number, ITodo[]> = {};
 //         for (const todo of filteredTodos) {
@@ -67,7 +65,6 @@
 //             }
 //             grouped[todo.userId].push(todo);
 //         }
-//
 //
 //         // Преобразуем объект в массив групп
 //         return Object.entries(grouped).map(([userId, todos]) => ({
