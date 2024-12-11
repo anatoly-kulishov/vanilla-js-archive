@@ -69,7 +69,7 @@ console.log(chooseChamp(statistics1)); // { userIds: [2], steps: 2500 }
 
 const statistics2 = [
     [{ userId: 1, steps: 2000 }, { userId: 2, steps: 1500 }],
-    [{ userId: 2, steps: 4000 }, { userId: 1, steps: 3500 }]
+    [{ userId: 1, steps: 3500 }, { userId: 2, steps: 4000 }]
 ];
 console.log(chooseChamp(statistics2)); // { userIds: [1, 2], steps: 5500 }
 
