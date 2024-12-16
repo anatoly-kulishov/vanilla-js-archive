@@ -10,7 +10,7 @@
  * Сложность по памяти: 𝑂 (𝑛 ⋅ 𝑘) O(n⋅k), так как данные о каждом участнике сохраняются.
  */
 
-const chooseChamp = (statistics) => {
+const getStepChampion = (statistics) => {
     const champions = { userIds: [], steps: 0 };
     const map = {};
     const totalDays = statistics.length;
@@ -65,17 +65,17 @@ const statistics1 = [
     [{ userId: 1, steps: 5000 }, { userId: 2, steps: 1500 }],
     [{ userId: 2, steps: 1000 }]
 ];
-console.log(chooseChamp(statistics1)); // { userIds: [2], steps: 2500 }
+console.log(getStepChampion(statistics1)); // { userIds: [2], steps: 2500 }
 
 const statistics2 = [
     [{ userId: 1, steps: 2000 }, { userId: 2, steps: 1500 }],
     [{ userId: 1, steps: 3500 }, { userId: 2, steps: 4000 }]
 ];
-console.log(chooseChamp(statistics2)); // { userIds: [1, 2], steps: 5500 }
+console.log(getStepChampion(statistics2)); // { userIds: [1, 2], steps: 5500 }
 
 const statistics3 = [
     [],
     [{ userId: 1, steps: 2000 }, { userId: 2, steps: 1500 }],
     [{ userId: 2, steps: 4000 }, { userId: 1, steps: 3500 }]
 ];
-console.log(chooseChamp(statistics3)); // { userIds: [], steps: 0 }
+console.log(getStepChampion(statistics3)); // { userIds: [], steps: 0 }

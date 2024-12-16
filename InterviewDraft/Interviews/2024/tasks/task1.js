@@ -27,16 +27,16 @@
 // var a = { b: 1 }
 // c = Object.create(a)
 //
-// console.log(c.b) // 1
+// console.log(c.b) //
 // delete c.b
-// console.log(c.b) // 1
+// console.log(c.b) //
 // delete a.b
-// console.log(c.b) // und
+// console.log(c.b) //
 //
 // a.z = 2
-// console.log(c.z) // 2
+// console.log(c.z) //
 // c.z = 3
-// console.log(a.z) // 2
+// console.log(a.z) //
 
 /**
  * 3
@@ -103,9 +103,9 @@
 // obj2.bar(); //
 // obj2.baz(); //
 
-// /**
-//  * 6
-//  */
+/**
+ * 6
+ */
 // var a = 5;
 // setTimeout(() => {
 //     console.log(a); //
@@ -150,8 +150,6 @@
 //     .finally(p => p + 'e')
 //     .then(p => console.log(p))
 
-// a2d1d3
-
 /**
  * 9
  */
@@ -166,5 +164,3 @@
 // foo();
 //
 // console.log('end')
-
-// start 1 2 end 3

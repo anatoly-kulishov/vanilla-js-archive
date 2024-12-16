@@ -1,5 +1,5 @@
-const testCase = require("../../Helpers/testCase");
-const Stack = require("../../DataStructures/Stack");
+const testCase = require("../../../Helpers/testCase");
+const Stack = require("../../../DataStructures/Stack");
 
 const stackWithElements = new Stack();
 const emptyStack = new Stack();

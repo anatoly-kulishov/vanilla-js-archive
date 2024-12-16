@@ -44,7 +44,7 @@ const runDynamo = (onRoll, onStop) => {
     setTimeout(round, initialSpeed);
 };
 
-/** --  ниже идет твой код: -- **/
+/** -- ниже идет твой код: -- **/
 
 function Roller() {
    // ...
