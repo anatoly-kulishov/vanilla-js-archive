@@ -1,3 +1,4 @@
+// Canonical: problems/group-anagrams/solution.js
 const testCase = require("#shared/testCase");
 
 /**

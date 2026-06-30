@@ -1,3 +1,4 @@
+// Canonical: problems/event-emitter/solution.js
 class EventEmitter {
   constructor() {
     this.events = {};

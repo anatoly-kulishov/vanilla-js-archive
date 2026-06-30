@@ -1,3 +1,4 @@
+// Canonical: problems/debounce/solution.js
 const debounce = (callback, delay) => {
     let timeoutId
 

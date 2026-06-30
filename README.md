@@ -86,3 +86,9 @@ This layout replaces the former top-level folders:
 | `Documents/technologies/` | `docs/technologies/` |
 
 Further deduplication into `problems/` is ongoing — see [problems/README.md](./problems/README.md).
+
+### Phase 2 (latest)
+
+- Added 6 canonical problems: debounce, event-emitter, promise-all, group-anagrams, bind, pipe-compose
+- Split monolithic company files into `/<year>/theory/` (MTS, Альфа-банк, Сбер Риски)
+- Interview copies now reference canonical paths in header comments

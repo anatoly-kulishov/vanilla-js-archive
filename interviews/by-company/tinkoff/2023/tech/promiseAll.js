@@ -1,3 +1,4 @@
+// Canonical: problems/promise-all/solution.js
 const promiseAll = (promises) => {
     return new Promise((resolve, reject) => {
         const finishPromises = [];

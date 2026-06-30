@@ -1,3 +1,4 @@
+// Canonical: problems/bind/solution.js
 const testCase = require("#shared/testCase");
 
 function plus(x, y) {
