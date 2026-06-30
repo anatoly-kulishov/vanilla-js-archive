@@ -1,0 +1,19 @@
+{
+  "name": "vanilla-js-archive",
+  "version": "3.0.0",
+  "private": true,
+  "description": "Personal archive for algorithms, interview tasks, and frontend fundamentals",
+  "type": "commonjs",
+  "imports": {
+    "#shared/testCase": "./shared/testCase.js",
+    "#shared/timePerformanceStart": "./shared/timePerformanceStart.js",
+    "#shared/timePerformanceResult": "./shared/timePerformanceResult.js",
+    "#shared/searchByStack": "./shared/searchByStack.js",
+    "#shared/hashGenerator": "./shared/hashGenerator.js"
+  },
+  "scripts": {
+    "test": "node scripts/run-tests.js",
+    "test:leetcode": "node scripts/run-tests.js leetcode",
+    "test:problems": "node scripts/run-tests.js problems"
+  }
+}
