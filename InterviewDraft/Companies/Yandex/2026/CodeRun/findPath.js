@@ -1,23 +1,49 @@
 /**
  * Найти маршрут from → to по дереву рейсов.
- * fetchFlights(airport) → соседние аэропорты (прямой вылет).
- * Сеть — дерево без циклов. Нет пути → [].
+ * fetchFlights(airport) → прямые вылеты. Нет пути → [].
+ *
+ * Итеративный DFS: не копируем path и не копим массивы на стеке вызовов.
+ * parent[next] = current — в конце собираем путь от to к from.
  */
 export async function findPath(from, to, fetchFlights) {
-    // BFS: очередь пар [аэропорт, путь до него]
-    const queue = [[from, [from]]];
+    if (from === to) {
+        return [from];
+    }
 
-    while (queue.length > 0) {
-        const [current, path] = queue.shift();
+    // откуда пришли в аэропорт (для восстановления маршрута)
+    const parent = Object.create(null);
+    // уже были — защита от повторного обхода / циклов
+    const visited = new Set([from]);
+    // стек аэропортов (только коды, без путей)
+    const stack = [from];
 
-        if (current === to) {
-            return path;
-        }
-
+    while (stack.length > 0) {
+        const current = stack.pop();
         const nextAirports = (await fetchFlights(current)) || [];
 
         for (const next of nextAirports) {
-            queue.push([next, [...path, next]]);
+            if (visited.has(next)) {
+                continue;
+            }
+
+            visited.add(next);
+            parent[next] = current;
+
+            // нашли to — собираем путь назад по parent
+            if (next === to) {
+                const path = [to];
+                let node = to;
+
+                while (node !== from) {
+                    node = parent[node];
+                    path.push(node);
+                }
+
+                path.reverse();
+                return path;
+            }
+
+            stack.push(next);
         }
     }
 
@@ -34,5 +60,3 @@ export async function findPath(from, to, fetchFlights) {
 // const fetchFlights = (from) => Promise.resolve(FLIGHTS[from]);
 //
 // findPath('A', 'S', fetchFlights).then(console.log); // ['A', 'D', 'F', 'S']
-// findPath('A', 'C', fetchFlights).then(console.log); // ['A', 'B', 'C']
-// findPath('B', 'S', fetchFlights).then(console.log); // []
