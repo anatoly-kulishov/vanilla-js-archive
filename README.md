@@ -1,6 +1,6 @@
 # Frontend Interview Prep
 
-### **JavaScript / TypeScript interview handbook — algorithms to company screens.**
+### **JavaScript / TypeScript interview handbook - algorithms to company screens.**
 
 [![JavaScript](https://img.shields.io/badge/JavaScript-ES2020%2B-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![TypeScript](https://img.shields.io/badge/TypeScript-ready-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
@@ -14,7 +14,7 @@
 
 Personal handbook for **frontend coding interviews**: algorithms, data structures, GoF design patterns, LeetCode-style tasks, React / TypeScript drills, and solutions from real company screens (Yandex, Avito, Revolut, Tinkoff, Wildberries, and more).
 
-**No build step** — open any `.js` / `.ts` file and run it with Node or in the browser console.
+**No build step** - open any `.js` / `.ts` file and run it with Node or in the browser console.
 
 **Keywords:** frontend interview, JavaScript interview, TypeScript interview, coding interview, LeetCode, algorithms, data structures, design patterns, React interview, Yandex frontend, Avito interview, Revolut frontend task.
 
@@ -136,4 +136,4 @@ Personal learning material. Use at your own risk; not an official dump of any co
 
 ---
 
-**If this handbook helps your next screen — ⭐ the [repo](https://github.com/anatoly-kulishov/frontend-interview-prep).**
+**If this handbook helps your next screen - ⭐ the [repo](https://github.com/anatoly-kulishov/frontend-interview-prep).**
